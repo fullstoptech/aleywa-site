@@ -26,8 +26,17 @@ const { title, description, bare = false, footerTone = 'paper' } = Astro.props;
         els.forEach((e) => e.classList.add('is-revealed'));
       } else {
         const io = new IntersectionObserver((entries) => {
-          entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('is-revealed'); io.unobserve(en.target); } });
-        }, { threshold: 0.08 });
+          let shown = 0;
+          entries.forEach((en) => {
+            if (en.isIntersecting) {
+              // Small stagger so groups entering together cascade smoothly.
+              (en.target as HTMLElement).style.transitionDelay = `${Math.min(shown * 70, 280)}ms`;
+              shown++;
+              en.target.classList.add('is-revealed');
+              io.unobserve(en.target);
+            }
+          });
+        }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
         els.forEach((e) => io.observe(e));
       }
     </script>
