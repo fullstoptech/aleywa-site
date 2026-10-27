@@ -48,8 +48,8 @@ export default function Header(props: { currentPath?: string }) {
   return (
     <>
       <header
-        class="bg-paper sticky top-0 z-40"
-        style={scrolled() || open() ? 'border-bottom:1px solid var(--color-line);background:var(--color-paper);' : 'border-bottom:1px solid transparent;'}
+        class="bg-paper sticky top-0 z-50 site-header"
+        style={(scrolled() || open() ? 'border-bottom:1px solid var(--color-line);background:var(--color-paper);' : 'border-bottom:1px solid transparent;') + 'transition:background-color 300ms cubic-bezier(0.22,1,0.36,1),border-color 300ms cubic-bezier(0.22,1,0.36,1);'}
       >
         <div class="section-x">
           <div class="inner-x flex items-center justify-between h-16 lg:h-[88px] gap-4">
@@ -60,7 +60,7 @@ export default function Header(props: { currentPath?: string }) {
                   href={n.href}
                   aria-current={isCurrent(currentPath, n.href) ? 'page' : undefined}
                   class="text-label min-h-[44px] inline-flex items-center gap-1 hover:text-[#7f1840]"
-                  style="transition:color 120ms cubic-bezier(0.2,0.7,0.2,1);"
+                  style="transition:color 250ms cubic-bezier(0.22,1,0.36,1),opacity 250ms cubic-bezier(0.22,1,0.36,1);"
                 >
                   {isCurrent(currentPath, n.href) && <span aria-hidden="true" style="display:inline-block;width:10px;height:10px;background:var(--color-accent);flex:none;" />}
                   {n.label}
@@ -87,8 +87,8 @@ export default function Header(props: { currentPath?: string }) {
           role="dialog"
           aria-modal="true"
           aria-label="Menu"
-          class="fixed inset-0 z-[60] bg-paper flex flex-col"
-          style="background:var(--color-paper);box-shadow:0 12px 28px -14px rgba(24,17,16,.35);transition:opacity 180ms cubic-bezier(0.2,0.7,0.2,1);"
+          class="fixed inset-0 z-[60] bg-paper flex flex-col menu-panel"
+          style="background:var(--color-paper);box-shadow:0 12px 28px -14px rgba(24,17,16,.35);"
         >
           <div class="section-x">
             <div class="inner-x flex items-center justify-between h-16">
@@ -100,7 +100,7 @@ export default function Header(props: { currentPath?: string }) {
             <div class="inner-x flex flex-col gap-12 py-8">
               <nav aria-label="Menu" class="flex flex-col gap-3">
                 <For each={NAV}>{(n, i) => (
-                  <a href={n.href} aria-current={isCurrent(currentPath, n.href) ? 'page' : undefined} class="flex flex-col gap-0 min-h-[44px]">
+                  <a href={n.href} aria-current={isCurrent(currentPath, n.href) ? 'page' : undefined} class="flex flex-col gap-0 min-h-[44px] menu-link" style={`animation-delay:${60 + i() * 55}ms`}>
                     <span class="text-label text-ink-muted">{i() + 1}</span>
                     <span class="text-h2">{n.label}</span>
                   </a>
