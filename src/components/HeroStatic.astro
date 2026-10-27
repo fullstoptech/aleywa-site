@@ -10,7 +10,8 @@ const lettersSvg = lettersRaw
 ---
 <div class="hero-static">
   {/* Desktop stage */}
-  <div class="hero-desktop-wrap hidden lg:block relative overflow-hidden bg-paper w-full" style="height:calc(100vw * 680 / 1440);">
+  {/* Stage is scaled to fit the fold: header (88) + stage + berry band (up to ~230) = viewport height, so the berry text is visible without scrolling. */}
+  <div class="hero-desktop-wrap hidden lg:block relative overflow-hidden bg-paper w-full" style="height:min(calc(100vw * 680 / 1440), calc(100svh - 318px));min-height:300px;">
     <div class="hero-stage absolute top-0 left-0 origin-top-left" style="width:1440px;height:900px;">
       <div class="hero-layer absolute" style="left:0;top:-244.8px;width:3657.546px;height:1152px;will-change:transform;">
         <div class="absolute overflow-hidden" style="left:118.8px;top:448.2px;width:345.6px;height:345.6px;">
@@ -61,13 +62,13 @@ const lettersSvg = lettersRaw
   </div>
   {/* Full-bleed berry band: stretches edge to edge at any viewport width */}
   <div class="hero-band hidden lg:block w-full" style="background:var(--color-berry);color:var(--color-paper);">
-    <div class="section-x"><div class="inner-x flex gap-6 items-start py-6 min-h-[220px]">
+    <div class="section-x"><div class="inner-x flex gap-6 items-start py-5 min-h-[190px]">
       <div class="hero-band-stack flex-1" style="display:grid;">
         <div class="hero-band-rest" style="grid-area:1/1;will-change:opacity,transform;">
-          <p class="text-hero-h1">Brand identity and websites,<br />made together<span aria-hidden="true" style="display:inline-block;width:14px;height:14px;background:var(--color-accent-on-inverse);margin-left:0.12em;"></span></p>
+          <p class="text-hero-fluid">Brand identity and websites,<br />made together<span aria-hidden="true" style="display:inline-block;width:14px;height:14px;background:var(--color-accent-on-inverse);margin-left:0.12em;"></span></p>
         </div>
         <div class="hero-band-focus" style="grid-area:1/1;opacity:0;will-change:opacity,transform;" aria-hidden="true">
-          <p class="text-hero-h1">The card</p>
+          <p class="text-hero-fluid">The card</p>
           <p class="text-label mt-2" style="color:#fcd1da;">A 9 mm square is cut through the paper face, the size of the stop.</p>
         </div>
       </div>
@@ -102,8 +103,9 @@ const lettersSvg = lettersRaw
   </div>
 </div>
 <style>
-  .hero-stage { transform-origin: top left; transform: scale(calc(100vw / 1440)); }
-  @media (min-width: 1024px) and (max-width: 1439px) { .hero-stage { transform: scale(calc(100vw / 1440)); } }
+  /* Smaller of width-fit and fold-fit (header 88 + berry ~230 reserved), so the
+     giant lettering shrinks on short screens and the berry band stays in view. */
+  .hero-stage { transform-origin: top left; transform: scale(min(calc(100vw / 1440px), calc((100svh - 318px) / 680px))); }
   .hero-focus { opacity: 0; }
   @media (prefers-reduced-motion: reduce) {
     .hero-focus { opacity: 1; position: static !important; }
