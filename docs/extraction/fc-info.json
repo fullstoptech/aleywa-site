@@ -1,0 +1,237 @@
+{
+  "file": "aleywa-studios.figcraft",
+  "images": 49,
+  "missingFonts": [
+    {
+      "family": "Schibsted Grotesk",
+      "layers": 2840
+    }
+  ],
+  "name": "Aleywa Studios website",
+  "nodes": 9112,
+  "notes": [],
+  "pages": [
+    {
+      "frames": [
+        {
+          "height": 13358.0,
+          "id": 133914,
+          "name": "Foundations / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        }
+      ],
+      "id": 1,
+      "name": "Foundations",
+      "nodes": 935,
+      "topLevel": 1
+    },
+    {
+      "frames": [
+        {
+          "height": 61796.0,
+          "id": 6807,
+          "name": "Components / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        }
+      ],
+      "id": 2,
+      "name": "Components",
+      "nodes": 3190,
+      "topLevel": 1
+    },
+    {
+      "frames": [
+        {
+          "height": 10108.0,
+          "id": 134858,
+          "name": "Home / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 900.0,
+          "id": 135344,
+          "name": "Home / hero focus / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 12293.0,
+          "id": 135405,
+          "name": "Home / 390",
+          "type": "FRAME",
+          "width": 390.0
+        },
+        {
+          "height": 844.0,
+          "id": 135834,
+          "name": "Menu / 390",
+          "type": "FRAME",
+          "width": 390.0
+        },
+        {
+          "height": 4671.0,
+          "id": 135885,
+          "name": "What we do / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 2358.0,
+          "id": 136151,
+          "name": "Strategy / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 2439.0,
+          "id": 136350,
+          "name": "Identity / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 2315.0,
+          "id": 136551,
+          "name": "Applications / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 2383.0,
+          "id": 136748,
+          "name": "Website / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 3801.0,
+          "id": 136950,
+          "name": "Why us / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 1842.0,
+          "id": 137207,
+          "name": "How we work / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 6263.0,
+          "id": 137401,
+          "name": "What we do / 390",
+          "type": "FRAME",
+          "width": 390.0
+        },
+        {
+          "height": 3974.0,
+          "id": 137637,
+          "name": "Recent work / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 6188.0,
+          "id": 137871,
+          "name": "Our brand in full / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 2591.0,
+          "id": 138158,
+          "name": "Letters / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 3303.0,
+          "id": 138370,
+          "name": "Blog / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 9740.0,
+          "id": 138541,
+          "name": "Post / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 1883.0,
+          "id": 138888,
+          "name": "Start a project / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 742.0,
+          "id": 139039,
+          "name": "Start a project / copied / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 900.0,
+          "id": 139058,
+          "name": "404 / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 900.0,
+          "id": 139177,
+          "name": "Privacy / 1440",
+          "type": "FRAME",
+          "width": 1440.0
+        },
+        {
+          "height": 3626.0,
+          "id": 139285,
+          "name": "Blog / 390",
+          "type": "FRAME",
+          "width": 390.0
+        },
+        {
+          "height": 9474.0,
+          "id": 139425,
+          "name": "Post / 390",
+          "type": "FRAME",
+          "width": 390.0
+        },
+        {
+          "height": 2650.0,
+          "id": 139697,
+          "name": "Start a project / 390",
+          "type": "FRAME",
+          "width": 390.0
+        },
+        {
+          "height": 811.0,
+          "id": 139828,
+          "name": "Start a project / copied / 390",
+          "type": "FRAME",
+          "width": 390.0
+        }
+      ],
+      "id": 3,
+      "name": "Screens",
+      "nodes": 4983,
+      "topLevel": 25
+    },
+    {
+      "frames": [],
+      "id": 4,
+      "name": "Critique",
+      "nodes": 0,
+      "topLevel": 0
+    }
+  ],
+  "styles": 22,
+  "variables": 224
+}

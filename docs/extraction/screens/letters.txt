@@ -1,0 +1,116 @@
+frame #138158 'Letters / 1440' 1440.0x2591.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] #f6f3ee
+  instance #138159 'Header' 1440.0x88.0 lay=horizontal gap=0.0 pad=[0.0, 64.0, 0.0, 64.0] #f6f3ee
+    frame #138160 'Home link' 101.599x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #138161 'Wordmark' 101.599x32.0 lay=None gap=None pad=None 
+    frame #138165 'Nav' 618.0x44.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #138166 'Nav item' 99.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] What we do
+      instance #138170 'Nav item' 105.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Recent work
+      instance #138174 'Nav item' 68.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Why us
+      instance #138178 'Nav item' 113.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] How we work
+      instance #138182 'Nav item' 48.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Blog
+      instance #138186 'Nav item' 65.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Letters
+    instance #138190 'Link' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      frame #138191 'Tap area' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[18.0/Medium] Start a project
+  frame #138195 'Main' 1440.0x2503.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+    frame #138196 'Page hero' 1440.0x371.0 lay=vertical gap=32.0 pad=[96.0, 64.0, 64.0, 64.0] 
+      frame #138197 'H1' 1260.6x115.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[120.0/Bold] Letters for your people
+            INST 'Stop' 24.0x24.0
+      frame #138202 'Sub' 680.0x64.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[21.0/Regular] Names and words in Twi, Ga and Ewe need letters many typefaces do not have.
+    frame #138204 'Glyph row' 1440.0x347.0 lay=horizontal gap=4.0 pad=[64.0, 64.0, 96.0, 64.0] 
+      instance #138205 'Glyph slot' 160.0x186.0 lay=vertical gap=8.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[120.0/Bold] ɛ
+        T[13.0/Medium] Not drawn yet
+      instance #138210 'Glyph slot' 160.0x186.0 lay=vertical gap=8.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[120.0/Bold] Ɛ
+        T[13.0/Medium] Not drawn yet
+      instance #138215 'Glyph slot' 160.0x186.0 lay=vertical gap=8.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[120.0/Bold] ɔ
+        T[13.0/Medium] Not drawn yet
+      instance #138220 'Glyph slot' 160.0x186.0 lay=vertical gap=8.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[120.0/Bold] Ɔ
+        T[13.0/Medium] Not drawn yet
+      instance #138225 'Glyph slot' 160.0x186.0 lay=vertical gap=8.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[120.0/Bold] ɖ
+        T[13.0/Medium] Not drawn yet
+      instance #138230 'Glyph slot' 160.0x186.0 lay=vertical gap=8.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[120.0/Bold] ɣ
+        T[13.0/Medium] Not drawn yet
+      instance #138235 'Glyph slot' 160.0x186.0 lay=vertical gap=8.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[120.0/Bold] ʋ
+        T[13.0/Medium] Not drawn yet
+      instance #138240 'Glyph slot' 160.0x186.0 lay=vertical gap=8.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[120.0/Bold] ŋ
+        T[13.0/Medium] In the typeface
+    frame #138244 'What we found' 1440.0x257.0 lay=horizontal gap=24.0 pad=[96.0, 64.0, 96.0, 64.0] 
+      frame #138245 'Label column' 421.0x48.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[44.0/Bold] What we found
+              INST 'Stop' 9.0x9.0
+      frame #138251 'Body box' 680.0x64.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[21.0/Regular] Our text typeface, Schibsted Grotesk, has no glyphs for ɛ Ɛ ɔ Ɔ ɖ ɣ ʋ. It does have ŋ and the usual accents.
+    frame #138253 'Now and plan' 1440.0x329.0 lay=horizontal gap=24.0 pad=[0.0, 64.0, 96.0, 64.0] 
+      frame #138254 'What we do / now' 644.0x189.0 lay=vertical gap=24.0 pad=[32.0, 0.0, 0.0, 0.0] 
+            T[44.0/Bold] What we do now
+              INST 'Stop' 9.0x9.0
+          T[18.0/Regular] A second typeface sets those letters by unicode range, so the page does not break. We check every letter in your name and your words before we choose type.
+      frame #138262 'What we do / plan' 644.0x233.0 lay=vertical gap=24.0 pad=[32.0, 0.0, 0.0, 0.0] 
+            T[44.0/Bold] What we plan
+              INST 'Stop' 9.0x9.0
+          T[18.0/Regular] We plan to have a type designer draw the missing letters into a licensed version of the typeface, which its licence allows. Until then, we do not say the gap is closed.
+        T[15.0/Medium] Status: planned.
+    frame #138271 'FAQ' 1440.0x242.0 lay=vertical gap=0.0 pad=[0.0, 64.0, 96.0, 64.0] 
+      frame #138272 'FAQ rows' 1312.0x146.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Honest answer' 1312.0x145.0
+            T[28.0/Bold] Will my name be set correctly?
+              T[21.0/Regular] Yes. Until our own typeface is drawn, a fallback typeface that has the letters sets them, and we check every letter in your name before we choose type.
+    frame #138279 'Why it matters' 1440.0x368.0 lay=vertical gap=32.0 pad=[96.0, 64.0, 96.0, 64.0] #ece9e4
+      frame #138280 'Title' 434.3x48.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[44.0/Bold] Why it matters to you
+            INST 'Stop' 9.0x9.0
+      frame #138285 'Body box' 680.0x96.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[21.0/Regular] If your customers write ɛ or ɔ in your name, your brand has to set it correctly on a sign, on a card and on a screen. We check that before we draw anything.
+    instance #138287 'CTA band' 1440.0x332.0 lay=horizontal gap=0.0 pad=[96.0, 64.0, 96.0, 64.0] #460f22
+      frame #138288 'Heading' 480.2x72.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[72.0/Bold] Start a project
+              INST 'Stop' 14.0x14.0
+      frame #138294 'Ask' 533.0x140.0 lay=vertical gap=32.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Address link' 363.0x52.0
+              T[44.0/Bold] info@aleywa.com
+          INST 'Button' 155.0x56.0
+              T[18.0/Medium] Write to us
+          INST 'Button' 224.0x56.0
+              T[18.0/Medium] Copy address
+    instance #138307 'Footer' 1440.0x257.0 lay=vertical gap=48.0 pad=[64.0, 64.0, 32.0, 64.0] #460f22
+      frame #138308 'Columns' 1312.0x160.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Wordmark' 101.599x32.0
+          T[18.0/Regular] Brand identity and websites, made together.
+          T[15.0/Medium] Contact
+          INST 'Link' 150.0x44.0
+                T[18.0/Medium] info@aleywa.com
+          INST 'Link' 102.0x44.0
+                T[18.0/Medium] aleywa.com
+          T[15.0/Medium] Pages
+              INST 'Link' 100.0x44.0
+                    T[18.0/Medium] What we do
+              INST 'Link' 107.0x44.0
+                    T[18.0/Medium] Recent work
+              INST 'Link' 62.0x44.0
+                    T[18.0/Medium] Why us
+              INST 'Link' 116.0x44.0
+                    T[18.0/Medium] How we work
+              INST 'Link' 59.0x44.0
+                    T[18.0/Medium] Letters
+              INST 'Link' 44.0x44.0
+                    T[18.0/Medium] Blog
+          T[15.0/Medium] About the site
+          T[13.0/Medium] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+          INST 'Link' 63.0x44.0
+                T[18.0/Medium] Privacy

@@ -1,0 +1,1014 @@
+[15.0] 01 Atoms
+[44.0] Atoms.
+[21.0] The smallest parts, with every state. Compose them; do not restyle them on a page: a page that needs another look asks for a new variant here. Link is the text action, Button is for Write to us and Copy address only, Label credits a plate.
+[28.0] Stop
+[18.0] The one square, set like a full stop: 0.2 em of the title it ends (xxs 6 px at H3, xs 9 at H2, h1 14 at H1, lg 24 at Display), 0.03 em after the last letter, on the baseline; sm 10 is the active-nav marker, md 16 the pull-quote marker. Round 3: the stop ends h1 and h2 only, never a job name, plate or step title, card title or kicker. Lit raspberry on berry; paper (accent) on a raspberry button. Decorative: it never carries meaning alone.
+[13.0] size = xxs 6, xs 9, sm 10, h1 14, md 16, lg 24  ·  on = paper, berry, accent  ·  18 variants. berry and accent sit on one berry board.
+[28.0] Wordmark
+[18.0] The logo as drawn in identity/assets/logo, imported from the SVG, scaled only. Colour on paper, on-berry on the berry surface, reversed (white) on photographs.
+[13.0] variant = colour, on-berry, reversed  ·  size = sm (24 high), md (32 high)  ·  6 variants. The on-berry and reversed rows are transparent and sit on one berry board.
+[28.0] Link
+[18.0] A text action that goes somewhere: Start a project, What it includes, Back to the blog. Underline 1.5 px, 4 px below the text. size=lead is the address on the closing band, set at 44 px (H2), lead-sm the same at 38 px on the phone (44 px does not fit 350): it is a link too. Not for an action that changes the page (use Button).
+[13.0] size = body, lead (44), lead-sm (38, phone)  ·  tone = ink, accent, inverse (lead sizes: ink, inverse)  ·  state = default, hover, pressed, focus  ·  28 variants. Light above, Dark below.
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[44.0] Start a project
+[44.0] Start a project
+[44.0] Start a project
+[44.0] Start a project
+[38.0] Start a project
+[38.0] Start a project
+[38.0] Start a project
+[38.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[44.0] Start a project
+[44.0] Start a project
+[44.0] Start a project
+[44.0] Start a project
+[38.0] Start a project
+[38.0] Start a project
+[38.0] Start a project
+[38.0] Start a project
+[15.0] Dark mode
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[44.0] Start a project
+[44.0] Start a project
+[44.0] Start a project
+[44.0] Start a project
+[38.0] Start a project
+[38.0] Start a project
+[38.0] Start a project
+[38.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[18.0] Start a project
+[44.0] Start a project
+[44.0] Start a project
+[44.0] Start a project
+[44.0] Start a project
+[38.0] Start a project
+[38.0] Start a project
+[38.0] Start a project
+[38.0] Start a project
+[28.0] Button
+[18.0] Write to us and Copy address, nothing else: the site has one call to action, a link by mail. Primary is ink, secondary is a 1.5 px outline. For any other action that goes somewhere, use Link.
+[13.0] variant = primary, secondary  ·  size = lg (56), md (48)  ·  on = paper, berry (lg only)  ·  state = default, hover, pressed, focus, disabled, success  ·  36 variants
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Address copied.
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Address copied.
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Address copied.
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Address copied.
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Address copied.
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Address copied.
+[15.0] Dark mode
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Address copied.
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Address copied.
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Address copied.
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Address copied.
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Write to us
+[18.0] Address copied.
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Copy address
+[18.0] Address copied.
+[28.0] Nav item
+[18.0] A page name in the header or the footer. The active page shows the stop before its label. Not for an action (Link) or a heading.
+[13.0] state = default, hover, active, focus  ·  4 variants
+[15.0] What we do
+[15.0] What we do
+[15.0] What we do
+[15.0] What we do
+[28.0] Label
+[18.0] The one-line credit under a plate ('Our own brand. 3D render.') or, with kicker, the small heading above a section title (plain text, no square: the stop is for h1 and h2 only). Not for body copy or a button label.
+[13.0] tone = paper, berry  ·  kicker = false, true (label size, no bullet)  ·  4 variants
+[13.0] Our own brand. 3D render.
+[15.0] What we do
+[13.0] Our own brand. 3D render.
+[15.0] What we do
+[15.0] 02 Layout parts
+[44.0] Layout parts.
+[21.0] The parts that frame a page: the bar, the phone menu, the opening of a section, the closing ask and the foot. Use them whole; a page does not rebuild them. Header and Footer carry the site's links, CTA band carries its one call to action.
+[28.0] Header
+[18.0] The bar on every page: wordmark, the six pages, Start a project. On the phone: wordmark, Start a project and the Menu text button (both 44 px targets, 350 px wide with room to spare). Not a place for a second call to action; the sibling for the open phone menu is Menu panel.
+[13.0] variant = desktop (1440 x 88), mobile (390 x 64)  ·  state = top, scrolled, menu-open (phone)  ·  5 variants. Light above, Dark below.
+[15.0] What we do
+[15.0] Recent work
+[15.0] Why us
+[15.0] How we work
+[15.0] Blog
+[15.0] Letters
+[18.0] Start a project
+[15.0] What we do
+[15.0] Recent work
+[15.0] Why us
+[15.0] How we work
+[15.0] Blog
+[15.0] Letters
+[18.0] Start a project
+[18.0] Start a project
+[15.0] Menu
+[18.0] Start a project
+[15.0] Menu
+[15.0] Close
+[15.0] Dark mode
+[15.0] What we do
+[15.0] Recent work
+[15.0] Why us
+[15.0] How we work
+[15.0] Blog
+[15.0] Letters
+[18.0] Start a project
+[15.0] What we do
+[15.0] Recent work
+[15.0] Why us
+[15.0] How we work
+[15.0] Blog
+[15.0] Letters
+[18.0] Start a project
+[18.0] Start a project
+[15.0] Menu
+[18.0] Start a project
+[15.0] Menu
+[15.0] Close
+[28.0] Menu panel
+[18.0] The phone menu, open: full height, links at the head, Start a project and the address at the foot. It casts the one shadow. Not for the desktop header (the nav sits in the bar).
+[13.0] state = open  ·  390 x 844, with the Header (phone, menu-open)  ·  1 variant
+[15.0] Close
+[15.0] 1
+[44.0] What we do
+[15.0] 2
+[44.0] Recent work
+[15.0] 3
+[44.0] Why us
+[15.0] 4
+[44.0] How we work
+[15.0] 5
+[44.0] Blog
+[15.0] 6
+[44.0] Letters
+[18.0] Start a project
+[21.0] info@aleywa.com
+[28.0] Section header
+[18.0] Kicker, title with the stop, optional intro: the opening of a section on every page. Not for the page's h1 (the page hero does that); the sibling for a full-width closing is CTA band.
+[13.0] tone = paper, berry  ·  with-intro = true, false  ·  platform = desktop, mobile (paper only, 350 wide)  ·  6 variants. Text properties: kicker, title, intro. The berry rows are transparent and sit on one berry board.
+[15.0] What we do
+[44.0] What we do
+[21.0] Four jobs, in the order we do them.
+[15.0] What we do
+[44.0] What we do
+[15.0] What we do
+[44.0] What we do
+[21.0] Four jobs, in the order we do them.
+[15.0] What we do
+[44.0] What we do
+[15.0] What we do
+[44.0] What we do
+[18.0] Four jobs, in the order we do them.
+[15.0] What we do
+[44.0] What we do
+[28.0] CTA band
+[18.0] The closing of every page: Start a project, the address as the lead line (a link, 44 px), Write to us as the primary Button and Copy address as the secondary Button (the same specification as the Email block). 96 px of padding above and below. Berry is the page's one dark surface, so on Home use paper, at display size. Not for anything but this one ask.
+[13.0] tone = berry, paper  ·  size = h1, display (paper desktop only)  ·  platform = desktop (1440, 96 padding), mobile (390, paper)  ·  4 variants. Text property: heading (heading end on the phone); the address link and the button expose their labels.
+[72.0] Start a project
+[44.0] info@aleywa.com
+[18.0] Write to us
+[18.0] Copy address
+[72.0] Start a project
+[44.0] info@aleywa.com
+[18.0] Write to us
+[18.0] Copy address
+[120.0] Start a project
+[44.0] info@aleywa.com
+[18.0] Write to us
+[18.0] Copy address
+[56.0] Start a
+[56.0] project
+[38.0] info@aleywa.com
+[18.0] Write to us
+[18.0] Copy address
+[56.0] Start a
+[56.0] project
+[38.0] info@aleywa.com
+[18.0] Write to us
+[18.0] Copy address
+[28.0] Footer
+[18.0] Contact, the six pages, a line about the site and Privacy, on every page. Berry continues the closing band; paper follows the paper CTA band on Home. Not for navigation to anything outside the site.
+[13.0] tone = berry, paper  ·  platform = desktop, mobile (390, paper)  ·  3 variants. Light above, Dark below.
+[18.0] Brand identity and websites, made together.
+[15.0] Contact
+[18.0] info@aleywa.com
+[18.0] aleywa.com
+[15.0] Pages
+[18.0] What we do
+[18.0] Recent work
+[18.0] Why us
+[18.0] How we work
+[18.0] Letters
+[18.0] Blog
+[15.0] About the site
+[13.0] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+[18.0] Privacy
+[18.0] Brand identity and websites, made together.
+[15.0] Contact
+[18.0] info@aleywa.com
+[18.0] aleywa.com
+[15.0] Pages
+[18.0] What we do
+[18.0] Recent work
+[18.0] Why us
+[18.0] How we work
+[18.0] Letters
+[18.0] Blog
+[15.0] About the site
+[13.0] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+[18.0] Privacy
+[18.0] Brand identity and websites, made together.
+[15.0] Contact
+[18.0] info@aleywa.com
+[18.0] aleywa.com
+[15.0] Pages
+[18.0] What we do
+[18.0] Recent work
+[18.0] Why us
+[18.0] How we work
+[18.0] Letters
+[18.0] Blog
+[15.0] About the site
+[13.0] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+[18.0] Privacy
+[18.0] Brand identity and websites, made together.
+[15.0] Contact
+[18.0] info@aleywa.com
+[18.0] aleywa.com
+[15.0] Pages
+[18.0] What we do
+[18.0] Recent work
+[18.0] Why us
+[18.0] How we work
+[18.0] Letters
+[18.0] Blog
+[15.0] About the site
+[13.0] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+[18.0] Privacy
+[15.0] Dark mode
+[18.0] Brand identity and websites, made together.
+[15.0] Contact
+[18.0] info@aleywa.com
+[18.0] aleywa.com
+[15.0] Pages
+[18.0] What we do
+[18.0] Recent work
+[18.0] Why us
+[18.0] How we work
+[18.0] Letters
+[18.0] Blog
+[15.0] About the site
+[13.0] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+[18.0] Privacy
+[18.0] Brand identity and websites, made together.
+[15.0] Contact
+[18.0] info@aleywa.com
+[18.0] aleywa.com
+[15.0] Pages
+[18.0] What we do
+[18.0] Recent work
+[18.0] Why us
+[18.0] How we work
+[18.0] Letters
+[18.0] Blog
+[15.0] About the site
+[13.0] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+[18.0] Privacy
+[18.0] Brand identity and websites, made together.
+[15.0] Contact
+[18.0] info@aleywa.com
+[18.0] aleywa.com
+[15.0] Pages
+[18.0] What we do
+[18.0] Recent work
+[18.0] Why us
+[18.0] How we work
+[18.0] Letters
+[18.0] Blog
+[15.0] About the site
+[13.0] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+[18.0] Privacy
+[15.0] 03 Content
+[44.0] Content.
+[21.0] The parts a page is made of: windows, plates, rows and short answers. Each one holds our own work or our own words, labelled. No card, no chip, no icon tile: ruled rows and open plates. Plate holds a piece of work, Window is only the aperture.
+[28.0] Glyph slot
+[18.0] A letter the typeface cannot set yet, shown hatched in the fallback face with its label 'Not drawn yet' under every slot, or drawn and solid. Not a decoration: it only appears where the missing letters are the subject (Why us, Our brand in full, Letters). Where slots are shown as a group, one 'Status: planned' line follows the group.
+[13.0] state = not-drawn, drawn  ·  size = sm (64), md (160)  ·  tone = paper, berry (label colour)  ·  8 variants. The berry ones sit on one berry board.
+[44.0] ɛ
+[13.0] Not drawn yet
+[44.0] ŋ
+[13.0] In the typeface
+[120.0] ɛ
+[13.0] Not drawn yet
+[120.0] ŋ
+[13.0] In the typeface
+[44.0] ɛ
+[13.0] Not drawn yet
+[44.0] ŋ
+[13.0] In the typeface
+[120.0] ɛ
+[13.0] Not drawn yet
+[120.0] ŋ
+[13.0] In the typeface
+[28.0] Window
+[18.0] The site's one idea. Round: an ink field (a piece of the letter) with a true circular hole, the picture filling the full diameter (the home hero alone keeps the real counter shapes). Square: the stop's own square with the picture inside, no edge line. Only our own work, text-free at this size. Not for client work; the sibling for a labelled picture with its decision is Plate.
+[13.0] shape = round, square  ·  size = sm (128), md (256), lg (384)  ·  image slot  ·  6 variants
+[28.0] Plate
+[18.0] One labelled piece of our own work, with the decision behind it and, when we recorded one, what we gave up. Image 4:3. The slot variant stands for client work that has not been cleared yet. Not a card: no border, no shadow, no chip; the sibling for blog pictures is Post card.
+[13.0] size = lg, md, sm  ·  gave = true, false  ·  slot = false, true  ·  platform = desktop, mobile (350 wide, size lg)  ·  12 variants. Text properties: title (no stop), caption, gave line (the variant property gave shows or hides it), label. Light above, Dark below.
+[28.0] The wordmark
+[18.0] We set our name in 45 typefaces and none carried the idea, so we drew it by hand.
+[18.0] We gave up a ready-made typeface, and a cut on the e.
+[13.0] Our own brand. Brand book page.
+[28.0] The space between the letters
+[18.0] We set each gap by measuring each pair, then drew a separate small version for tiny sizes.
+[18.0] We gave up the wide gap between the y and the w.
+[13.0] Our own brand. Brand book page.
+[28.0] The card
+[18.0] A 9 mm square is cut through the paper face, the size of the stop.
+[18.0] We gave up printing the stop. It is cut through the card, and the raspberry core shows.
+[13.0] Our own brand. 3D render. Printer samples to come.
+[28.0] The card
+[18.0] A 9 mm square is cut through the paper face, the size of the stop.
+[13.0] Our own brand. 3D render. Printer samples to come.
+[28.0] Client work
+[18.0] It will appear here when a client has cleared it in writing.
+[28.0] The wordmark
+[18.0] We set our name in 45 typefaces and none carried the idea, so we drew it by hand.
+[13.0] Our own brand. Brand book page.
+[28.0] The space between the letters
+[18.0] We set each gap by measuring each pair, then drew a separate small version for tiny sizes.
+[13.0] Our own brand. Brand book page.
+[28.0] Client work
+[18.0] It will appear here when a client has cleared it in writing.
+[28.0] Client work
+[18.0] It will appear here when a client has cleared it in writing.
+[28.0] The space between
+the letters
+[18.0] We set each gap by measuring each pair, then drew a separate small version for tiny sizes.
+[18.0] We gave up the wide gap between the y and the w.
+[13.0] Our own brand. Brand book page.
+[28.0] The space between
+the letters
+[18.0] We set each gap by measuring each pair, then drew a separate small version for tiny sizes.
+[13.0] Our own brand. Brand book page.
+[28.0] Client work
+[18.0] It will appear here when a client has cleared it in writing.
+[15.0] Dark mode
+[28.0] The wordmark
+[18.0] We set our name in 45 typefaces and none carried the idea, so we drew it by hand.
+[18.0] We gave up a ready-made typeface, and a cut on the e.
+[13.0] Our own brand. Brand book page.
+[28.0] The space between the letters
+[18.0] We set each gap by measuring each pair, then drew a separate small version for tiny sizes.
+[18.0] We gave up the wide gap between the y and the w.
+[13.0] Our own brand. Brand book page.
+[28.0] The card
+[18.0] A 9 mm square is cut through the paper face, the size of the stop.
+[18.0] We gave up printing the stop. It is cut through the card, and the raspberry core shows.
+[13.0] Our own brand. 3D render. Printer samples to come.
+[28.0] The card
+[18.0] A 9 mm square is cut through the paper face, the size of the stop.
+[13.0] Our own brand. 3D render. Printer samples to come.
+[28.0] Client work
+[18.0] It will appear here when a client has cleared it in writing.
+[28.0] The wordmark
+[18.0] We set our name in 45 typefaces and none carried the idea, so we drew it by hand.
+[13.0] Our own brand. Brand book page.
+[28.0] The space between the letters
+[18.0] We set each gap by measuring each pair, then drew a separate small version for tiny sizes.
+[13.0] Our own brand. Brand book page.
+[28.0] Client work
+[18.0] It will appear here when a client has cleared it in writing.
+[28.0] Client work
+[18.0] It will appear here when a client has cleared it in writing.
+[28.0] The space between
+the letters
+[18.0] We set each gap by measuring each pair, then drew a separate small version for tiny sizes.
+[18.0] We gave up the wide gap between the y and the w.
+[13.0] Our own brand. Brand book page.
+[28.0] The space between
+the letters
+[18.0] We set each gap by measuring each pair, then drew a separate small version for tiny sizes.
+[13.0] Our own brand. Brand book page.
+[28.0] Client work
+[18.0] It will appear here when a client has cleared it in writing.
+[28.0] Job row
+[18.0] One of the four jobs as a ruled row: number, name, what it is, the first thing you get, and the way in. A row, not a card: three-up icon cards are not used on this site. Number and name sit on the grid's left edge, level with the rules and headings above and below. The sibling for the same content in full is the service page.
+[13.0] state = default, hover  ·  platform = desktop, mobile (350 wide, default only)  ·  3 variants. Text properties: number, name (no stop), line, first item.
+[44.0] 1
+[44.0] Strategy
+[21.0] We work out who you are for, and what you say first.
+[15.0] What you get
+[18.0] A written strategy: who it is for, what the other choices are, and what you say first.
+[18.0] What it includes
+[44.0] 1
+[44.0] Strategy
+[21.0] We work out who you are for, and what you say first.
+[15.0] What you get
+[18.0] A written strategy: who it is for, what the other choices are, and what you say first.
+[18.0] What it includes
+[15.0] 1
+[44.0] Strategy
+[18.0] We work out who you are for, and what you say first.
+[15.0] What you get
+[18.0] A written strategy: who it is for, what the other choices are, and what you say first.
+[18.0] What it includes
+[28.0] Reason
+[18.0] One of the five reasons to choose us: a big numeral, a title and what backs it, with the work behind it in a small labelled picture beside it (columns 8 to 12; reason 4 shows the letters we have not drawn instead of a picture). Not for a feature list or a testimonial.
+[13.0] tone = paper, berry  ·  index = 1 to 5  ·  platform = desktop, mobile (350 wide, paper, numeral 56)  ·  15 variants. Text properties: title, body, status (reason 4); the picture's Label exposes its text. Light above, Dark below.
+[72.0] 1
+[28.0] One studio for your brand and your website.
+[18.0] One studio decides both, and writes the decisions down. You do not brief a logo maker, wait, then hand a web builder a logo that was never drawn for a website.
+[13.0] Our own brand. Site design.
+[72.0] 2
+[28.0] Every decision has a reason you can read.
+[18.0] We write down what we tried and what we gave up. You can judge our thinking before you buy it. Our own brand came with a brand book of more than fifty pages that shows the working.
+[13.0] Our own brand. Brand book page.
+[72.0] 3
+[28.0] Craft you can measure.
+[18.0] We set the space between your letters by measuring each pair, so the word looks even. For tiny sizes we draw a separate small version of your mark, so it still reads in a browser tab.
+[13.0] Our own brand. Brand book page.
+[72.0] 4
+[28.0] Letters for your people.
+[18.0] We check every letter your customers write. Our own typeface cannot set the Twi, Ga and Ewe letters ɛ ɔ ɖ ɣ ʋ yet, so we say so, and we plan to have them drawn.
+[44.0] ɛ
+[13.0] Not drawn yet
+[44.0] ɔ
+[13.0] Not drawn yet
+[44.0] ɖ
+[13.0] Not drawn yet
+[44.0] ɣ
+[13.0] Not drawn yet
+[44.0] ʋ
+[13.0] Not drawn yet
+[13.0] Status: planned
+[18.0] See the letters
+[72.0] 5
+[28.0] Bold, and finished.
+[18.0] Every piece takes one deliberate risk, and is disciplined everywhere else. Our card takes one: a 9 mm square is cut through the paper.
+[13.0] Our own brand. 3D render.
+[72.0] 1
+[28.0] One studio for your brand and your website.
+[18.0] One studio decides both, and writes the decisions down. You do not brief a logo maker, wait, then hand a web builder a logo that was never drawn for a website.
+[13.0] Our own brand. Site design.
+[72.0] 2
+[28.0] Every decision has a reason you can read.
+[18.0] We write down what we tried and what we gave up. You can judge our thinking before you buy it. Our own brand came with a brand book of more than fifty pages that shows the working.
+[13.0] Our own brand. Brand book page.
+[72.0] 3
+[28.0] Craft you can measure.
+[18.0] We set the space between your letters by measuring each pair, so the word looks even. For tiny sizes we draw a separate small version of your mark, so it still reads in a browser tab.
+[13.0] Our own brand. Brand book page.
+[72.0] 4
+[28.0] Letters for your people.
+[18.0] We check every letter your customers write. Our own typeface cannot set the Twi, Ga and Ewe letters ɛ ɔ ɖ ɣ ʋ yet, so we say so, and we plan to have them drawn.
+[44.0] ɛ
+[13.0] Not drawn yet
+[44.0] ɔ
+[13.0] Not drawn yet
+[44.0] ɖ
+[13.0] Not drawn yet
+[44.0] ɣ
+[13.0] Not drawn yet
+[44.0] ʋ
+[13.0] Not drawn yet
+[13.0] Status: planned
+[18.0] See the letters
+[72.0] 5
+[28.0] Bold, and finished.
+[18.0] Every piece takes one deliberate risk, and is disciplined everywhere else. Our card takes one: a 9 mm square is cut through the paper.
+[13.0] Our own brand. 3D render.
+[56.0] 1
+[28.0] One studio for your brand and your website.
+[18.0] One studio decides both, and writes the decisions down. You do not brief a logo maker, wait, then hand a web builder a logo that was never drawn for a website.
+[56.0] 2
+[28.0] Every decision has a reason you can read.
+[18.0] We write down what we tried and what we gave up. You can judge our thinking before you buy it. Our own brand came with a brand book of more than fifty pages that shows the working.
+[56.0] 3
+[28.0] Craft you can measure.
+[18.0] We set the space between your letters by measuring each pair, so the word looks even. For tiny sizes we draw a separate small version of your mark, so it still reads in a browser tab.
+[56.0] 4
+[28.0] Letters for your people.
+[18.0] We check every letter your customers write. Our own typeface cannot set the Twi, Ga and Ewe letters ɛ ɔ ɖ ɣ ʋ yet, so we say so, and we plan to have them drawn.
+[44.0] ɛ
+[13.0] Not drawn yet
+[44.0] ɔ
+[13.0] Not drawn yet
+[44.0] ɖ
+[13.0] Not drawn yet
+[44.0] ɣ
+[13.0] Not drawn yet
+[44.0] ʋ
+[13.0] Not drawn yet
+[13.0] Status: planned
+[18.0] See the letters
+[56.0] 5
+[28.0] Bold, and finished.
+[18.0] Every piece takes one deliberate risk, and is disciplined everywhere else. Our card takes one: a 9 mm square is cut through the paper.
+[15.0] Dark mode
+[72.0] 1
+[28.0] One studio for your brand and your website.
+[18.0] One studio decides both, and writes the decisions down. You do not brief a logo maker, wait, then hand a web builder a logo that was never drawn for a website.
+[13.0] Our own brand. Site design.
+[72.0] 2
+[28.0] Every decision has a reason you can read.
+[18.0] We write down what we tried and what we gave up. You can judge our thinking before you buy it. Our own brand came with a brand book of more than fifty pages that shows the working.
+[13.0] Our own brand. Brand book page.
+[72.0] 3
+[28.0] Craft you can measure.
+[18.0] We set the space between your letters by measuring each pair, so the word looks even. For tiny sizes we draw a separate small version of your mark, so it still reads in a browser tab.
+[13.0] Our own brand. Brand book page.
+[72.0] 4
+[28.0] Letters for your people.
+[18.0] We check every letter your customers write. Our own typeface cannot set the Twi, Ga and Ewe letters ɛ ɔ ɖ ɣ ʋ yet, so we say so, and we plan to have them drawn.
+[44.0] ɛ
+[13.0] Not drawn yet
+[44.0] ɔ
+[13.0] Not drawn yet
+[44.0] ɖ
+[13.0] Not drawn yet
+[44.0] ɣ
+[13.0] Not drawn yet
+[44.0] ʋ
+[13.0] Not drawn yet
+[13.0] Status: planned
+[18.0] See the letters
+[72.0] 5
+[28.0] Bold, and finished.
+[18.0] Every piece takes one deliberate risk, and is disciplined everywhere else. Our card takes one: a 9 mm square is cut through the paper.
+[13.0] Our own brand. 3D render.
+[56.0] 1
+[28.0] One studio for your brand and your website.
+[18.0] One studio decides both, and writes the decisions down. You do not brief a logo maker, wait, then hand a web builder a logo that was never drawn for a website.
+[56.0] 2
+[28.0] Every decision has a reason you can read.
+[18.0] We write down what we tried and what we gave up. You can judge our thinking before you buy it. Our own brand came with a brand book of more than fifty pages that shows the working.
+[56.0] 3
+[28.0] Craft you can measure.
+[18.0] We set the space between your letters by measuring each pair, so the word looks even. For tiny sizes we draw a separate small version of your mark, so it still reads in a browser tab.
+[56.0] 4
+[28.0] Letters for your people.
+[18.0] We check every letter your customers write. Our own typeface cannot set the Twi, Ga and Ewe letters ɛ ɔ ɖ ɣ ʋ yet, so we say so, and we plan to have them drawn.
+[44.0] ɛ
+[13.0] Not drawn yet
+[44.0] ɔ
+[13.0] Not drawn yet
+[44.0] ɖ
+[13.0] Not drawn yet
+[44.0] ɣ
+[13.0] Not drawn yet
+[44.0] ʋ
+[13.0] Not drawn yet
+[13.0] Status: planned
+[18.0] See the letters
+[56.0] 5
+[28.0] Bold, and finished.
+[18.0] Every piece takes one deliberate risk, and is disciplined everywhere else. Our card takes one: a 9 mm square is cut through the paper.
+[72.0] 1
+[28.0] One studio for your brand and your website.
+[18.0] One studio decides both, and writes the decisions down. You do not brief a logo maker, wait, then hand a web builder a logo that was never drawn for a website.
+[13.0] Our own brand. Site design.
+[72.0] 2
+[28.0] Every decision has a reason you can read.
+[18.0] We write down what we tried and what we gave up. You can judge our thinking before you buy it. Our own brand came with a brand book of more than fifty pages that shows the working.
+[13.0] Our own brand. Brand book page.
+[72.0] 3
+[28.0] Craft you can measure.
+[18.0] We set the space between your letters by measuring each pair, so the word looks even. For tiny sizes we draw a separate small version of your mark, so it still reads in a browser tab.
+[13.0] Our own brand. Brand book page.
+[72.0] 4
+[28.0] Letters for your people.
+[18.0] We check every letter your customers write. Our own typeface cannot set the Twi, Ga and Ewe letters ɛ ɔ ɖ ɣ ʋ yet, so we say so, and we plan to have them drawn.
+[44.0] ɛ
+[13.0] Not drawn yet
+[44.0] ɔ
+[13.0] Not drawn yet
+[44.0] ɖ
+[13.0] Not drawn yet
+[44.0] ɣ
+[13.0] Not drawn yet
+[44.0] ʋ
+[13.0] Not drawn yet
+[13.0] Status: planned
+[18.0] See the letters
+[72.0] 5
+[28.0] Bold, and finished.
+[18.0] Every piece takes one deliberate risk, and is disciplined everywhere else. Our card takes one: a 9 mm square is cut through the paper.
+[13.0] Our own brand. 3D render.
+[28.0] Step
+[18.0] One step of the order we work in: what we do, what you decide, what you receive. Column on Home (four across), row on How we work (stacked). Not a timeline: no dates, no durations.
+[13.0] layout = column, row  ·  index = 1 to 4  ·  platform = desktop, mobile (column at 350 wide)  ·  12 variants. Text properties: name (no stop), we do, you decide, you receive.
+[15.0] 1
+[28.0] Strategy
+[15.0] We do
+[18.0] We work out who you are for, what the other choices are, and what you say first.
+[15.0] You decide
+[18.0] You confirm who it is for and what comes first.
+[15.0] You receive
+[18.0] A written strategy and a one-page brief.
+[15.0] 2
+[28.0] Identity
+[15.0] We do
+[18.0] We show you routes, you choose one, and we draw it and write its rules.
+[15.0] You decide
+[18.0] You choose the route.
+[15.0] You receive
+[18.0] Your mark and its small-size version, colour, type, and a book of rules.
+[15.0] 3
+[28.0] Applications
+[15.0] We do
+[18.0] We design the pieces that carry the brand.
+[15.0] You decide
+[18.0] You choose which pieces come first.
+[15.0] You receive
+[18.0] Cards, letterheads, signs, social posts and slides, ready to use.
+[15.0] 4
+[28.0] Website
+[15.0] We do
+[18.0] We plan the pages, write the words and build the site in the same system.
+[15.0] You decide
+[18.0] You approve the plan, the words and the design.
+[15.0] You receive
+[18.0] A site built from your brand and checked at phone size.
+[15.0] 1
+[28.0] Strategy
+[15.0] We do
+[18.0] We work out who you are for, what the other choices are, and what you say first.
+[15.0] You decide
+[18.0] You confirm who it is for and what comes first.
+[15.0] You receive
+[18.0] A written strategy and a one-page brief.
+[15.0] 2
+[28.0] Identity
+[15.0] We do
+[18.0] We show you routes, you choose one, and we draw it and write its rules.
+[15.0] You decide
+[18.0] You choose the route.
+[15.0] You receive
+[18.0] Your mark and its small-size version, colour, type, and a book of rules.
+[15.0] 3
+[28.0] Applications
+[15.0] We do
+[18.0] We design the pieces that carry the brand.
+[15.0] You decide
+[18.0] You choose which pieces come first.
+[15.0] You receive
+[18.0] Cards, letterheads, signs, social posts and slides, ready to use.
+[15.0] 4
+[28.0] Website
+[15.0] We do
+[18.0] We plan the pages, write the words and build the site in the same system.
+[15.0] You decide
+[18.0] You approve the plan, the words and the design.
+[15.0] You receive
+[18.0] A site built from your brand and checked at phone size.
+[15.0] 1
+[28.0] Strategy
+[15.0] We do
+[18.0] We work out who you are for, what the other choices are, and what you say first.
+[15.0] You decide
+[18.0] You confirm who it is for and what comes first.
+[15.0] You receive
+[18.0] A written strategy and a one-page brief.
+[15.0] 2
+[28.0] Identity
+[15.0] We do
+[18.0] We show you routes, you choose one, and we draw it and write its rules.
+[15.0] You decide
+[18.0] You choose the route.
+[15.0] You receive
+[18.0] Your mark and its small-size version, colour, type, and a book of rules.
+[15.0] 3
+[28.0] Applications
+[15.0] We do
+[18.0] We design the pieces that carry the brand.
+[15.0] You decide
+[18.0] You choose which pieces come first.
+[15.0] You receive
+[18.0] Cards, letterheads, signs, social posts and slides, ready to use.
+[15.0] 4
+[28.0] Website
+[15.0] We do
+[18.0] We plan the pages, write the words and build the site in the same system.
+[15.0] You decide
+[18.0] You approve the plan, the words and the design.
+[15.0] You receive
+[18.0] A site built from your brand and checked at phone size.
+[28.0] Step grid
+[18.0] The four steps as one grid: the three row labels (We do, You decide, You receive) once in the left column, the four steps across, one shared height and baseline per row. Home uses it in place of four separate Steps. Not for the phone (use Step, stacked) and not a timeline.
+[13.0] layout = grid  ·  1312 wide: the row labels once at the left, four steps across  ·  1 variant. Text properties: name, we do, you decide, you receive, each 1 to 4.
+[15.0] 1
+[28.0] Strategy
+[15.0] 2
+[28.0] Identity
+[15.0] 3
+[28.0] Applications
+[15.0] 4
+[28.0] Website
+[15.0] We do
+[18.0] We work out who you are for, what the other choices are, and what you say first.
+[18.0] We show you routes, you choose one, and we draw it and write its rules.
+[18.0] We design the pieces that carry the brand.
+[18.0] We plan the pages, write the words and build the site in the same system.
+[15.0] You decide
+[18.0] You confirm who it is for and what comes first.
+[18.0] You choose the route.
+[18.0] You choose which pieces come first.
+[18.0] You approve the plan, the words and the design.
+[15.0] You receive
+[18.0] A written strategy and a one-page brief.
+[18.0] Your mark and its small-size version, colour, type, and a book of rules.
+[18.0] Cards, letterheads, signs, social posts and slides, ready to use.
+[18.0] A site built from your brand and checked at phone size.
+[28.0] Honest answer
+[18.0] A hard question and the plain answer, ruled. The question is bold, the answer is short. layout=split puts the question on the left (4 columns) and the answer on the right (8 columns); stacked puts the answer under the question. Not an FAQ accordion: nothing opens or closes.
+[13.0] layout = stacked, split  ·  index = 1 to 5  ·  10 variants. Text properties: question, answer.
+[28.0] Why not a logo contest?
+[21.0] We show you routes, you choose one, and each comes with its reasons. A contest does not design your website.
+[28.0] Why not a template site?
+[21.0] A template is a good start when you already have the brand and the words. We build the site from your brand, so it is made for you and not shared.
+[28.0] Why not two freelancers?
+[21.0] Then you join the pieces up. We decide the brand and the site together, and write the decisions down.
+[28.0] Why not a big studio?
+[21.0] We make brand identity and websites for owner-led businesses, and we write down what we did and what we gave up.
+[28.0] Where is your client work?
+[21.0] Client work goes on this site only when the client has cleared it in writing. Until then we show our own design in full, with the reasoning, and we label every mockup and render.
+[28.0] Why not a logo contest?
+[21.0] We show you routes, you choose one, and each comes with its reasons. A contest does not design your website.
+[28.0] Why not a template site?
+[21.0] A template is a good start when you already have the brand and the words. We build the site from your brand, so it is made for you and not shared.
+[28.0] Why not two freelancers?
+[21.0] Then you join the pieces up. We decide the brand and the site together, and write the decisions down.
+[28.0] Why not a big studio?
+[21.0] We make brand identity and websites for owner-led businesses, and we write down what we did and what we gave up.
+[28.0] Where is your client work?
+[21.0] Client work goes on this site only when the client has cleared it in writing. Until then we show our own design in full, with the reasoning, and we label every mockup and render.
+[15.0] 04 Blog
+[44.0] Blog.
+[21.0] The parts of the blog: the card on the index and on Home, the head of a post, the elements of its body and the reading marker. A post picture is always landscape; no chip, tag or category appears. For work use Plate, not Post card.
+[28.0] Post card
+[18.0] One post: a landscape picture (1.905 to 1, 1200 x 630 sources, a 1 px line edge), date and read time, title (no stop: the stop ends h1 and h2 only), description. Featured is the newest, standard sits in a two-column grid, row is the compact list. No chips, no categories, no tags. Not for work (use Plate).
+[13.0] variant = featured, standard, row  ·  platform = desktop, mobile (featured and standard at 350 wide)  ·  5 variants. Text properties: title, meta, description. Light above, Dark below.
+[44.0] Why we named a design
+studio after a sweet
+[15.0] 2 Nov 2026 · 6 min read
+[18.0] Aleywa Studios is named after alewa, a boiled-sugar sweet many kids in Ghana grew up eating. How the name, the square full stop and our colours came from it.
+[15.0] 9 Nov 2026 · 6 min read
+[28.0] We set our name in 45
+typefaces, then drew it by hand
+[18.0] We tested our studio name in 45 typefaces. Several read as default faces and none carried the idea, so we drew the wordmark. What we tested and why.
+[15.0] 23 Nov 2026 · 6 min read
+[28.0] One square, five
+places: card, letterhead,
+envelope, billboard, wall
+[15.0] 2 Nov 2026 · 6 min read
+[28.0] Why we named a design
+studio after a sweet
+[18.0] Aleywa Studios is named after alewa, a boiled-sugar sweet many kids in Ghana grew up eating. How the name, the square full stop and our colours came from it.
+[15.0] 9 Nov 2026 · 6 min read
+[28.0] We set our name in
+45 typefaces, then
+drew it by hand
+[15.0] Dark mode
+[44.0] Why we named a design
+studio after a sweet
+[15.0] 2 Nov 2026 · 6 min read
+[18.0] Aleywa Studios is named after alewa, a boiled-sugar sweet many kids in Ghana grew up eating. How the name, the square full stop and our colours came from it.
+[15.0] 9 Nov 2026 · 6 min read
+[28.0] We set our name in 45
+typefaces, then drew it by hand
+[18.0] We tested our studio name in 45 typefaces. Several read as default faces and none carried the idea, so we drew the wordmark. What we tested and why.
+[15.0] 23 Nov 2026 · 6 min read
+[28.0] One square, five
+places: card, letterhead,
+envelope, billboard, wall
+[15.0] 2 Nov 2026 · 6 min read
+[28.0] Why we named a design
+studio after a sweet
+[18.0] Aleywa Studios is named after alewa, a boiled-sugar sweet many kids in Ghana grew up eating. How the name, the square full stop and our colours came from it.
+[15.0] 9 Nov 2026 · 6 min read
+[28.0] We set our name in
+45 typefaces, then
+drew it by hand
+[28.0] Post hero
+[18.0] The head of a post: a small row with the back link and the section, the landscape picture first (1312 x 689, a 1 px line edge) with its caption and credit, then, 48 px below, the title with the stop, the standfirst and the meta line. with-title=false is only the picture and its caption. Not for the blog index (use Post card).
+[13.0] with-title = true, false  ·  2 variants. Text properties: meta, title, standfirst, caption; the Link exposes its label.
+[18.0] Back to the blog
+[15.0] The measure
+[13.0] Where the y meets the w, enlarged.
+[13.0] Diagram, Aleywa Studios.
+[72.0] How we spaced our wordmark
+[72.0] by measuring the gaps
+[21.0] We spaced our wordmark by measuring the closest gap between letter outlines. The six targets, four tests on y and w, and why we settled on about 3.4.
+[15.0] By Aleywa Studios · 12 Nov 2026 · 6 min read
+[13.0] Where the y meets the w, enlarged.
+[13.0] Diagram, Aleywa Studios.
+[28.0] Prose
+[18.0] The pieces of a post's body, set in the reading column: 680 px at 20 / 1.6. The figure breaks out to 960. Not for pages other than posts; the page text elsewhere uses Body.
+[13.0] element = p, h2, ol, table, figure, pull-quote, gave-up  ·  7 variants. Reading column 680 px at 20 / 1.6 (text style Prose); the figure is 960.
+[20.0] Every letter sits inside a box. The usual way to space type is to set the gaps between those boxes, and for straight letters that works. An l fills its box from edge to edge, so the box and the letter agree.
+[28.0] Why the boxes around letters mislead
+[28.0] Rules to reuse
+[20.0] 1.
+[20.0] Measure the closest distance between outlines, not the boxes around letters.
+[20.0] 2.
+[20.0] Count in units of your stem, so the numbers survive scaling.
+[20.0] 3.
+[20.0] Give every pair a written target, and record the measured value next to it.
+[20.0] 4.
+[20.0] Test values on both sides of where you think the answer is.
+[20.0] 5.
+[20.0] Draw small sizes separately, with wider gaps and a larger stop.
+[15.0] Pair
+[15.0] Shapes that meet
+[15.0] Target (units)
+[18.0] a‑l
+[18.0] straight to straight
+[18.0] 8.6
+[18.0] l‑e
+[18.0] straight to round
+[18.0] 6.6
+[18.0] e‑y
+[18.0] round to diagonal
+[18.0] 5.5
+[18.0] y‑w
+[18.0] diagonal to diagonal
+[18.0] 3.4
+[18.0] w‑a
+[18.0] diagonal to round
+[18.0] 5.5
+[18.0] a‑stop
+[18.0] straight to square
+[18.0] 7.6
+[13.0] The spacing page of the brand book, with each target and the value measured in the final file.
+[13.0] Brand book, Aleywa Studios.
+[32.0] Between 3.2 and 4.2, both ends could be defended on paper, and no measurement settles which looks right.
+[15.0] What we gave up
+[18.0] The wide gap between the y and the w. At 5.5 it looked like the widest opening in the word.
+[28.0] Reading marker
+[18.0] A hairline with the stop travelling along it: how far down the post you are. The one progress indicator on the site. Not a scroll bar, not a percentage readout.
+[13.0] progress = 0, 50, 100  ·  1440 x 10  ·  3 variants
+[15.0] 05 Action
+[44.0] Action.
+[21.0] The one thing a visitor does: write to info@aleywa.com. The address, the two buttons and the confirmation. There is no form; for any other link use Link, for a status elsewhere there is no sibling, because nothing else needs one.
+[28.0] Email block
+[18.0] The one way to start, as the berry band that runs into the footer (the page's one berry surface): the address at heading size, Write to us, Copy address (a secondary button 224 px wide whose label alone changes to 'Address copied.'), the fallback line, and at the right a round Window (520 px ink square, the card render) with its label. In the copied state only the label changes: the Toast is used on the phone only, never both. There is no form and no name field. The address appears once. Not for a second address or a social link.
+[13.0] state = default, copied  ·  1440 wide, berry  ·  2 variants. Text properties: address, fallback; the buttons and the label expose their text.
+[72.0] info@aleywa.com
+[18.0] Write to us
+[18.0] Copy address
+[18.0] If your email does not open, copy the address above.
+[13.0] Our own brand. 3D render. Printer samples to come.
+[72.0] info@aleywa.com
+[18.0] Write to us
+[18.0] Address copied.
+[18.0] If your email does not open, copy the address above.
+[13.0] Our own brand. 3D render. Printer samples to come.
+[28.0] Toast
+[18.0] A short confirmation that something small worked: 'Address copied.' It casts the one other shadow on the site (the open menu is the first). Not for errors or anything that needs a decision; it disappears by itself.
+[13.0] state = success  ·  1 variant. Text property: message.
+[18.0] Address copied.
+[15.0] 06 Hero counters
+[44.0] Hero counters.
+[21.0] The home hero is the idea itself: our wordmark cut open, a window in each counter. Use it once, on Home. For the same idea at small size elsewhere use Window; for the closing ask use CTA band.
+[28.0] Hero counters
+[18.0] The home hero: a huge ink 'ale' cut from the wordmark's own paths, with a window in each counter and the berry band beneath. state=rest shows the first two windows, state=focus-window has slid to the second a and the stop. platform=mobile is the phone's first screen: the first a, the H1 above and the band below. Only on Home; not a banner template.
+[13.0] state = rest, focus-window  ·  platform = desktop (1440 x 900, 9 px per unit), mobile (390 x 844, 5.27 px per unit, rest only)  ·  3 variants. Built from design/assets/hero/*.svg.
+[28.0] 1 Strategy.
+[15.0] We work out who you are for, and what you say first.
+[28.0] 2 Identity.
+[15.0] We draw your name, choose your colour and type, and write the rules.
+[13.0] Our own brand. 3D render.
+[13.0] Our own brand. Brand book page.
+[18.0] Start a project
+[60.0] Brand identity and websites,
+[60.0] made together
+[15.0] Aleywa Studios is a design studio that decides your brand and your website together, and shows you the reason behind every decision.
+[13.0] Scroll along the word. Four windows, then the rest.
+[13.0] Our own brand. 3D render. Printer samples to come.
+[28.0] 4 Website.
+[15.0] We plan, write and build your site in the same system.
+[13.0] Our own brand. Site design.
+[44.0] Why choose us
+[15.0] 1
+[18.0] One studio for your brand and your website.
+[15.0] 2
+[18.0] Every decision has a reason you can read.
+[15.0] 3
+[18.0] Craft you can measure.
+[15.0] 4
+[18.0] Letters for your people.
+[15.0] 5
+[18.0] Bold, and finished.
+[18.0] Start a project
+[60.0] The card
+[15.0] A 9 mm square is cut through the paper face, the size of the stop.
+[13.0] Scroll along the word. Four windows, then the rest.
+[28.0] 1 Strategy.
+[13.0] Our own brand. 3D render.
+[44.0] Brand identity
+and websites,
+[44.0] made together
+[15.0] Aleywa Studios is a design studio that decides your brand and your website together, and shows you the reason behind every decision.
+[13.0] Swipe along the word.
+[15.0] 07 Figures
+[44.0] Figures.
+[21.0] The picture of our own work with its label and nothing else, for pages where the words sit beside it, and the palette swatch. A piece with a title, a caption and a decision is a Plate; a picture with a date is a Post card.
+[28.0] Figure
+[18.0] A picture of our own work and its label, nothing else: the title and the words sit beside it in the page. 4:3 (1200 x 900 sources) on one sunken mat with no hairline, the same mat as a Plate. size lg is 7 of 12 columns, md is 5, full is the whole container (1312, 16:9); on the phone lg is 350 wide and bleed is the full 390 with no label (the head picture of a post). Not for a piece with its own title, caption and decision (use Plate), not for a blog picture with a date (use Post card).
+[13.0] size = lg, md, full  ·  platform = desktop, mobile (lg 350 wide, bleed 390 x 205)  ·  5 variants. The nested Label exposes its text; the Image slot swaps and resizes.
+[13.0] Our own brand. Brand book page.
+[13.0] Our own brand. Brand book page.
+[13.0] Our own brand. Brand book page.
+[13.0] Our own brand. Brand book page.
+[28.0] Swatch
+[18.0] A real colour of the system as a 240 px square on paper, with its name and its hex read from the tokens: the square is filled by the colour variable itself, so retuning the variable retunes the swatch. Used where the colour chapter shows the palette. Not for a ramp or a contrast pair (see Foundations).
+[13.0] swatch = paper, ink, stone, raspberry, berry  ·  5 variants. Text properties: name, hex.
+[18.0] Paper
+[15.0] #F6F3EE
+[18.0] Ink
+[15.0] #181110
+[18.0] Stone
+[15.0] #6A615F
+[18.0] Raspberry
+[15.0] #AB2859
+[18.0] Berry
+[15.0] #460F22

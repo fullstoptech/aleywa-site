@@ -1,0 +1,334 @@
+=== VARIABLES ===
+VariableCollectionId:1 Primitives [{'id': 'VariableCollectionId:1/mode1', 'name': 'Value'}]
+VariableCollectionId:2 Theme [{'id': 'VariableCollectionId:2/mode1', 'name': 'Light'}, {'id': 'VariableCollectionId:2/mode2', 'name': 'Dark'}]
+VariableID:1 breakpoint/desktop number ["{'type': 'number', 'value': 1024.0}"] {'WEB': 'var(--breakpoint-desktop)'}
+VariableID:2 color/brand/600 color ["{'type': 'color', 'value': {'r': 0.67058825, 'g': 0.15686275, 'b': 0.34901962, '"] {'WEB': 'var(--color-brand-600)'}
+VariableID:3 type/weight/h3 string ["{'type': 'string', 'value': '700'}"] {'WEB': 'var(--type-weight-h3)'}
+VariableID:4 type/weight/label string ["{'type': 'string', 'value': '500'}"] {'WEB': 'var(--type-weight-label)'}
+VariableID:5 type/weight/statement string ["{'type': 'string', 'value': '700'}"] {'WEB': 'var(--type-weight-statement)'}
+VariableID:6 color/accent color ["{'type': 'alias', 'value': 'VariableID:2'}", "{'type': 'alias', 'value': 'VariableID:96'}"] {'WEB': 'var(--color-accent)'}
+VariableID:7 color/accent-hover color ["{'type': 'alias', 'value': 'VariableID:13'}", "{'type': 'alias', 'value': 'VariableID:85'}"] {'WEB': 'var(--color-accent-hover)'}
+VariableID:8 color/accent-on-inverse color ["{'type': 'alias', 'value': 'VariableID:118'}", "{'type': 'alias', 'value': 'VariableID:2'}"] {'WEB': 'var(--color-accent-on-inverse)'}
+VariableID:9 color/accent-pressed color ["{'type': 'alias', 'value': 'VariableID:24'}", "{'type': 'alias', 'value': 'VariableID:74'}"] {'WEB': 'var(--color-accent-pressed)'}
+VariableID:10 color/bg color ["{'type': 'alias', 'value': 'VariableID:42'}", "{'type': 'alias', 'value': 'VariableID:34'}"] {'WEB': 'var(--color-bg)'}
+VariableID:11 color/danger color ["{'type': 'color', 'value': {'r': 0.7019608, 'g': 0.14901961, 'b': 0.11764706, 'a", "{'type': 'color', 'value': {'r': 1.0, 'g': 0.56078434, 'b': 0.5254902, 'a': 1.0}"] {'WEB': 'var(--color-danger)'}
+VariableID:12 color/focus color ["{'type': 'alias', 'value': 'VariableID:118'}", "{'type': 'alias', 'value': 'VariableID:96'}"] {'WEB': 'var(--color-focus)'}
+VariableID:13 color/brand/700 color ["{'type': 'color', 'value': {'r': 0.49803922, 'g': 0.09411765, 'b': 0.2509804, 'a"] {'WEB': 'var(--color-brand-700)'}
+VariableID:14 color/hatch color ["{'type': 'alias', 'value': 'VariableID:38'}", "{'type': 'alias', 'value': 'VariableID:24'}"] {'WEB': 'var(--color-hatch)'}
+VariableID:15 color/info color ["{'type': 'color', 'value': {'r': 0.1764706, 'g': 0.36862746, 'b': 0.5411765, 'a'", "{'type': 'color', 'value': {'r': 0.56078434, 'g': 0.73333335, 'b': 0.9098039, 'a"] {'WEB': 'var(--color-info)'}
+VariableID:16 color/ink color ["{'type': 'alias', 'value': 'VariableID:48'}", "{'type': 'alias', 'value': 'VariableID:42'}"] {'WEB': 'var(--color-ink)'}
+VariableID:17 color/ink-inverse color ["{'type': 'alias', 'value': 'VariableID:42'}", "{'type': 'alias', 'value': 'VariableID:48'}"] {'WEB': 'var(--color-ink-inverse)'}
+VariableID:18 color/ink-muted color ["{'type': 'alias', 'value': 'VariableID:44'}", "{'type': 'alias', 'value': 'VariableID:74'}"] {'WEB': 'var(--color-ink-muted)'}
+VariableID:19 color/ink-muted-inverse color ["{'type': 'alias', 'value': 'VariableID:74'}", "{'type': 'alias', 'value': 'VariableID:44'}"] {'WEB': 'var(--color-ink-muted-inverse)'}
+VariableID:20 color/line color ["{'type': 'alias', 'value': 'VariableID:38'}", "{'type': 'alias', 'value': 'VariableID:24'}"] {'WEB': 'var(--color-line)'}
+VariableID:21 color/line-inverse color ["{'type': 'alias', 'value': 'VariableID:24'}", "{'type': 'alias', 'value': 'VariableID:38'}"] {'WEB': 'var(--color-line-inverse)'}
+VariableID:22 color/line-strong color ["{'type': 'alias', 'value': 'VariableID:43'}", "{'type': 'alias', 'value': 'VariableID:96'}"] {'WEB': 'var(--color-line-strong)'}
+VariableID:23 color/on-accent color ["{'type': 'alias', 'value': 'VariableID:42'}", "{'type': 'alias', 'value': 'VariableID:48'}"] {'WEB': 'var(--color-on-accent)'}
+VariableID:24 color/brand/800 color ["{'type': 'color', 'value': {'r': 0.36862746, 'g': 0.07058824, 'b': 0.18039216, '"] {'WEB': 'var(--color-brand-800)'}
+VariableID:25 color/on-danger color ["{'type': 'alias', 'value': 'VariableID:42'}", "{'type': 'alias', 'value': 'VariableID:48'}"] {'WEB': 'var(--color-on-danger)'}
+VariableID:26 color/success color ["{'type': 'color', 'value': {'r': 0.18039216, 'g': 0.41960785, 'b': 0.30588236, '", "{'type': 'color', 'value': {'r': 0.49803922, 'g': 0.8156863, 'b': 0.65882355, 'a"] {'WEB': 'var(--color-success)'}
+VariableID:27 color/surface color ["{'type': 'alias', 'value': 'VariableID:42'}", "{'type': 'alias', 'value': 'VariableID:34'}"] {'WEB': 'var(--color-surface)'}
+VariableID:28 color/surface-hover color ["{'type': 'alias', 'value': 'VariableID:37'}", "{'type': 'alias', 'value': 'VariableID:24'}"] {'WEB': 'var(--color-surface-hover)'}
+VariableID:29 color/surface-inverse color ["{'type': 'alias', 'value': 'VariableID:34'}", "{'type': 'alias', 'value': 'VariableID:42'}"] {'WEB': 'var(--color-surface-inverse)'}
+VariableID:30 color/surface-pressed color ["{'type': 'alias', 'value': 'VariableID:38'}", "{'type': 'alias', 'value': 'VariableID:13'}"] {'WEB': 'var(--color-surface-pressed)'}
+VariableID:31 color/surface-raised color ["{'type': 'alias', 'value': 'VariableID:36'}", "{'type': 'alias', 'value': 'VariableID:24'}"] {'WEB': 'var(--color-surface-raised)'}
+VariableID:32 color/surface-sunken color ["{'type': 'alias', 'value': 'VariableID:37'}", "{'type': 'alias', 'value': 'VariableID:35'}"] {'WEB': 'var(--color-surface-sunken)'}
+VariableID:33 color/warning color ["{'type': 'color', 'value': {'r': 0.5411765, 'g': 0.3529412, 'b': 0.0, 'a': 1.0}}", "{'type': 'color', 'value': {'r': 0.8784314, 'g': 0.6901961, 'b': 0.32156864, 'a'"] {'WEB': 'var(--color-warning)'}
+VariableID:34 color/brand/900 color ["{'type': 'color', 'value': {'r': 0.27450982, 'g': 0.05882353, 'b': 0.13333334, '"] {'WEB': 'var(--color-brand-900)'}
+VariableID:35 color/brand/950 color ["{'type': 'color', 'value': {'r': 0.16862746, 'g': 0.02745098, 'b': 0.07450981, '"] {'WEB': 'var(--color-brand-950)'}
+VariableID:36 color/neutral/0 color ["{'type': 'color', 'value': {'r': 0.99607843, 'g': 0.99215686, 'b': 0.9843137, 'a"] {'WEB': 'var(--color-neutral-0)'}
+VariableID:37 color/neutral/100 color ["{'type': 'color', 'value': {'r': 0.9254902, 'g': 0.9137255, 'b': 0.89411765, 'a'"] {'WEB': 'var(--color-neutral-100)'}
+VariableID:38 color/neutral/200 color ["{'type': 'color', 'value': {'r': 0.8784314, 'g': 0.85882354, 'b': 0.8392157, 'a'"] {'WEB': 'var(--color-neutral-200)'}
+VariableID:39 color/neutral/300 color ["{'type': 'color', 'value': {'r': 0.8, 'g': 0.7764706, 'b': 0.75686276, 'a': 1.0}"] {'WEB': 'var(--color-neutral-300)'}
+VariableID:40 color/neutral/400 color ["{'type': 'color', 'value': {'r': 0.67058825, 'g': 0.6392157, 'b': 0.62352943, 'a"] {'WEB': 'var(--color-neutral-400)'}
+VariableID:41 breakpoint/tablet number ["{'type': 'number', 'value': 768.0}"] {'WEB': 'var(--breakpoint-tablet)'}
+VariableID:42 color/neutral/50 color ["{'type': 'color', 'value': {'r': 0.9647059, 'g': 0.9529412, 'b': 0.93333334, 'a'"] {'WEB': 'var(--color-neutral-50)'}
+VariableID:43 color/neutral/500 color ["{'type': 'color', 'value': {'r': 0.5294118, 'g': 0.49411765, 'b': 0.48235294, 'a"] {'WEB': 'var(--color-neutral-500)'}
+VariableID:44 color/neutral/600 color ["{'type': 'color', 'value': {'r': 0.41568628, 'g': 0.38039216, 'b': 0.37254903, '"] {'WEB': 'var(--color-neutral-600)'}
+VariableID:45 color/neutral/700 color ["{'type': 'color', 'value': {'r': 0.30588236, 'g': 0.27058825, 'b': 0.26666668, '"] {'WEB': 'var(--color-neutral-700)'}
+VariableID:46 color/neutral/800 color ["{'type': 'color', 'value': {'r': 0.21176471, 'g': 0.18039216, 'b': 0.1764706, 'a"] {'WEB': 'var(--color-neutral-800)'}
+VariableID:47 color/neutral/900 color ["{'type': 'color', 'value': {'r': 0.14509805, 'g': 0.11372549, 'b': 0.10980392, '"] {'WEB': 'var(--color-neutral-900)'}
+VariableID:48 color/neutral/950 color ["{'type': 'color', 'value': {'r': 0.09411765, 'g': 0.06666667, 'b': 0.0627451, 'a"] {'WEB': 'var(--color-neutral-950)'}
+VariableID:49 grid/columns string ["{'type': 'string', 'value': '12'}"] {'WEB': 'var(--grid-columns)'}
+VariableID:50 grid/container number ["{'type': 'number', 'value': 1312.0}"] {'WEB': 'var(--grid-container)'}
+VariableID:51 grid/gutter number ["{'type': 'number', 'value': 24.0}"] {'WEB': 'var(--grid-gutter)'}
+VariableID:52 breakpoint/wide number ["{'type': 'number', 'value': 1440.0}"] {'WEB': 'var(--breakpoint-wide)'}
+VariableID:53 grid/margin-desktop number ["{'type': 'number', 'value': 64.0}"] {'WEB': 'var(--grid-margin-desktop)'}
+VariableID:54 grid/margin-mobile number ["{'type': 'number', 'value': 20.0}"] {'WEB': 'var(--grid-margin-mobile)'}
+VariableID:55 grid/margin-tablet number ["{'type': 'number', 'value': 48.0}"] {'WEB': 'var(--grid-margin-tablet)'}
+VariableID:56 grid/reading number ["{'type': 'number', 'value': 680.0}"] {'WEB': 'var(--grid-reading)'}
+VariableID:57 motion/duration/base number ["{'type': 'number', 'value': 180.0}"] {'WEB': 'var(--motion-duration-base)'}
+VariableID:58 motion/duration/fast number ["{'type': 'number', 'value': 120.0}"] {'WEB': 'var(--motion-duration-fast)'}
+VariableID:59 motion/duration/slow number ["{'type': 'number', 'value': 320.0}"] {'WEB': 'var(--motion-duration-slow)'}
+VariableID:60 motion/duration/window number ["{'type': 'number', 'value': 480.0}"] {'WEB': 'var(--motion-duration-window)'}
+VariableID:61 motion/easing/base string ["{'type': 'string', 'value': 'cubic-bezier(0.2, 0.7, 0.2, 1)'}"] {'WEB': 'var(--motion-easing-base)'}
+VariableID:62 motion/easing/enter string ["{'type': 'string', 'value': 'cubic-bezier(0.2, 0.7, 0.2, 1)'}"] {'WEB': 'var(--motion-easing-enter)'}
+VariableID:63 color/brand/100 color ["{'type': 'color', 'value': {'r': 0.99215686, 'g': 0.9019608, 'b': 0.92156863, 'a"] {'WEB': 'var(--color-brand-100)'}
+VariableID:64 radius/full number ["{'type': 'number', 'value': 999.0}"] {'WEB': 'var(--radius-full)'}
+VariableID:65 radius/lg number ["{'type': 'number', 'value': 2.0}"] {'WEB': 'var(--radius-lg)'}
+VariableID:66 radius/md number ["{'type': 'number', 'value': 2.0}"] {'WEB': 'var(--radius-md)'}
+VariableID:67 radius/sm number ["{'type': 'number', 'value': 0.0}"] {'WEB': 'var(--radius-sm)'}
+VariableID:68 radius/xl number ["{'type': 'number', 'value': 2.0}"] {'WEB': 'var(--radius-xl)'}
+VariableID:69 shadow/popover string ["{'type': 'string', 'value': '0 12px 28px -14px rgba(24, 17, 16, 0.35)'}"] {'WEB': 'var(--shadow-popover)'}
+VariableID:70 size/control/lg number ["{'type': 'number', 'value': 56.0}"] {'WEB': 'var(--size-control-lg)'}
+VariableID:71 size/control/md number ["{'type': 'number', 'value': 48.0}"] {'WEB': 'var(--size-control-md)'}
+VariableID:72 size/control/sm number ["{'type': 'number', 'value': 40.0}"] {'WEB': 'var(--size-control-sm)'}
+VariableID:73 size/icon/md number ["{'type': 'number', 'value': 24.0}"] {'WEB': 'var(--size-icon-md)'}
+VariableID:74 color/brand/200 color ["{'type': 'color', 'value': {'r': 0.9882353, 'g': 0.81960785, 'b': 0.85490197, 'a"] {'WEB': 'var(--color-brand-200)'}
+VariableID:75 size/stop/lg number ["{'type': 'number', 'value': 24.0}"] {'WEB': 'var(--size-stop-lg)'}
+VariableID:76 size/stop/md number ["{'type': 'number', 'value': 16.0}"] {'WEB': 'var(--size-stop-md)'}
+VariableID:77 size/stop/sm number ["{'type': 'number', 'value': 10.0}"] {'WEB': 'var(--size-stop-sm)'}
+VariableID:78 size/target/min number ["{'type': 'number', 'value': 44.0}"] {'WEB': 'var(--size-target-min)'}
+VariableID:79 space/1 number ["{'type': 'number', 'value': 4.0}"] {'WEB': 'var(--space-1)'}
+VariableID:80 space/10 number ["{'type': 'number', 'value': 128.0}"] {'WEB': 'var(--space-10)'}
+VariableID:81 space/11 number ["{'type': 'number', 'value': 160.0}"] {'WEB': 'var(--space-11)'}
+VariableID:82 space/2 number ["{'type': 'number', 'value': 8.0}"] {'WEB': 'var(--space-2)'}
+VariableID:83 space/3 number ["{'type': 'number', 'value': 12.0}"] {'WEB': 'var(--space-3)'}
+VariableID:84 space/4 number ["{'type': 'number', 'value': 16.0}"] {'WEB': 'var(--space-4)'}
+VariableID:85 color/brand/300 color ["{'type': 'color', 'value': {'r': 0.99215686, 'g': 0.69803923, 'b': 0.76862746, '"] {'WEB': 'var(--color-brand-300)'}
+VariableID:86 space/5 number ["{'type': 'number', 'value': 24.0}"] {'WEB': 'var(--space-5)'}
+VariableID:87 space/6 number ["{'type': 'number', 'value': 32.0}"] {'WEB': 'var(--space-6)'}
+VariableID:88 space/7 number ["{'type': 'number', 'value': 48.0}"] {'WEB': 'var(--space-7)'}
+VariableID:89 space/8 number ["{'type': 'number', 'value': 64.0}"] {'WEB': 'var(--space-8)'}
+VariableID:90 space/9 number ["{'type': 'number', 'value': 96.0}"] {'WEB': 'var(--space-9)'}
+VariableID:91 type/family/display string ["{'type': 'string', 'value': 'Schibsted Grotesk'}"] {'WEB': 'var(--type-family-display)'}
+VariableID:92 type/family/text string ["{'type': 'string', 'value': 'Schibsted Grotesk'}"] {'WEB': 'var(--type-family-text)'}
+VariableID:93 type/line-height/body string ["{'type': 'string', 'value': '1.55'}"] {'WEB': 'var(--type-line-height-body)'}
+VariableID:94 type/line-height/body-lg string ["{'type': 'string', 'value': '1.5'}"] {'WEB': 'var(--type-line-height-body-lg)'}
+VariableID:95 type/line-height/caption string ["{'type': 'string', 'value': '1.4'}"] {'WEB': 'var(--type-line-height-caption)'}
+VariableID:96 color/brand/400 color ["{'type': 'color', 'value': {'r': 0.94509804, 'g': 0.5372549, 'b': 0.64705884, 'a"] {'WEB': 'var(--color-brand-400)'}
+VariableID:97 type/line-height/display string ["{'type': 'string', 'value': '0.96'}"] {'WEB': 'var(--type-line-height-display)'}
+VariableID:98 type/line-height/h1 string ["{'type': 'string', 'value': '1.0'}"] {'WEB': 'var(--type-line-height-h1)'}
+VariableID:99 type/line-height/h2 string ["{'type': 'string', 'value': '1.08'}"] {'WEB': 'var(--type-line-height-h2)'}
+VariableID:100 type/line-height/h3 string ["{'type': 'string', 'value': '1.15'}"] {'WEB': 'var(--type-line-height-h3)'}
+VariableID:101 type/line-height/label string ["{'type': 'string', 'value': '1.3'}"] {'WEB': 'var(--type-line-height-label)'}
+VariableID:102 type/line-height/statement string ["{'type': 'string', 'value': '0.95'}"] {'WEB': 'var(--type-line-height-statement)'}
+VariableID:103 type/size/body number ["{'type': 'number', 'value': 18.0}"] {'WEB': 'var(--type-size-body)'}
+VariableID:104 type/size/body-lg number ["{'type': 'number', 'value': 21.0}"] {'WEB': 'var(--type-size-body-lg)'}
+VariableID:105 type/size/caption number ["{'type': 'number', 'value': 13.0}"] {'WEB': 'var(--type-size-caption)'}
+VariableID:106 type/size/display number ["{'type': 'number', 'value': 120.0}"] {'WEB': 'var(--type-size-display)'}
+VariableID:107 color/brand/50 color ["{'type': 'color', 'value': {'r': 0.99215686, 'g': 0.9529412, 'b': 0.9607843, 'a'"] {'WEB': 'var(--color-brand-50)'}
+VariableID:108 type/size/h1 number ["{'type': 'number', 'value': 72.0}"] {'WEB': 'var(--type-size-h1)'}
+VariableID:109 type/size/h2 number ["{'type': 'number', 'value': 44.0}"] {'WEB': 'var(--type-size-h2)'}
+VariableID:110 type/size/h3 number ["{'type': 'number', 'value': 28.0}"] {'WEB': 'var(--type-size-h3)'}
+VariableID:111 type/size/label number ["{'type': 'number', 'value': 15.0}"] {'WEB': 'var(--type-size-label)'}
+VariableID:112 type/size/statement number ["{'type': 'number', 'value': 192.0}"] {'WEB': 'var(--type-size-statement)'}
+VariableID:113 type/tracking/body string ["{'type': 'string', 'value': '0em'}"] {'WEB': 'var(--type-tracking-body)'}
+VariableID:114 type/tracking/body-lg string ["{'type': 'string', 'value': '-0.005em'}"] {'WEB': 'var(--type-tracking-body-lg)'}
+VariableID:115 type/tracking/caption string ["{'type': 'string', 'value': '0.01em'}"] {'WEB': 'var(--type-tracking-caption)'}
+VariableID:116 type/tracking/display string ["{'type': 'string', 'value': '-0.04em'}"] {'WEB': 'var(--type-tracking-display)'}
+VariableID:117 type/tracking/h1 string ["{'type': 'string', 'value': '-0.04em'}"] {'WEB': 'var(--type-tracking-h1)'}
+VariableID:118 color/brand/500 color ["{'type': 'color', 'value': {'r': 0.87058824, 'g': 0.29803923, 'b': 0.49019608, '"] {'WEB': 'var(--color-brand-500)'}
+VariableID:119 type/tracking/h2 string ["{'type': 'string', 'value': '-0.035em'}"] {'WEB': 'var(--type-tracking-h2)'}
+VariableID:120 type/tracking/h3 string ["{'type': 'string', 'value': '-0.025em'}"] {'WEB': 'var(--type-tracking-h3)'}
+VariableID:121 type/tracking/label string ["{'type': 'string', 'value': '0em'}"] {'WEB': 'var(--type-tracking-label)'}
+VariableID:122 type/tracking/statement string ["{'type': 'string', 'value': '-0.045em'}"] {'WEB': 'var(--type-tracking-statement)'}
+VariableID:123 type/weight/body string ["{'type': 'string', 'value': '400'}"] {'WEB': 'var(--type-weight-body)'}
+VariableID:124 type/weight/body-lg string ["{'type': 'string', 'value': '400'}"] {'WEB': 'var(--type-weight-body-lg)'}
+VariableID:125 type/weight/caption string ["{'type': 'string', 'value': '500'}"] {'WEB': 'var(--type-weight-caption)'}
+VariableID:126 type/weight/display string ["{'type': 'string', 'value': '700'}"] {'WEB': 'var(--type-weight-display)'}
+VariableID:127 type/weight/h1 string ["{'type': 'string', 'value': '700'}"] {'WEB': 'var(--type-weight-h1)'}
+VariableID:128 type/weight/h2 string ["{'type': 'string', 'value': '700'}"] {'WEB': 'var(--type-weight-h2)'}
+VariableID:129 type/line-height-px/caption number ["{'type': 'number', 'value': 18.2}"] None
+VariableID:130 type/tracking-px/caption number ["{'type': 'number', 'value': 0.13}"] None
+VariableID:131 type/font-style/caption string ["{'type': 'string', 'value': 'Medium'}"] None
+VariableID:132 type/line-height-px/label number ["{'type': 'number', 'value': 19.5}"] None
+VariableID:133 type/tracking-px/label number ["{'type': 'number', 'value': 0.0}"] None
+VariableID:134 type/font-style/label string ["{'type': 'string', 'value': 'Medium'}"] None
+VariableID:135 type/line-height-px/body number ["{'type': 'number', 'value': 27.9}"] None
+VariableID:136 type/tracking-px/body number ["{'type': 'number', 'value': 0.0}"] None
+VariableID:137 type/font-style/body string ["{'type': 'string', 'value': 'Regular'}"] None
+VariableID:138 type/line-height-px/body-lg number ["{'type': 'number', 'value': 31.5}"] None
+VariableID:139 type/tracking-px/body-lg number ["{'type': 'number', 'value': -0.105}"] None
+VariableID:140 type/font-style/body-lg string ["{'type': 'string', 'value': 'Regular'}"] None
+VariableID:141 type/line-height-px/h3 number ["{'type': 'number', 'value': 32.2}"] None
+VariableID:142 type/tracking-px/h3 number ["{'type': 'number', 'value': -0.7}"] None
+VariableID:143 type/font-style/h3 string ["{'type': 'string', 'value': 'Bold'}"] None
+VariableID:144 type/line-height-px/h2 number ["{'type': 'number', 'value': 47.52}"] None
+VariableID:145 type/tracking-px/h2 number ["{'type': 'number', 'value': -1.54}"] None
+VariableID:146 type/font-style/h2 string ["{'type': 'string', 'value': 'Bold'}"] None
+VariableID:147 type/line-height-px/h1 number ["{'type': 'number', 'value': 72.0}"] None
+VariableID:148 type/tracking-px/h1 number ["{'type': 'number', 'value': -2.88}"] None
+VariableID:149 type/font-style/h1 string ["{'type': 'string', 'value': 'Bold'}"] None
+VariableID:150 type/line-height-px/display number ["{'type': 'number', 'value': 115.2}"] None
+VariableID:151 type/tracking-px/display number ["{'type': 'number', 'value': -4.8}"] None
+VariableID:152 type/font-style/display string ["{'type': 'string', 'value': 'Bold'}"] None
+VariableID:153 type/line-height-px/statement number ["{'type': 'number', 'value': 182.4}"] None
+VariableID:154 type/tracking-px/statement number ["{'type': 'number', 'value': -8.64}"] None
+VariableID:155 type/font-style/statement string ["{'type': 'string', 'value': 'Bold'}"] None
+VariableID:156 type/line-height-px/body-italic number ["{'type': 'number', 'value': 27.9}"] None
+VariableID:157 type/tracking-px/body-italic number ["{'type': 'number', 'value': 0.0}"] None
+VariableID:158 type/font-style/body-italic string ["{'type': 'string', 'value': 'Italic'}"] None
+VariableID:159 size/hairline number ["{'type': 'number', 'value': 1.0}"] None
+VariableID:160 shadow/popover/offset-y number ["{'type': 'number', 'value': 12.0}"] None
+VariableID:161 shadow/popover/blur number ["{'type': 'number', 'value': 28.0}"] None
+VariableID:162 shadow/popover/spread number ["{'type': 'number', 'value': -14.0}"] None
+VariableID:163 size/stroke/strong number ["{'type': 'number', 'value': 1.5}"] None
+VariableID:164 size/focus/ring number ["{'type': 'number', 'value': 3.0}"] None
+VariableID:165 size/focus/offset number ["{'type': 'number', 'value': 3.0}"] None
+VariableID:166 type/line-height-px/body-strong number ["{'type': 'number', 'value': 27.9}"] None
+VariableID:167 type/tracking-px/body-strong number ["{'type': 'number', 'value': 0.0}"] None
+VariableID:168 type/font-style/body-strong string ["{'type': 'string', 'value': 'Medium'}"] None
+VariableID:169 type/line-height-px/prose number ["{'type': 'number', 'value': 32.0}"] None
+VariableID:170 type/tracking-px/prose number ["{'type': 'number', 'value': 0.0}"] None
+VariableID:171 type/font-style/prose string ["{'type': 'string', 'value': 'Regular'}"] None
+VariableID:172 type/size/prose number ["{'type': 'number', 'value': 20.0}"] None
+VariableID:173 type/line-height/prose string ["{'type': 'string', 'value': '1.6'}"] None
+VariableID:174 size/stop/xxs number ["{'type': 'number', 'value': 6.0}"] None
+VariableID:175 size/stop/xs number ["{'type': 'number', 'value': 9.0}"] None
+VariableID:176 size/stop/h1 number ["{'type': 'number', 'value': 14.0}"] None
+VariableID:177 size/stop-gap/xxs number ["{'type': 'number', 'value': 0.8}"] None
+VariableID:178 size/stop-gap/xs number ["{'type': 'number', 'value': 1.3}"] None
+VariableID:179 size/stop-gap/h1 number ["{'type': 'number', 'value': 2.2}"] None
+VariableID:180 size/stop-gap/lg number ["{'type': 'number', 'value': 3.6}"] None
+VariableID:181 size/stop-lift/h3 number ["{'type': 'number', 'value': 6.0}"] None
+VariableID:182 size/stop-lift/h2 number ["{'type': 'number', 'value': 8.0}"] None
+VariableID:183 size/stop-lift/h1 number ["{'type': 'number', 'value': 10.0}"] None
+VariableID:184 size/stop-lift/display number ["{'type': 'number', 'value': 14.5}"] None
+VariableID:185 size/stop-lift/statement number ["{'type': 'number', 'value': 22.0}"] None
+VariableID:186 type/line-height-px/h1-mobile number ["{'type': 'number', 'value': 39.52}"] None
+VariableID:187 type/tracking-px/h1-mobile number ["{'type': 'number', 'value': -1.52}"] None
+VariableID:188 type/font-style/h1-mobile string ["{'type': 'string', 'value': 'Bold'}"] None
+VariableID:189 type/size/h1-mobile number ["{'type': 'number', 'value': 38.0}"] None
+VariableID:190 type/line-height/h1-mobile string ["{'type': 'string', 'value': '1.04'}"] None
+VariableID:191 type/line-height-px/numeral-mobile number ["{'type': 'number', 'value': 56.0}"] None
+VariableID:192 type/tracking-px/numeral-mobile number ["{'type': 'number', 'value': -2.24}"] None
+VariableID:193 type/font-style/numeral-mobile string ["{'type': 'string', 'value': 'Bold'}"] None
+VariableID:194 type/size/numeral-mobile number ["{'type': 'number', 'value': 56.0}"] None
+VariableID:195 type/line-height/numeral-mobile string ["{'type': 'string', 'value': '1.0'}"] None
+VariableID:196 type/line-height-px/display-mobile number ["{'type': 'number', 'value': 56.0}"] None
+VariableID:197 type/tracking-px/display-mobile number ["{'type': 'number', 'value': -2.24}"] None
+VariableID:198 type/font-style/display-mobile string ["{'type': 'string', 'value': 'Bold'}"] None
+VariableID:199 type/size/display-mobile number ["{'type': 'number', 'value': 56.0}"] None
+VariableID:200 type/line-height/display-mobile string ["{'type': 'string', 'value': '1.0'}"] None
+VariableID:201 type/line-height-px/lead-mobile number ["{'type': 'number', 'value': 41.04}"] None
+VariableID:202 type/tracking-px/lead-mobile number ["{'type': 'number', 'value': -1.52}"] None
+VariableID:203 type/font-style/lead-mobile string ["{'type': 'string', 'value': 'Bold'}"] None
+VariableID:204 type/size/lead-mobile number ["{'type': 'number', 'value': 38.0}"] None
+VariableID:205 type/line-height/lead-mobile string ["{'type': 'string', 'value': '1.08'}"] None
+VariableID:206 size/stroke/rule number ["{'type': 'number', 'value': 2.0}"] None
+VariableID:207 type/line-height-px/hero-h1 number ["{'type': 'number', 'value': 62.4}"] None
+VariableID:208 type/tracking-px/hero-h1 number ["{'type': 'number', 'value': -2.4}"] None
+VariableID:209 type/font-style/hero-h1 string ["{'type': 'string', 'value': 'Bold'}"] None
+VariableID:210 type/size/hero-h1 number ["{'type': 'number', 'value': 60.0}"] None
+VariableID:211 type/line-height/hero-h1 string ["{'type': 'string', 'value': '1.04'}"] None
+VariableID:212 type/line-height-px/hero-mobile number ["{'type': 'number', 'value': 45.76}"] None
+VariableID:213 type/tracking-px/hero-mobile number ["{'type': 'number', 'value': -1.76}"] None
+VariableID:214 type/font-style/hero-mobile string ["{'type': 'string', 'value': 'Bold'}"] None
+VariableID:215 type/size/hero-mobile number ["{'type': 'number', 'value': 44.0}"] None
+VariableID:216 type/line-height/hero-mobile string ["{'type': 'string', 'value': '1.04'}"] None
+VariableID:217 type/line-height-px/pull number ["{'type': 'number', 'value': 41.6}"] None
+VariableID:218 type/tracking-px/pull number ["{'type': 'number', 'value': 0.0}"] None
+VariableID:219 type/font-style/pull string ["{'type': 'string', 'value': 'Italic'}"] None
+VariableID:220 type/size/pull number ["{'type': 'number', 'value': 32.0}"] None
+VariableID:221 type/line-height/pull string ["{'type': 'string', 'value': '1.3'}"] None
+VariableID:222 type/line-height-px/table-figure number ["{'type': 'number', 'value': 27.9}"] None
+VariableID:223 type/tracking-px/table-figure number ["{'type': 'number', 'value': 0.0}"] None
+VariableID:224 type/font-style/table-figure string ["{'type': 'string', 'value': 'Bold'}"] None
+
+=== TEXT STYLES ===
+S:1 Caption text {'font_family': 'Schibsted Grotesk', 'font_style': 'Medium', 'font_size': 13.0, 'line_height': {'unit': 'pixels', 'value': 18.2}, 'letter_spacing': {'unit': 'pixels', 'value': 0.13}, 'case': 'original'}
+S:2 Label text {'font_family': 'Schibsted Grotesk', 'font_style': 'Medium', 'font_size': 15.0, 'line_height': {'unit': 'pixels', 'value': 19.5}, 'letter_spacing': {'unit': 'pixels', 'value': 0.0}, 'case': 'original'}
+S:3 Body text {'font_family': 'Schibsted Grotesk', 'font_style': 'Regular', 'font_size': 18.0, 'line_height': {'unit': 'pixels', 'value': 27.9}, 'letter_spacing': {'unit': 'pixels', 'value': 0.0}, 'case': 'original'}
+S:4 Body large text {'font_family': 'Schibsted Grotesk', 'font_style': 'Regular', 'font_size': 21.0, 'line_height': {'unit': 'pixels', 'value': 31.5}, 'letter_spacing': {'unit': 'pixels', 'value': -0.105}, 'case': 'original'}
+S:5 H3 text {'font_family': 'Schibsted Grotesk', 'font_style': 'Bold', 'font_size': 28.0, 'line_height': {'unit': 'pixels', 'value': 32.2}, 'letter_spacing': {'unit': 'pixels', 'value': -0.7}, 'case': 'original'}
+S:6 H2 text {'font_family': 'Schibsted Grotesk', 'font_style': 'Bold', 'font_size': 44.0, 'line_height': {'unit': 'pixels', 'value': 47.52}, 'letter_spacing': {'unit': 'pixels', 'value': -1.54}, 'case': 'original'}
+S:7 H1 text {'font_family': 'Schibsted Grotesk', 'font_style': 'Bold', 'font_size': 72.0, 'line_height': {'unit': 'pixels', 'value': 72.0}, 'letter_spacing': {'unit': 'pixels', 'value': -2.88}, 'case': 'original'}
+S:8 Display text {'font_family': 'Schibsted Grotesk', 'font_style': 'Bold', 'font_size': 120.0, 'line_height': {'unit': 'pixels', 'value': 115.2}, 'letter_spacing': {'unit': 'pixels', 'value': -4.8}, 'case': 'original'}
+S:9 Statement text {'font_family': 'Schibsted Grotesk', 'font_style': 'Bold', 'font_size': 192.0, 'line_height': {'unit': 'pixels', 'value': 182.4}, 'letter_spacing': {'unit': 'pixels', 'value': -8.64}, 'case': 'original'}
+S:10 Body italic text {'font_family': 'Schibsted Grotesk', 'font_style': 'Italic', 'font_size': 18.0, 'line_height': {'unit': 'pixels', 'value': 27.9}, 'letter_spacing': {'unit': 'pixels', 'value': 0.0}, 'case': 'original'}
+S:11 popover effect {'id': 'S:11', 'name': 'popover', 'description': '', 'type': 'effect', 'effects': [{'type': 'dropShadow', 'color': {'r': 0.09411765, 'g': 0.06666667, 'b': 0.0627451, 'a': 0.34901962}, 'offset': [0.0, 12.0], 'radius': 28.0, 'spread': -14.0, 'blend': 'normal', 'show_behind': False, 'visible': True}], 'bound': {'effects/0/offsetY': 'VariableID:160', 'effects/0/radius': 'VariableID:161', 'effects/0/spread': 'VariableID:162'}}
+S:12 Grid/12 columns/1440 grid {'id': 'S:12', 'name': 'Grid/12 columns/1440', 'description': '', 'type': 'grid', 'grids': [{'kind': 'columns', 'size': 10.0, 'count': 12, 'gutter': 24.0, 'offset': 64.0, 'align': 'stretch', 'color': {'r': 1.0, 'g': 0.0, 'b': 0.0, 'a': 0.1}, 'visible': True}], 'bound': {'layoutGrids/0/gutter': 'VariableID:51', 'layoutGrids/0/offset': 'VariableID:53'}}
+S:13 Body strong text {'font_family': 'Schibsted Grotesk', 'font_style': 'Medium', 'font_size': 18.0, 'line_height': {'unit': 'pixels', 'value': 27.9}, 'letter_spacing': {'unit': 'pixels', 'value': 0.0}, 'case': 'original'}
+S:14 Prose text {'font_family': 'Schibsted Grotesk', 'font_style': 'Regular', 'font_size': 20.0, 'line_height': {'unit': 'pixels', 'value': 32.0}, 'letter_spacing': {'unit': 'pixels', 'value': 0.0}, 'case': 'original'}
+S:15 H1 mobile text {'font_family': 'Schibsted Grotesk', 'font_style': 'Bold', 'font_size': 38.0, 'line_height': {'unit': 'pixels', 'value': 39.52}, 'letter_spacing': {'unit': 'pixels', 'value': -1.52}, 'case': 'original'}
+S:16 Numeral mobile text {'font_family': 'Schibsted Grotesk', 'font_style': 'Bold', 'font_size': 56.0, 'line_height': {'unit': 'pixels', 'value': 56.0}, 'letter_spacing': {'unit': 'pixels', 'value': -2.24}, 'case': 'original'}
+S:17 Display mobile text {'font_family': 'Schibsted Grotesk', 'font_style': 'Bold', 'font_size': 56.0, 'line_height': {'unit': 'pixels', 'value': 56.0}, 'letter_spacing': {'unit': 'pixels', 'value': -2.24}, 'case': 'original'}
+S:18 Lead mobile text {'font_family': 'Schibsted Grotesk', 'font_style': 'Bold', 'font_size': 38.0, 'line_height': {'unit': 'pixels', 'value': 41.04}, 'letter_spacing': {'unit': 'pixels', 'value': -1.52}, 'case': 'original'}
+S:19 Hero H1 text {'font_family': 'Schibsted Grotesk', 'font_style': 'Bold', 'font_size': 60.0, 'line_height': {'unit': 'pixels', 'value': 62.4}, 'letter_spacing': {'unit': 'pixels', 'value': -2.4}, 'case': 'original'}
+S:20 Hero H1 mobile text {'font_family': 'Schibsted Grotesk', 'font_style': 'Bold', 'font_size': 44.0, 'line_height': {'unit': 'pixels', 'value': 45.76}, 'letter_spacing': {'unit': 'pixels', 'value': -1.76}, 'case': 'original'}
+S:21 Pull quote text {'font_family': 'Schibsted Grotesk', 'font_style': 'Italic', 'font_size': 32.0, 'line_height': {'unit': 'pixels', 'value': 41.6}, 'letter_spacing': {'unit': 'pixels', 'value': 0.0}, 'case': 'original'}
+S:22 Table figure text {'font_family': 'Schibsted Grotesk', 'font_style': 'Bold', 'font_size': 18.0, 'line_height': {'unit': 'pixels', 'value': 27.9}, 'letter_spacing': {'unit': 'pixels', 'value': 0.0}, 'case': 'original'}
+
+=== PAGES / TOP FRAMES ===
+PAGE entry: 1
+PAGE entry: 2
+PAGE entry: 3
+PAGE entry: 4
+
+PAGE 1 Foundations children=[133914]
+  FRAME 133914 Foundations / 1440 type=frame 1440.0x13358.0 children=9
+
+PAGE 2 Components children=[6807]
+  FRAME 6807 Components / 1440 type=frame 1440.0x61796.0 children=7
+
+PAGE 3 Screens children=[134858, 135344, 135405, 135834, 135885, 136151, 136350, 136551, 136748, 136950, 137207, 137401, 137637, 137871, 138158, 138370, 138541, 138888, 139039, 139058, 139177, 139285, 139425, 139697, 139828]
+  FRAME 134858 Home / 1440 type=frame 1440.0x10108.0 children=8
+  FRAME 135344 Home / hero focus / 1440 type=frame 1440.0x900.0 children=1
+  FRAME 135405 Home / 390 type=frame 390.0x12293.0 children=9
+  FRAME 135834 Menu / 390 type=frame 390.0x844.0 children=1
+  FRAME 135885 What we do / 1440 type=frame 1440.0x4671.0 children=2
+  FRAME 136151 Strategy / 1440 type=frame 1440.0x2358.0 children=2
+  FRAME 136350 Identity / 1440 type=frame 1440.0x2439.0 children=2
+  FRAME 136551 Applications / 1440 type=frame 1440.0x2315.0 children=2
+  FRAME 136748 Website / 1440 type=frame 1440.0x2383.0 children=2
+  FRAME 136950 Why us / 1440 type=frame 1440.0x3801.0 children=2
+  FRAME 137207 How we work / 1440 type=frame 1440.0x1842.0 children=2
+  FRAME 137401 What we do / 390 type=frame 390.0x6263.0 children=2
+  FRAME 137637 Recent work / 1440 type=frame 1440.0x3974.0 children=2
+  FRAME 137871 Our brand in full / 1440 type=frame 1440.0x6188.0 children=2
+  FRAME 138158 Letters / 1440 type=frame 1440.0x2591.0 children=2
+  FRAME 138370 Blog / 1440 type=frame 1440.0x3303.0 children=2
+  FRAME 138541 Post / 1440 type=frame 1440.0x9740.0 children=3
+  FRAME 138888 Start a project / 1440 type=frame 1440.0x1883.0 children=2
+  FRAME 139039 Start a project / copied / 1440 type=frame 1440.0x742.0 children=1
+  FRAME 139058 404 / 1440 type=frame 1440.0x900.0 children=3
+  FRAME 139177 Privacy / 1440 type=frame 1440.0x900.0 children=3
+  FRAME 139285 Blog / 390 type=frame 390.0x3626.0 children=2
+  FRAME 139425 Post / 390 type=frame 390.0x9474.0 children=3
+  FRAME 139697 Start a project / 390 type=frame 390.0x2650.0 children=2
+  FRAME 139828 Start a project / copied / 390 type=frame 390.0x811.0 children=1
+
+PAGE 4 Critique children=None
+
+=== FONTS USED ===
+('Schibsted Grotesk', 'Medium', 15.0) 634
+('Schibsted Grotesk', 'Medium', 18.0) 512
+('Schibsted Grotesk', 'Medium', 13.0) 475
+('Schibsted Grotesk', 'Regular', 18.0) 472
+('Schibsted Grotesk', 'Bold', 28.0) 253
+('Schibsted Grotesk', 'Bold', 44.0) 177
+('Schibsted Grotesk', 'Bold', 72.0) 82
+('Schibsted Grotesk', 'Regular', 21.0) 75
+('Schibsted Grotesk', 'Regular', 20.0) 42
+('Schibsted Grotesk', 'Bold', 38.0) 31
+('Schibsted Grotesk', 'Bold', 56.0) 29
+('Schibsted Grotesk', 'Bold', 120.0) 26
+('Schibsted Grotesk', 'Bold', 18.0) 18
+('Schibsted Grotesk', 'Bold', 60.0) 6
+('Schibsted Grotesk', 'Italic', 18.0) 4
+('Schibsted Grotesk', 'Italic', 32.0) 3
+('Schibsted Grotesk', 'Bold', 192.0) 1
+
+=== IMAGE INDEX === [{'hash': '00958fbc79910d61963d24e10d00b74898d76de74014511639a4f1406059aee0', 'width': 1106, 'height': 623}, {'hash': '09a4d634b9a48f84885283f529221016cd1457438eb6d56fc566b4a807b55a49', 'width': 1200, 'height': 1200}, {'hash': '0abe91d8605c234bbeb9fa298a45fecf4018864def492d67ceab75331cb959ea', 'width': 640, 'height': 221}, {'hash': '0b756040b825a2f7761fa5f5a1352149f419867a261dc673d57b79a3112756ef', 'width': 1200, 'height': 1200}, {'hash': '0cc80ee1166e01fb5bb08e9c1a19d359e7dbe6878e52c84ced0dfd6c29576329', 'width': 1000, 'height': 410}] total 49
+17 8e0f70dc9ba258b30842038bd87cd8b299545d3834dc63c239a5e63bf63a155b
+17 {'type': 'image', 'image': '8e0f70dc9ba258b30842038bd87cd8b299545d3834dc63c239a5e63bf63a155b', 'scale_mode': 'fill', 'scale': 1.0, 'rotation': 0, 'crop': None, 'filters': {'exposure': 0.0, 'contrast':
+15 ab7d4e812b623a93a81468a0f5ed7b930e81c312caadcd293490ae7bec60cb79
+15 {'type': 'image', 'image': 'ab7d4e812b623a93a81468a0f5ed7b930e81c312caadcd293490ae7bec60cb79', 'scale_mode': 'fill', 'scale': 1.0, 'rotation': 0, 'crop': None, 'filters': {'exposure': 0.0, 'contrast':
+10 a47492daad45b194022c94d7651f60b4773e8c03e9253084257c8c8e80159bf9
+10 {'type': 'image', 'image': 'a47492daad45b194022c94d7651f60b4773e8c03e9253084257c8c8e80159bf9', 'scale_mode': 'fill', 'scale': 1.0, 'rotation': 0, 'crop': None, 'filters': {'exposure': 0.0, 'contrast':
+10 ba1212cc4625b1a65862a0c463373ed41ea6f5fc2a68d357dcab2e068b978693
+10 {'type': 'image', 'image': 'ba1212cc4625b1a65862a0c463373ed41ea6f5fc2a68d357dcab2e068b978693', 'scale_mode': 'fill', 'scale': 1.0, 'rotation': 0, 'crop': None, 'filters': {'exposure': 0.0, 'contrast':
+8 e3784d0021523a559206810793b2298558166eece68c6405b2fa2daf0ef6528e
+8 {'type': 'image', 'image': 'e3784d0021523a559206810793b2298558166eece68c6405b2fa2daf0ef6528e', 'scale_mode': 'fill', 'scale': 1.0, 'rotation': 0, 'crop': None, 'filters': {'exposure': 0.0, 'contrast':
+8 b42a3c9f55875442eddbd2b0f2d2c0d728642bb99f8d97e48e18abb6b0ed6f59
+8 {'type': 'image', 'image': 'b42a3c9f55875442eddbd2b0f2d2c0d728642bb99f8d97e48e18abb6b0ed6f59', 'scale_mode': 'fill', 'scale': 1.0, 'rotation': 0, 'crop': None, 'filters': {'exposure': 0.0, 'contrast':
+8 adef63f2943371816a903a15dad1e8145979883f937933a16b79b491be2ccc53
+8 {'type': 'image', 'image': 'adef63f2943371816a903a15dad1e8145979883f937933a16b79b491be2ccc53', 'scale_mode': 'fill', 'scale': 1.0, 'rotation': 0, 'crop': None, 'filters': {'exposure': 0.0, 'contrast':
+8 9faedbddc02e8a72de8c142d739706a15efc9c270e36bd879783f6504d72dece
+8 {'type': 'image', 'image': '9faedbddc02e8a72de8c142d739706a15efc9c270e36bd879783f6504d72dece', 'scale_mode': 'fill', 'scale': 1.0, 'rotation': 0, 'crop': None, 'filters': {'exposure': 0.0, 'contrast':
+6 3c4842f71c22c2763c32370cf9a961ba34c3c93d2ac3de7a687bf88b49baab91
+6 {'type': 'image', 'image': '3c4842f71c22c2763c32370cf9a961ba34c3c93d2ac3de7a687bf88b49baab91', 'scale_mode': 'fill', 'scale': 1.0, 'rotation': 0, 'crop': None, 'filters': {'exposure': 0.0, 'contrast':
+5 1b2e3b01ad2ae821aa5f78e8dde69d63f92b11390fd3ce04a7bab29265fe5a34
+5 {'type': 'image', 'image': '1b2e3b01ad2ae821aa5f78e8dde69d63f92b11390fd3ce04a7bab29265fe5a34', 'scale_mode': 'fill', 'scale': 1.0, 'rotation': 0, 'crop': None, 'filters': {'exposure': 0.0, 'contrast':
+SAMPLE IMAGE FILL 132183 Image slot {'type': 'image', 'image': '332212a22624340b33639f34ea70fc5bc9c26b2e7e5d66f1fa65d712ac154e3f', 'scale_mode': 'fill', 'scale': 1.0, 'rotation': 0, 'crop': None, 'filters': {'exposure': 0.0, 'contrast': 0.0, 'saturation': 0.0, 'temperature': 0.0, 'tint': 0.0, 'highlights': 0.0, 'shadows': 0.0}, 'opacity': 1.0, 'visible': True, 'blend': 'normal'}

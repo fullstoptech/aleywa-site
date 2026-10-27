@@ -1,0 +1,90 @@
+frame #138370 'Blog / 1440' 1440.0x3303.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] #f6f3ee
+  instance #138371 'Header' 1440.0x88.0 lay=horizontal gap=0.0 pad=[0.0, 64.0, 0.0, 64.0] #f6f3ee
+    frame #138372 'Home link' 101.599x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #138373 'Wordmark' 101.599x32.0 lay=None gap=None pad=None 
+    frame #138377 'Nav' 636.0x44.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #138378 'Nav item' 99.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] What we do
+      instance #138382 'Nav item' 105.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Recent work
+      instance #138386 'Nav item' 68.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Why us
+      instance #138390 'Nav item' 113.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] How we work
+      instance #138394 'Nav item' 66.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Stop' 10.0x10.0
+            T[15.0/Medium] Blog
+      instance #138398 'Nav item' 65.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Letters
+    instance #138402 'Link' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      frame #138403 'Tap area' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[18.0/Medium] Start a project
+  frame #138407 'Main' 1440.0x3215.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+    frame #138408 'Page hero' 1440.0x400.0 lay=vertical gap=32.0 pad=[96.0, 64.0, 64.0, 64.0] 
+      frame #138409 'H1' 519.0x144.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[72.0/Bold] How we decide,
+          T[72.0/Bold] written down
+            INST 'Stop' 14.0x14.0
+      frame #138415 'Sub' 680.0x64.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[21.0/Regular] Posts from our own brand: what we tried, what we kept and what we gave up.
+    frame #138417 'Featured post' 1440.0x925.0 lay=vertical gap=0.0 pad=[0.0, 64.0, 96.0, 64.0] 
+      instance #138418 'Post card' 1312.0x829.0 lay=vertical gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+              T[44.0/Bold] Why we named a design / studio after a sweet
+            T[15.0/Medium] 2 Nov 2026 · 6 min read
+            T[18.0/Regular] Aleywa Studios is named after alewa, a boiled-sugar sweet many kids in Ghana grew up eating. How the name, the square full stop and our colours came from it.
+    frame #138427 'Posts' 1440.0x1301.0 lay=vertical gap=64.0 pad=[96.0, 64.0, 96.0, 64.0] 
+      frame #138428 'Post row' 1312.0x536.0 lay=horizontal gap=32.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Post card' 640.0x536.0
+            T[15.0/Medium] 9 Nov 2026 · 6 min read
+              T[28.0/Bold] We set our name in 45 typefaces, / then drew it by hand
+            T[18.0/Regular] We tested our studio name in 45 typefaces. Several read as default faces and none carried the idea, so we drew the wordmark. What we tested and why.
+        INST 'Post card' 640.0x536.0
+            T[15.0/Medium] 12 Nov 2026 · 6 min read
+              T[28.0/Bold] How we spaced our wordmark / by measuring the gaps
+            T[18.0/Regular] We spaced our wordmark by measuring the closest gap between letter outlines. The six targets, four tests on y and w, and why we settled on about 3.4.
+      frame #138443 'Post row' 1312.0x508.0 lay=horizontal gap=32.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Post card' 640.0x508.0
+            T[15.0/Medium] 16 Nov 2026 · 5 min read
+              T[28.0/Bold] Our typeface cannot set ɛ or ɔ: / checking a font for Twi, Ga and Ewe
+            T[18.0/Regular] Schibsted Grotesk has no ɛ, ɔ, ɖ, ɣ or ʋ. How we found the gap, how to check any font for Twi, Ga and Ewe letters, and our plan to close it.
+        INST 'Post card' 640.0x508.0
+            T[15.0/Medium] 23 Nov 2026 · 6 min read
+              T[28.0/Bold] One square, five places: card, / letterhead, envelope, billboard, wall
+            T[18.0/Regular] One raspberry square ends our wordmark, cuts through our card, counts our letters and fills a billboard. How one device carries a brand identity.
+    instance #138458 'CTA band' 1440.0x332.0 lay=horizontal gap=0.0 pad=[96.0, 64.0, 96.0, 64.0] #460f22
+      frame #138459 'Heading' 480.2x72.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[72.0/Bold] Start a project
+              INST 'Stop' 14.0x14.0
+      frame #138465 'Ask' 533.0x140.0 lay=vertical gap=32.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Address link' 363.0x52.0
+              T[44.0/Bold] info@aleywa.com
+          INST 'Button' 155.0x56.0
+              T[18.0/Medium] Write to us
+          INST 'Button' 224.0x56.0
+              T[18.0/Medium] Copy address
+    instance #138478 'Footer' 1440.0x257.0 lay=vertical gap=48.0 pad=[64.0, 64.0, 32.0, 64.0] #460f22
+      frame #138479 'Columns' 1312.0x160.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Wordmark' 101.599x32.0
+          T[18.0/Regular] Brand identity and websites, made together.
+          T[15.0/Medium] Contact
+          INST 'Link' 150.0x44.0
+                T[18.0/Medium] info@aleywa.com
+          INST 'Link' 102.0x44.0
+                T[18.0/Medium] aleywa.com
+          T[15.0/Medium] Pages
+              INST 'Link' 100.0x44.0
+                    T[18.0/Medium] What we do
+              INST 'Link' 107.0x44.0
+                    T[18.0/Medium] Recent work
+              INST 'Link' 62.0x44.0
+                    T[18.0/Medium] Why us
+              INST 'Link' 116.0x44.0
+                    T[18.0/Medium] How we work
+              INST 'Link' 59.0x44.0
+                    T[18.0/Medium] Letters
+              INST 'Link' 44.0x44.0
+                    T[18.0/Medium] Blog
+          T[15.0/Medium] About the site
+          T[13.0/Medium] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+          INST 'Link' 63.0x44.0
+                T[18.0/Medium] Privacy

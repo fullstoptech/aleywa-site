@@ -1,0 +1,205 @@
+MODES {'VariableCollectionId:1/mode1': 'Primitives/Value', 'VariableCollectionId:2/mode1': 'Theme/Light', 'VariableCollectionId:2/mode2': 'Theme/Dark'}
+breakpoint/desktop {'Primitives/Value': 1024.0}
+color/brand/600 {'Primitives/Value': '#ab2859'}
+color/accent {'Theme/Light': '#ab2859', 'Theme/Dark': '#f189a5'}
+color/accent-hover {'Theme/Light': '#7f1840', 'Theme/Dark': '#fdb2c4'}
+color/accent-on-inverse {'Theme/Light': '#de4c7d', 'Theme/Dark': '#ab2859'}
+color/accent-pressed {'Theme/Light': '#5e122e', 'Theme/Dark': '#fcd1da'}
+color/bg {'Theme/Light': '#f6f3ee', 'Theme/Dark': '#460f22'}
+color/danger {'Theme/Light': '#b3261e', 'Theme/Dark': '#ff8f86'}
+color/focus {'Theme/Light': '#de4c7d', 'Theme/Dark': '#f189a5'}
+color/brand/700 {'Primitives/Value': '#7f1840'}
+color/hatch {'Theme/Light': '#e0dbd6', 'Theme/Dark': '#5e122e'}
+color/info {'Theme/Light': '#2d5e8a', 'Theme/Dark': '#8fbbe8'}
+color/ink {'Theme/Light': '#181110', 'Theme/Dark': '#f6f3ee'}
+color/ink-inverse {'Theme/Light': '#f6f3ee', 'Theme/Dark': '#181110'}
+color/ink-muted {'Theme/Light': '#6a615f', 'Theme/Dark': '#fcd1da'}
+color/ink-muted-inverse {'Theme/Light': '#fcd1da', 'Theme/Dark': '#6a615f'}
+color/line {'Theme/Light': '#e0dbd6', 'Theme/Dark': '#5e122e'}
+color/line-inverse {'Theme/Light': '#5e122e', 'Theme/Dark': '#e0dbd6'}
+color/line-strong {'Theme/Light': '#877e7b', 'Theme/Dark': '#f189a5'}
+color/on-accent {'Theme/Light': '#f6f3ee', 'Theme/Dark': '#181110'}
+color/brand/800 {'Primitives/Value': '#5e122e'}
+color/on-danger {'Theme/Light': '#f6f3ee', 'Theme/Dark': '#181110'}
+color/success {'Theme/Light': '#2e6b4e', 'Theme/Dark': '#7fd0a8'}
+color/surface {'Theme/Light': '#f6f3ee', 'Theme/Dark': '#460f22'}
+color/surface-hover {'Theme/Light': '#ece9e4', 'Theme/Dark': '#5e122e'}
+color/surface-inverse {'Theme/Light': '#460f22', 'Theme/Dark': '#f6f3ee'}
+color/surface-pressed {'Theme/Light': '#e0dbd6', 'Theme/Dark': '#7f1840'}
+color/surface-raised {'Theme/Light': '#fefdfb', 'Theme/Dark': '#5e122e'}
+color/surface-sunken {'Theme/Light': '#ece9e4', 'Theme/Dark': '#2b0713'}
+color/warning {'Theme/Light': '#8a5a00', 'Theme/Dark': '#e0b052'}
+color/brand/900 {'Primitives/Value': '#460f22'}
+color/brand/950 {'Primitives/Value': '#2b0713'}
+color/neutral/0 {'Primitives/Value': '#fefdfb'}
+color/neutral/100 {'Primitives/Value': '#ece9e4'}
+color/neutral/200 {'Primitives/Value': '#e0dbd6'}
+color/neutral/300 {'Primitives/Value': '#ccc6c1'}
+color/neutral/400 {'Primitives/Value': '#aba39f'}
+breakpoint/tablet {'Primitives/Value': 768.0}
+color/neutral/50 {'Primitives/Value': '#f6f3ee'}
+color/neutral/500 {'Primitives/Value': '#877e7b'}
+color/neutral/600 {'Primitives/Value': '#6a615f'}
+color/neutral/700 {'Primitives/Value': '#4e4544'}
+color/neutral/800 {'Primitives/Value': '#362e2d'}
+color/neutral/900 {'Primitives/Value': '#251d1c'}
+color/neutral/950 {'Primitives/Value': '#181110'}
+grid/columns {'Primitives/Value': '12'}
+grid/container {'Primitives/Value': 1312.0}
+grid/gutter {'Primitives/Value': 24.0}
+breakpoint/wide {'Primitives/Value': 1440.0}
+grid/margin-desktop {'Primitives/Value': 64.0}
+grid/margin-mobile {'Primitives/Value': 20.0}
+grid/margin-tablet {'Primitives/Value': 48.0}
+grid/reading {'Primitives/Value': 680.0}
+motion/duration/base {'Primitives/Value': 180.0}
+motion/duration/fast {'Primitives/Value': 120.0}
+motion/duration/slow {'Primitives/Value': 320.0}
+motion/duration/window {'Primitives/Value': 480.0}
+motion/easing/base {'Primitives/Value': 'cubic-bezier(0.2, 0.7, 0.2, 1)'}
+motion/easing/enter {'Primitives/Value': 'cubic-bezier(0.2, 0.7, 0.2, 1)'}
+color/brand/100 {'Primitives/Value': '#fde6eb'}
+radius/full {'Primitives/Value': 999.0}
+radius/lg {'Primitives/Value': 2.0}
+radius/md {'Primitives/Value': 2.0}
+radius/sm {'Primitives/Value': 0.0}
+radius/xl {'Primitives/Value': 2.0}
+shadow/popover {'Primitives/Value': '0 12px 28px -14px rgba(24, 17, 16, 0.35)'}
+size/control/lg {'Primitives/Value': 56.0}
+size/control/md {'Primitives/Value': 48.0}
+size/control/sm {'Primitives/Value': 40.0}
+size/icon/md {'Primitives/Value': 24.0}
+color/brand/200 {'Primitives/Value': '#fcd1da'}
+size/stop/lg {'Primitives/Value': 24.0}
+size/stop/md {'Primitives/Value': 16.0}
+size/stop/sm {'Primitives/Value': 10.0}
+size/target/min {'Primitives/Value': 44.0}
+space/1 {'Primitives/Value': 4.0}
+space/10 {'Primitives/Value': 128.0}
+space/11 {'Primitives/Value': 160.0}
+space/2 {'Primitives/Value': 8.0}
+space/3 {'Primitives/Value': 12.0}
+space/4 {'Primitives/Value': 16.0}
+color/brand/300 {'Primitives/Value': '#fdb2c4'}
+space/5 {'Primitives/Value': 24.0}
+space/6 {'Primitives/Value': 32.0}
+space/7 {'Primitives/Value': 48.0}
+space/8 {'Primitives/Value': 64.0}
+space/9 {'Primitives/Value': 96.0}
+color/brand/400 {'Primitives/Value': '#f189a5'}
+color/brand/50 {'Primitives/Value': '#fdf3f5'}
+color/brand/500 {'Primitives/Value': '#de4c7d'}
+size/hairline {'Primitives/Value': 1.0}
+shadow/popover/offset-y {'Primitives/Value': 12.0}
+shadow/popover/blur {'Primitives/Value': 28.0}
+shadow/popover/spread {'Primitives/Value': -14.0}
+size/stroke/strong {'Primitives/Value': 1.5}
+size/focus/ring {'Primitives/Value': 3.0}
+size/focus/offset {'Primitives/Value': 3.0}
+size/stop/xxs {'Primitives/Value': 6.0}
+size/stop/xs {'Primitives/Value': 9.0}
+size/stop/h1 {'Primitives/Value': 14.0}
+size/stop-gap/xxs {'Primitives/Value': 0.8}
+size/stop-gap/xs {'Primitives/Value': 1.3}
+size/stop-gap/h1 {'Primitives/Value': 2.2}
+size/stop-gap/lg {'Primitives/Value': 3.6}
+size/stop-lift/h3 {'Primitives/Value': 6.0}
+size/stop-lift/h2 {'Primitives/Value': 8.0}
+size/stop-lift/h1 {'Primitives/Value': 10.0}
+size/stop-lift/display {'Primitives/Value': 14.5}
+size/stop-lift/statement {'Primitives/Value': 22.0}
+size/stroke/rule {'Primitives/Value': 2.0}
+
+=== COMPONENT NAMES (unique component-set-ish) ===
+36 Button
+5 CTA band
+2 Email block
+5 Figure
+4 Footer
+8 Glyph slot
+5 Header
+3 Hero counters
+10 Honest answer
+3 Job row
+4 Label
+28 Link
+1 Menu panel
+4 Nav item
+12 Plate
+5 Post card
+2 Post hero
+7 Prose
+3 Reading marker
+15 Reason
+6 Section header
+12 Step
+1 Step grid
+18 Stop
+5 Swatch
+1 Toast
+8 Window
+6 Wordmark
+
+=== INSTANCE main-component names ===
+346 Link
+114 Nav item
+113 Stop
+94 Button
+92 Label
+65 Wordmark
+58 Glyph slot
+30 Reason
+27 Header
+24 Address link
+24 Footer
+23 Post card
+21 Paragraph
+20 Plate
+18 Kicker
+17 CTA band
+14 Window
+13 Menu button
+10 Section header
+9 Figure
+8 Job row
+8 Step
+8 Link / What it includes
+8 Plate / our own example
+7 Heading
+6 Honest answer
+6 Link / Read the decision
+5 Swatch
+4 Stop sm
+4 Stop md
+4 Stop lg
+4 Link / back to What we do
+4 Kicker / position
+4 Link / recent work
+4 Kicker / next position
+4 Link / next job
+4 Figure image
+3 Hero counters
+2 Stop xxs
+2 Stop xs
+2 Stop h1
+2 Reading marker
+2 Email block
+1 Step grid
+1 Menu panel
+1 Plate / Our brand in full
+1 Plate / The card
+1 Plate / The wall
+1 Plate / The space between the letters
+1 Plate / This website
+1 Plate / The wordmark
+1 Link / Read about the letters
+1 Post hero
+1 Table
+1 Pull quote
+1 Rules to reuse
+1 What we gave up
+1 Link / Go to the home page
+1 Link / back to the blog
+1 Section
+1 Head picture
+1 Toast

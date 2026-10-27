@@ -1,0 +1,110 @@
+[15.0] What we do
+[15.0] Recent work
+[15.0] Why us
+[15.0] How we work
+[15.0] Blog
+[15.0] Letters
+[18.0] Start a project
+[18.0] Back to the blog
+[15.0] The measure
+[13.0] Where the y meets the w, enlarged.
+[13.0] Diagram, Aleywa Studios.
+[72.0] How we spaced
+our wordmark by
+[72.0] measuring the gaps
+[21.0] We spaced our wordmark by measuring the closest gap between letter outlines. The six targets, four tests on y and w, and why we settled on about 3.4.
+[15.0] By Aleywa Studios · 12 Nov 2026 · 6 min read
+[20.0] The y and the w in our wordmark sit about 3.4 units apart at their closest point, on our measure. They started at 5.5. We tested four gaps before we settled. Every other pair of letters has a target of its own: a-l 8.6, l-e 6.6, e-y 5.5, w-a 5.5, and 7.6 between the last a and the square stop.
+[20.0] This post explains how we measured, why y and w needed the most work, and the one decision the numbers could not make.
+[28.0] Why the boxes around letters mislead
+[20.0] Every letter sits inside a box. The usual way to space type is to set the gaps between those boxes, and for straight letters that works. An l fills its box from edge to edge, so the box and the letter agree.
+[20.0] Round and diagonal letters do not fill their boxes. An o touches its box at a single point on each side. A y or a w leaves big empty triangles in the corners of its box. Set the boxes evenly and the eye sees uneven gaps, because it judges the space between the shapes and ignores the boxes.
+[20.0] So we measured something else: the closest distance between the outlines of two neighbouring letters. That number describes the gap the eye actually sees.
+[20.0] The method is simple to repeat. Keep each letter as its own object. Find the nearest pair of points between two neighbours, measure the distance, and move one letter until the distance matches its target. Then save the file and measure again from the saved version, because what you exported is what people will see.
+[13.0] Above: the box around each letter. Below: the closest gap between outlines, the number we spaced by.
+[13.0] Diagram, Aleywa Studios.
+[28.0] One unit: the stem
+[20.0] A measurement needs a unit that holds at any size. Ours is tied to the drawing. The wordmark is 128 units tall, and every stem is 15 units thick, as described in how we drew the wordmark.
+[20.0] Working in those units keeps the numbers honest when the logo is scaled. A gap of about 3.4 is a little under a quarter of a stem, whether the word is on a business card or a billboard. Shown 128 pixels tall, one unit is exactly one pixel, which makes the figures easy to check on screen.
+[28.0] A target for every pair
+[20.0] Each pair of neighbours got a target. The targets differ because the shapes that meet are different.
+[15.0] Pair
+[15.0] Shapes that meet
+[15.0] Target (units)
+[18.0] a‑l
+[18.0] straight to straight
+[18.0] 8.6
+[18.0] l‑e
+[18.0] straight to round
+[18.0] 6.6
+[18.0] e‑y
+[18.0] round to diagonal
+[18.0] 5.5
+[18.0] y‑w
+[18.0] diagonal to diagonal
+[18.0] 3.4
+[18.0] w‑a
+[18.0] diagonal to round
+[18.0] 5.5
+[18.0] a‑stop
+[18.0] straight to square
+[18.0] 7.6
+[20.0] The pattern is simple once it is in a table. Two straight edges facing each other need the most room, because nothing opens up between them. A round letter brings some white space of its own, so it can sit closer. Diagonals bring the most, so they sit closest of all.
+[13.0] The spacing page of the brand book, with each target and the value measured in the final file.
+[13.0] Brand book, Aleywa Studios.
+[28.0] The pair with the most empty space
+[20.0] The y and the w are two diagonals that open downward. The right arm of the y leans left as it falls. The left arm of the w leans right. They come closest at the top, at the x-height, and then the space between them widens into a wedge all the way down.
+[20.0] That wedge is why this pair had the most empty space in the word. At 5.5, the gap we gave e-y and w-a, the opening between y and w looked like the widest gap in the word.
+[28.0] Four tests, then about 3.4
+[20.0] We tried four values for the y-w gap: 5.5, 4.2, 3.2 and 2.4. The figure shows the top of each pair enlarged, where the two letters come closest.
+[20.0] The opening changes quickly. At 5.5 there is a clear notch between the two arms. By 2.4 the top corners nearly touch.
+[20.0] We settled on about 3.4 units, between the third and second tests. Every number in this post is rounded and taken on one measure. Measure the same gap another way and it moves by a few tenths of a unit, so treat the numbers as targets on our measure.
+[13.0] The top of the y (left) and the w (right) at each gap we tried, and the gap we kept.
+[13.0] Diagram, Aleywa Studios.
+[20.0] Once a gap is set, it stays set. The logo exports are made once, in a vector tool, and every board, document and render uses those files. Nobody re-spaces the letters by eye later.
+[32.0] Between 3.2 and 4.2, both ends could be defended on paper, and no measurement settles which looks right.
+[28.0] Small sizes get their own drawing
+[20.0] Tight gaps that look right on a poster fill in on a phone screen. So below 24 pixels tall, the wordmark uses a separate drawing. Its gaps open by 3 to 4 units, and the stop grows from 1.1 stems to 1.3 stems so it does not shrink to a speck.
+[20.0] The extra space is not spread evenly. The pairs with straight edges, a-l, l-e and the a against the stop, open by 3 units. The pairs with diagonals, e-y, y-w and w-a, open by 4. Measured in units, the stop grows from 16.5 to 19.5 units square.
+[20.0] This is a second set of files, drawn for small sizes.
+[13.0] The small-size drawing, shown at true size and magnified.
+[13.0] Brand book, Aleywa Studios.
+[28.0] What measuring cannot decide
+[20.0] The numbers did a lot. They gave every pair a target, showed us which pair was wrong, and turned "it looks a bit off" into four values we could compare.
+[20.0] They did not choose the final gap. Between 3.2 and 4.2, both ends could be defended on paper, and no measurement settles which looks right. The last call was made by looking at the whole word.
+[28.0] Rules to reuse
+[20.0] 1.
+[20.0] Measure the closest distance between outlines, not the boxes around letters.
+[20.0] 2.
+[20.0] Count in units of your stem, so the numbers survive scaling.
+[20.0] 3.
+[20.0] Give every pair a written target, and record the measured value next to it.
+[20.0] 4.
+[20.0] Test values on both sides of where you think the answer is.
+[20.0] 5.
+[20.0] Draw small sizes separately, with wider gaps and a larger stop.
+[15.0] What we gave up
+[18.0] The wide gap between the y and the w. At 5.5 it looked like the widest opening in the word.
+[28.0] Next post
+[15.0] 16 Nov 2026 · 5 min read
+[28.0] Our typeface cannot set ɛ or ɔ:
+checking a font for Twi, Ga and Ewe
+[18.0] We tested our studio name in 45 typefaces. Several read as default faces and none carried the idea, so we drew the wordmark. What we tested and why.
+[72.0] Start a project
+[44.0] info@aleywa.com
+[18.0] Write to us
+[18.0] Copy address
+[18.0] Brand identity and websites, made together.
+[15.0] Contact
+[18.0] info@aleywa.com
+[18.0] aleywa.com
+[15.0] Pages
+[18.0] What we do
+[18.0] Recent work
+[18.0] Why us
+[18.0] How we work
+[18.0] Letters
+[18.0] Blog
+[15.0] About the site
+[13.0] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+[18.0] Privacy

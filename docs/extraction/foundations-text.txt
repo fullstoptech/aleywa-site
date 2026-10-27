@@ -1,0 +1,417 @@
+[15.0] Design system, foundations. 2026-10-26
+[120.0] Aleywa Studios
+website:
+[120.0] foundations
+[44.0] A window is cut in a letter
+[44.0] and the work shows through
+[21.0] The round window, the square window and the raspberry stop are the whole kit: ink letters on paper, one berry surface per page. Every plate of our own work sits in a window or beside one, and says what it is.
+[15.0] 01
+[72.0] Colour ramps
+[21.0] Two ramps: raspberry, and warm neutrals tinted to its hue. Roles point at these steps. Nothing on the site uses a ramp step directly.
+[15.0] Brand, raspberry. 50 to 950. 600 is the stop; 900 is berry, the one dark surface.
+[15.0] 50
+[13.0] #FDF3F5
+[15.0] 100
+[13.0] #FDE6EB
+[15.0] 200
+[13.0] #FCD1DA
+[15.0] 300
+[13.0] #FDB2C4
+[15.0] 400
+[13.0] #F189A5
+[15.0] 500
+[13.0] #DE4C7D
+[15.0] 600
+[13.0] #AB2859
+[15.0] 700
+[13.0] #7F1840
+[15.0] 800
+[13.0] #5E122E
+[15.0] 900
+[13.0] #460F22
+[15.0] 950
+[13.0] #2B0713
+[15.0] Neutral, warm. 0 to 950. 50 is paper; 950 is ink.
+[15.0] 0
+[13.0] #FEFDFB
+[15.0] 50
+[13.0] #F6F3EE
+[15.0] 100
+[13.0] #ECE9E4
+[15.0] 200
+[13.0] #E0DBD6
+[15.0] 300
+[13.0] #CCC6C1
+[15.0] 400
+[13.0] #ABA39F
+[15.0] 500
+[13.0] #877E7B
+[15.0] 600
+[13.0] #6A615F
+[15.0] 700
+[13.0] #4E4544
+[15.0] 800
+[13.0] #362E2D
+[15.0] 900
+[13.0] #251D1C
+[15.0] 950
+[13.0] #181110
+[15.0] 01
+[72.0] Colour roles
+[21.0] 26 roles in two modes. Light is paper and ink. Dark is the berry theme: berry ground, paper ink, lit raspberry. Every role is an alias to a ramp step, so retuning a step retunes the roles.
+[28.0] Light
+[13.0] Theme / Light. Paper ground, ink letters.
+[15.0] bg
+[13.0] Page ground (paper).
+[13.0] neutral/50
+[15.0] surface
+[13.0] Base layer of a section on the page.
+[13.0] neutral/50
+[15.0] surface-raised
+[13.0] Lifted layer: plates, the open menu, the toast.
+[13.0] neutral/0
+[15.0] surface-sunken
+[13.0] Recessed band or the ground behind a plate.
+[13.0] neutral/100
+[15.0] surface-inverse
+[13.0] The one dark surface of a page (berry): a band or the footer.
+[13.0] brand/900
+[15.0] surface-hover
+[13.0] Hover ground for rows and menu items.
+[13.0] neutral/100
+[15.0] surface-pressed
+[13.0] Pressed ground for rows and menu items.
+[13.0] neutral/200
+[15.0] ink
+[13.0] All headings, body and the letters of the logo.
+[13.0] neutral/950
+[15.0] ink-muted
+[13.0] Captions, labels, secondary lines, meta.
+[13.0] neutral/600
+[15.0] ink-inverse
+[13.0] Text on surface-inverse.
+[13.0] neutral/50
+[15.0] line
+[13.0] Hairlines between rows and around plates.
+[13.0] neutral/200
+[15.0] line-strong
+[13.0] Rules that carry meaning (table header rule, field border).
+[13.0] neutral/500
+[15.0] accent
+[13.0] Raspberry: the stop, a link, one highlight, a focus-adjacent state.
+[13.0] brand/600
+[15.0] accent-hover
+[13.0] Hover state of accent links and buttons.
+[13.0] brand/700
+[15.0] accent-pressed
+[13.0] Pressed state of accent links and buttons.
+[13.0] brand/800
+[15.0] on-accent
+[13.0] Label on an accent fill.
+[13.0] neutral/50
+[15.0] accent-on-inverse
+[13.0] The lit raspberry: the stop and accent graphics on berry.
+[13.0] brand/500
+[15.0] ink-muted-inverse
+[13.0] Secondary text on surface-inverse.
+[13.0] brand/200
+[15.0] line-inverse
+[13.0] Hairlines on surface-inverse.
+[13.0] brand/800
+[15.0] hatch
+[13.0] The hatch of a slot that is not drawn yet (the missing letters).
+[13.0] neutral/200
+[15.0] success
+[13.0] Status: the address was copied.
+[13.0] #2e6b4e
+[15.0] warning
+[13.0] Status: reserved.
+[13.0] #8a5a00
+[15.0] danger
+[13.0] Status: reserved for an error.
+[13.0] #b3261e
+[15.0] on-danger
+[13.0] Label on a danger fill.
+[13.0] neutral/50
+[15.0] info
+[13.0] Status: reserved.
+[13.0] #2d5e8a
+[15.0] focus
+[13.0] Focus ring (3px, offset 3px).
+[13.0] brand/500
+[28.0] Dark, the berry theme
+[13.0] Theme / Dark. Berry ground, paper ink, lit raspberry.
+[15.0] bg
+[13.0] Page ground (berry). Use for the page; never pure black.
+[13.0] brand/900
+[15.0] surface
+[13.0] Base layer of a section on the page.
+[13.0] brand/900
+[15.0] surface-raised
+[13.0] Lifted layer: plates, the open menu, the toast.
+[13.0] brand/800
+[15.0] surface-sunken
+[13.0] Recessed band or the ground behind a plate.
+[13.0] brand/950
+[15.0] surface-inverse
+[13.0] The one light surface of a page (paper): a band or the footer. Once per page.
+[13.0] neutral/50
+[15.0] surface-hover
+[13.0] Hover ground for rows and menu items.
+[13.0] brand/800
+[15.0] surface-pressed
+[13.0] Pressed ground for rows and menu items.
+[13.0] brand/700
+[15.0] ink
+[13.0] All headings, body and the letters of the logo.
+[13.0] neutral/50
+[15.0] ink-muted
+[13.0] Captions, labels, secondary lines, meta.
+[13.0] brand/200
+[15.0] ink-inverse
+[13.0] Text on surface-inverse.
+[13.0] neutral/950
+[15.0] line
+[13.0] Hairlines between rows and around plates.
+[13.0] brand/800
+[15.0] line-strong
+[13.0] Rules that carry meaning (table header rule, field border).
+[13.0] brand/400
+[15.0] accent
+[13.0] Raspberry: the stop, a link, one highlight, a focus-adjacent state.
+[13.0] brand/400
+[15.0] accent-hover
+[13.0] Hover state of accent links and buttons.
+[13.0] brand/300
+[15.0] accent-pressed
+[13.0] Pressed state of accent links and buttons.
+[13.0] brand/200
+[15.0] on-accent
+[13.0] Label on an accent fill.
+[13.0] neutral/950
+[15.0] accent-on-inverse
+[13.0] The lit raspberry: the stop and accent graphics on berry.
+[13.0] brand/600
+[15.0] ink-muted-inverse
+[13.0] Secondary text on surface-inverse.
+[13.0] neutral/600
+[15.0] line-inverse
+[13.0] Hairlines on surface-inverse.
+[13.0] neutral/200
+[15.0] hatch
+[13.0] The hatch of a slot that is not drawn yet (the missing letters).
+[13.0] brand/800
+[15.0] success
+[13.0] Status: the address was copied.
+[13.0] #7fd0a8
+[15.0] warning
+[13.0] Status: reserved.
+[13.0] #e0b052
+[15.0] danger
+[13.0] Status: reserved for an error.
+[13.0] #ff8f86
+[15.0] on-danger
+[13.0] Label on a danger fill.
+[13.0] neutral/950
+[15.0] info
+[13.0] Status: reserved.
+[13.0] #8fbbe8
+[15.0] focus
+[13.0] Focus ring (3px, offset 3px).
+[13.0] brand/400
+[15.0] 01
+[72.0] Key pairs
+[21.0] The five pairings the site relies on, with the contrast ratio the tokens give in each mode. Raspberry is a link, a stop or a graphic, never body text; the lit raspberry is for the stop on berry.
+[15.0] Light
+[28.0] The wordmark
+[18.0] Our own brand. Brand book page.
+[15.0] ink
+[13.0] on bg
+[13.0] 16.84:1. AAA at every size.
+[28.0] The card
+[18.0] Our own brand. Mockup.
+[15.0] ink-muted
+[13.0] on bg
+[13.0] 5.44:1. AA at every size.
+[28.0] The wall
+[18.0] Start a project
+[15.0] accent
+[13.0] on bg
+[13.0] 5.97:1. AA at every size.
+[28.0] What we do
+[18.0] Our own brand. Site design.
+[15.0] ink-inverse
+[13.0] on surface-inverse
+[13.0] 14.04:1. AAA at every size.
+[28.0] This website
+[15.0] accent-on-inverse
+[13.0] on surface-inverse
+[13.0] 4.02:1. Graphics and large type only.
+[15.0] Dark
+[28.0] The wordmark
+[18.0] Our own brand. Brand book page.
+[15.0] ink
+[13.0] on bg
+[13.0] 14.04:1. AAA at every size.
+[28.0] The card
+[18.0] Our own brand. Mockup.
+[15.0] ink-muted
+[13.0] on bg
+[13.0] 11.30:1. AAA at every size.
+[28.0] The wall
+[18.0] Start a project
+[15.0] accent
+[13.0] on bg
+[13.0] 6.56:1. AA at every size.
+[28.0] What we do
+[18.0] Our own brand. Site design.
+[15.0] ink-inverse
+[13.0] on surface-inverse
+[13.0] 16.84:1. AAA at every size.
+[28.0] This website
+[15.0] accent-on-inverse
+[13.0] on surface-inverse
+[13.0] 5.97:1. AA at every size.
+[15.0] 02
+[72.0] Type
+[21.0] Schibsted Grotesk, one family: 400, 500 and 700, and a 400 italic. Size, weight and tracking do the work. Ten text styles, each bound to the type variables. Every heading ends in the stop.
+[15.0] Statement
+[13.0] 192 px / 0.95 / 700 / -0.045 em
+[13.0] Schibsted Grotesk Bold
+[192.0] Together
+[15.0] Display
+[13.0] 120 px / 0.96 / 700 / -0.04 em
+[13.0] Schibsted Grotesk Bold
+[120.0] Brand identity
+and websites,
+[120.0] made together
+[15.0] H1
+[13.0] 72 px / 1 / 700 / -0.04 em
+[13.0] Schibsted Grotesk Bold
+[72.0] Start a project
+[15.0] H2
+[13.0] 44 px / 1.08 / 700 / -0.035 em
+[13.0] Schibsted Grotesk Bold
+[44.0] What we do
+[15.0] H3
+[13.0] 28 px / 1.15 / 700 / -0.025 em
+[13.0] Schibsted Grotesk Bold
+[28.0] The wordmark
+[15.0] Body large
+[13.0] 21 px / 1.5 / 400 / -0.005 em
+[13.0] Schibsted Grotesk Regular
+[21.0] We set our name in 45 typefaces and none carried the idea, so we drew it by hand. We gave up a ready-made typeface, and a cut on the e.
+[15.0] Body
+[13.0] 18 px / 1.55 / 400 / 0 em
+[13.0] Schibsted Grotesk Regular
+[18.0] We set each gap by measuring each pair, then drew a separate small version for tiny sizes. We gave up the wide gap between the y and the w.
+[15.0] Body italic
+[13.0] 18 px / 1.55 / 400 / 0 em
+[13.0] Schibsted Grotesk Italic
+[18.0] Between 3.2 and 4.2, both ends could be defended on paper, and no measurement settles which looks right.
+[15.0] Label
+[13.0] 15 px / 1.3 / 500 / 0 em
+[13.0] Schibsted Grotesk Medium
+[15.0] Our own brand. 3D render.
+[15.0] Caption
+[13.0] 13 px / 1.4 / 500 / 0.01 em
+[13.0] Schibsted Grotesk Medium
+[13.0] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+[15.0] Letters not drawn yet
+[13.0] The site sets ɛ Ɛ ɔ Ɔ ɖ ɣ ʋ in Noto Sans until we draw them; this file shows the system fallback face. ŋ is in Schibsted Grotesk.
+[72.0] ɛ Ɛ ɔ Ɔ ɖ ɣ ʋ ŋ
+[15.0] 03
+[72.0] Space and grid
+[21.0] Base 4 px. Eleven steps from 4 to 160; section space is 96 to 160 because the work is the content. Container 1312 px at 1440, 12 columns, 24 px gutter, 64 px margins. Reading column 680 px.
+[15.0] space/1
+[13.0] 4 px
+[15.0] space/2
+[13.0] 8 px
+[15.0] space/3
+[13.0] 12 px
+[15.0] space/4
+[13.0] 16 px
+[15.0] space/5
+[13.0] 24 px
+[15.0] space/6
+[13.0] 32 px
+[15.0] space/7
+[13.0] 48 px
+[15.0] space/8
+[13.0] 64 px
+[15.0] space/9
+[13.0] 96 px
+[15.0] space/10
+[13.0] 128 px
+[15.0] space/11
+[13.0] 160 px
+[15.0] 1440
+[13.0] Page width at the wide breakpoint (breakpoint/wide)
+[15.0] 64 px margins
+[13.0] grid/margin-desktop. 48 px at tablet, 20 px at mobile
+[15.0] 12 columns
+[13.0] grid/columns, 24 px gutter (grid/gutter)
+[15.0] 1312 px container
+[13.0] grid/container, the upper rule
+[15.0] 680 px reading column
+[13.0] grid/reading, the lower rule
+[15.0] 04
+[72.0] Shape, the stop and elevation
+[21.0] Corners are sharp. Rounding is a counter's job: the one round shape is a window cut in a letter. The stop is always a square. Only the open menu and the toast cast a shadow.
+[15.0] Square window, sharp
+[13.0] radius/sm, 0. Plates, buttons, rows, inputs. The window the stop makes.
+[15.0] md, 2 px
+[13.0] radius/md. Focus ring and field only.
+[15.0] Window, full
+[13.0] radius/full. Only a window cut in a letter counter: a circle, never a button or chip.
+[15.0] The stop on paper
+[13.0] xxs 6
+[13.0] xs 9
+[13.0] sm 10
+[13.0] h1 14
+[13.0] md 16
+[13.0] lg 24
+[15.0] The stop on berry
+[13.0] xxs 6
+[13.0] xs 9
+[13.0] sm 10
+[13.0] h1 14
+[13.0] md 16
+[13.0] lg 24
+[15.0] Shadow, popover
+[15.0] Address copied.
+[13.0] The open menu and the toast. Nothing else casts a shadow.
+[15.0] 05
+[72.0] Motion
+[21.0] Only transform and opacity, one easing, all of it off under reduced motion. One entrance pattern per page; no scroll-jacking, no carousels.
+[15.0] Token
+[15.0] ms
+[15.0] Length
+[15.0] Used for
+[15.0] motion/duration/fast
+[15.0] 120
+[18.0] Hover and press.
+[15.0] motion/duration/base
+[15.0] 180
+[18.0] Menu, toast, focus.
+[15.0] motion/duration/slow
+[15.0] 320
+[18.0] Section entrance (once).
+[15.0] motion/duration/window
+[15.0] 480
+[18.0] Hero window focus.
+[15.0] motion/easing/base
+[18.0] cubic-bezier(0.2, 0.7, 0.2, 1)
+[13.0] Used for every transition.
+[15.0] 06
+[72.0] Imagery
+[15.0] 1
+[28.0] Our own artefacts only
+[18.0] Brand book pages, 3D renders, flat art and diagrams. No stock images. No client work until a client has cleared it in writing.
+[15.0] 2
+[28.0] Every plate is labelled
+[18.0] The label says what the picture is, for example: Our own brand. 3D render.
+[15.0] 3
+[28.0] Blog heroes are landscape, 1.905 to 1
+[18.0] Sources are 1200 x 630 px, shown at the container width, 1312 x 689 px.
+[13.0] Our own brand. Blog hero for the post on spacing a wordmark. 1200 x 630 px, shown at 1312 x 689 px.

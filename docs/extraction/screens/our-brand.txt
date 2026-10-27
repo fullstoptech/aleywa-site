@@ -1,0 +1,152 @@
+frame #137871 'Our brand in full / 1440' 1440.0x6188.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] #f6f3ee
+  instance #137872 'Header' 1440.0x88.0 lay=horizontal gap=0.0 pad=[0.0, 64.0, 0.0, 64.0] #f6f3ee
+    frame #137873 'Home link' 101.599x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #137874 'Wordmark' 101.599x32.0 lay=None gap=None pad=None 
+    frame #137878 'Nav' 636.0x44.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #137879 'Nav item' 99.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] What we do
+      instance #137883 'Nav item' 123.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Stop' 10.0x10.0
+            T[15.0/Medium] Recent work
+      instance #137887 'Nav item' 68.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Why us
+      instance #137891 'Nav item' 113.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] How we work
+      instance #137895 'Nav item' 48.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Blog
+      instance #137899 'Nav item' 65.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Letters
+    instance #137903 'Link' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      frame #137904 'Tap area' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[18.0/Medium] Start a project
+  frame #137908 'Main' 1440.0x6100.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+    frame #137909 'Page hero' 1440.0x403.0 lay=vertical gap=32.0 pad=[96.0, 64.0, 96.0, 64.0] 
+      frame #137910 'H1' 892.6x115.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[120.0/Bold] Our brand in full
+            INST 'Stop' 24.0x24.0
+      frame #137915 'Sub' 680.0x64.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[21.0/Regular] This is our own brand, shown in full. Every piece is labelled, and each comes with the decision behind it and what we gave up.
+    frame #137917 'Chapters' 1440.0x5108.0 lay=vertical gap=0.0 pad=[0.0, 64.0, 96.0, 64.0] 
+      frame #137918 'Chapter / idea' 1312.0x799.0 lay=horizontal gap=24.0 pad=[64.0, 0.0, 64.0, 0.0] 
+            T[44.0/Bold] Round letters.
+              T[44.0/Bold] One square stop
+                INST 'Stop' 9.0x9.0
+          T[18.0/Regular] The wordmark is lower case, with round letters and flat-ended strokes, ending in a square raspberry full stop. The stop is the hand-cut piece of candy, and it ends every headline. Every piece takes one risk.
+          T[18.0/Regular] We gave up bubbly candy imagery and the usual twisted wrapper.
+          INST 'Window' 640.0x640.0
+          INST 'Label' 210.0x18.0
+            T[13.0/Medium] Our own brand. Brand book page.
+      frame #137933 'Chapter / wordmark' 1312.0x473.0 lay=horizontal gap=24.0 pad=[64.0, 0.0, 64.0, 0.0] 
+          INST 'Figure' 533.0x344.0
+            INST 'Label' 533.0x18.0
+              T[13.0/Medium] Our own brand. Brand book page.
+                T[44.0/Bold] Drawn by hand
+                  INST 'Stop' 9.0x9.0
+            T[18.0/Regular] We set the name in 45 typefaces. None carried the idea, and several read as default faces. So we drew the wordmark.
+            T[18.0/Regular] We gave up a ready-made typeface, and a cut on the e.
+      frame #137949 'Chapter / spacing' 1312.0x733.0 lay=horizontal gap=24.0 pad=[64.0, 0.0, 64.0, 0.0] 
+              T[44.0/Bold] Spaced by measuring
+                INST 'Stop' 9.0x9.0
+          T[18.0/Regular] We set the space between letters by measuring the closest distance between neighbouring outlines, not the boxes around them. The y and w had the most empty space, so we tightened that pair to about 3.4 units after comparing four values. Small sizes get their own drawing.
+          T[13.0/Medium] The numbers are rounded and on our own measure.
+          INST 'Figure' 755.0x604.0
+            INST 'Label' 755.0x18.0
+              T[13.0/Medium] Our own brand. Brand book page.
+      frame #137964 'Chapter / colour' 1312.0x737.0 lay=vertical gap=48.0 pad=[64.0, 0.0, 64.0, 0.0] 
+            T[44.0/Bold] Colour sampled,
+              T[44.0/Bold] then turned down
+                INST 'Stop' 9.0x9.0
+          T[18.0/Regular] The colours came from photographs of real alewa, then we lowered the vividness: paper, ink, stone, one raspberry for the stop, and one berry for the single dark surface. A hot pink failed: white on it is only 3.7 to 1.
+          T[18.0/Regular] We gave up bright pink as a ground.
+          INST 'Swatch' 240.0x304.0
+              T[18.0/Medium] Paper
+              T[15.0/Medium] #F6F3EE
+          INST 'Swatch' 240.0x304.0
+              T[18.0/Medium] Ink
+              T[15.0/Medium] #181110
+          INST 'Swatch' 240.0x304.0
+              T[18.0/Medium] Stone
+              T[15.0/Medium] #6A615F
+          INST 'Swatch' 240.0x304.0
+              T[18.0/Medium] Raspberry
+              T[15.0/Medium] #AB2859
+          INST 'Swatch' 240.0x304.0
+              T[18.0/Medium] Berry
+              T[15.0/Medium] #460F22
+      frame #138000 'Chapter / type' 1312.0x598.0 lay=horizontal gap=24.0 pad=[64.0, 0.0, 64.0, 0.0] 
+          INST 'Figure' 755.0x469.0
+            INST 'Label' 755.0x18.0
+              T[13.0/Medium] Our own brand. Brand book page.
+            T[44.0/Bold] One family,
+              T[44.0/Bold] and an honest gap
+                INST 'Stop' 9.0x9.0
+          T[18.0/Regular] The text typeface is Schibsted Grotesk. It has no glyphs for ɛ Ɛ ɔ Ɔ ɖ ɣ ʋ, letters of Twi, Ga and Ewe. A fallback sets them for now, and we plan to have them drawn.
+            INST 'Glyph slot' 64.0x108.0
+                T[44.0/Bold] ɛ
+              T[13.0/Medium] Not drawn yet
+            INST 'Glyph slot' 64.0x108.0
+                T[44.0/Bold] ɔ
+              T[13.0/Medium] Not drawn yet
+            INST 'Glyph slot' 64.0x108.0
+                T[44.0/Bold] ɖ
+              T[13.0/Medium] Not drawn yet
+            INST 'Glyph slot' 64.0x108.0
+                T[44.0/Bold] ɣ
+              T[13.0/Medium] Not drawn yet
+            INST 'Glyph slot' 64.0x108.0
+                T[44.0/Bold] ʋ
+              T[13.0/Medium] Not drawn yet
+          T[13.0/Medium] Status: planned
+          INST 'Link / Read about the letters' 187.0x44.0
+                T[18.0/Medium] Read about the letters
+      frame #138047 'Chapter / apps' 1312.0x585.0 lay=horizontal gap=24.0 pad=[64.0, 0.0, 64.0, 0.0] 
+                T[44.0/Bold] Where it goes
+                  INST 'Stop' 9.0x9.0
+            T[18.0/Regular] A business card with a 9 mm square cut through the face. A letterhead with a column of squares that counts its letters. An envelope with a square window. Billboards read in pieces. A wall that reads one word to a row.
+          INST 'Figure' 533.0x456.0
+            INST 'Label' 533.0x36.0
+              T[13.0/Medium] Mockups and 3D renders. Names and details on mockups are samples. Printer samples to come.
+      frame #138062 'Chapter / book' 1312.0x1087.0 lay=vertical gap=48.0 pad=[64.0, 0.0, 64.0, 0.0] 
+              T[44.0/Bold] The brand book
+                INST 'Stop' 9.0x9.0
+          T[18.0/Regular] More than fifty pages: the idea, the logo, colour, type, layout, voice, applications and how to use it.
+        INST 'Figure' 1312.0x782.0
+          INST 'Label' 1312.0x18.0
+            T[13.0/Medium] Our own brand. Brand book page.
+    instance #138075 'CTA band' 1440.0x332.0 lay=horizontal gap=0.0 pad=[96.0, 64.0, 96.0, 64.0] #460f22
+      frame #138076 'Heading' 480.2x72.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[72.0/Bold] Start a project
+              INST 'Stop' 14.0x14.0
+      frame #138082 'Ask' 533.0x140.0 lay=vertical gap=32.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Address link' 363.0x52.0
+              T[44.0/Bold] info@aleywa.com
+          INST 'Button' 155.0x56.0
+              T[18.0/Medium] Write to us
+          INST 'Button' 224.0x56.0
+              T[18.0/Medium] Copy address
+    instance #138095 'Footer' 1440.0x257.0 lay=vertical gap=48.0 pad=[64.0, 64.0, 32.0, 64.0] #460f22
+      frame #138096 'Columns' 1312.0x160.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Wordmark' 101.599x32.0
+          T[18.0/Regular] Brand identity and websites, made together.
+          T[15.0/Medium] Contact
+          INST 'Link' 150.0x44.0
+                T[18.0/Medium] info@aleywa.com
+          INST 'Link' 102.0x44.0
+                T[18.0/Medium] aleywa.com
+          T[15.0/Medium] Pages
+              INST 'Link' 100.0x44.0
+                    T[18.0/Medium] What we do
+              INST 'Link' 107.0x44.0
+                    T[18.0/Medium] Recent work
+              INST 'Link' 62.0x44.0
+                    T[18.0/Medium] Why us
+              INST 'Link' 116.0x44.0
+                    T[18.0/Medium] How we work
+              INST 'Link' 59.0x44.0
+                    T[18.0/Medium] Letters
+              INST 'Link' 44.0x44.0
+                    T[18.0/Medium] Blog
+          T[15.0/Medium] About the site
+          T[13.0/Medium] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+          INST 'Link' 63.0x44.0
+                T[18.0/Medium] Privacy

@@ -1,0 +1,133 @@
+frame #135885 'What we do / 1440' 1440.0x4671.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] #f6f3ee
+  instance #135886 'Header' 1440.0x88.0 lay=horizontal gap=0.0 pad=[0.0, 64.0, 0.0, 64.0] #f6f3ee
+    frame #135887 'Home link' 101.599x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #135888 'Wordmark' 101.599x32.0 lay=None gap=None pad=None 
+    frame #135892 'Nav' 636.0x44.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #135893 'Nav item' 117.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Stop' 10.0x10.0
+            T[15.0/Medium] What we do
+      instance #135897 'Nav item' 105.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Recent work
+      instance #135901 'Nav item' 68.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Why us
+      instance #135905 'Nav item' 113.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] How we work
+      instance #135909 'Nav item' 48.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Blog
+      instance #135913 'Nav item' 65.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Letters
+    instance #135917 'Link' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      frame #135918 'Tap area' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[18.0/Medium] Start a project
+  frame #135922 'Main' 1440.0x4583.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+    frame #135923 'Page hero' 1440.0x518.0 lay=vertical gap=32.0 pad=[96.0, 64.0, 96.0, 64.0] 
+      frame #135924 'H1' 983.6x230.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[120.0/Bold] Four jobs, in the
+          T[120.0/Bold] order we do them
+            INST 'Stop' 24.0x24.0
+      frame #135930 'Sub' 680.0x64.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[21.0/Regular] Brand identity and websites, made together, with the reason behind every decision written down.
+    frame #135932 'Job blocks' 1440.0x3092.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      frame #135933 'Job block / Strategy' 1440.0x735.0 lay=horizontal gap=24.0 pad=[96.0, 64.0, 96.0, 64.0] 
+          T[72.0/Bold] 1
+            T[72.0/Bold] Strategy
+            T[21.0/Regular] We work out who you are for, and what you say first.
+              T[15.0/Medium] What you get
+                  T[18.0/Regular] A written strategy: who it is for, what the other choices are, and what you say first.
+                  T[18.0/Regular] A one-page brief your team and your suppliers can work from.
+              INST 'Link / What it includes' 135.0x44.0
+                    T[18.0/Medium] What it includes
+            INST 'Plate / our own example' 421.0x462.0
+                  T[28.0/Bold] One idea
+                T[18.0/Regular] Our brand idea in one line: round letters, one square stop.
+                INST 'Label' 210.0x18.0
+                  T[13.0/Medium] Our own brand. Brand book page.
+      frame #135963 'Job block / Identity' 1440.0x795.0 lay=horizontal gap=24.0 pad=[96.0, 64.0, 96.0, 64.0] 
+          T[72.0/Bold] 2
+            T[72.0/Bold] Identity
+            T[21.0/Regular] We draw your name, choose your colour and type, and write the rules so anyone on your team can use them.
+              T[15.0/Medium] What you get
+                  T[18.0/Regular] Routes to choose from, then one drawn and refined, with its small-size version.
+                  T[18.0/Regular] Colour and type with the reasons, checked for contrast.
+                  T[18.0/Regular] A book of rules: a web page and a PDF.
+              INST 'Link / What it includes' 135.0x44.0
+                    T[18.0/Medium] What it includes
+            INST 'Plate / our own example' 421.0x490.0
+                  T[28.0/Bold] The brand book
+                T[18.0/Regular] Ours has more than fifty pages: the idea, the logo, colour, type, layout, voice, applications and how to use it.
+                INST 'Label' 210.0x18.0
+                  T[13.0/Medium] Our own brand. Brand book page.
+      frame #135995 'Job block / Applications' 1440.0x795.0 lay=horizontal gap=24.0 pad=[96.0, 64.0, 96.0, 64.0] 
+          T[72.0/Bold] 3
+            T[72.0/Bold] Applications
+            T[21.0/Regular] We design what carries your brand: cards, letterheads, signs, social posts and slides.
+              T[15.0/Medium] What you get
+                  T[18.0/Regular] The pieces you will use first, designed once and ready to print or post.
+              INST 'Link / What it includes' 135.0x44.0
+                    T[18.0/Medium] What it includes
+            INST 'Plate / our own example' 421.0x490.0
+                  T[28.0/Bold] The card
+                T[18.0/Regular] A 9 mm square is cut through the paper face, the size of the stop. Stacked, the edges show a raspberry line.
+                INST 'Label' 324.0x18.0
+                  T[13.0/Medium] Our own brand. 3D render. Printer samples to come.
+      frame #136023 'Job block / Website' 1440.0x767.0 lay=horizontal gap=24.0 pad=[96.0, 64.0, 96.0, 64.0] 
+          T[72.0/Bold] 4
+            T[72.0/Bold] Website
+            T[21.0/Regular] We plan, write and build your site from your brand's own colour, type and rules.
+              T[15.0/Medium] What you get
+                  T[18.0/Regular] A plan of the pages and what each one is for.
+                  T[18.0/Regular] The words for every page, starting with what you say first.
+                  T[18.0/Regular] The site, designed and built from your brand, checked at phone size.
+              INST 'Link / What it includes' 135.0x44.0
+                    T[18.0/Medium] What it includes
+            INST 'Plate / our own example' 421.0x462.0
+                  T[28.0/Bold] This website
+                T[18.0/Regular] Our own site, designed from our own brand's colour, type and rules.
+                INST 'Label' 173.0x18.0
+                  T[13.0/Medium] Our own brand. Site design.
+    frame #136055 'Together' 1440.0x384.0 lay=horizontal gap=24.0 pad=[96.0, 64.0, 96.0, 64.0] #ece9e4
+      frame #136056 'Label column' 421.0x20.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Kicker' 64.0x20.0
+          T[15.0/Medium] Together
+      frame #136059 'Statement' 867.0x192.0 lay=vertical gap=32.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[44.0/Bold] One system, so your brand and your
+            T[44.0/Bold] website are never designed apart
+              INST 'Stop' 9.0x9.0
+          T[21.0/Regular] You do not hire a logo maker and a web builder and join them up. One studio decides both, and the decisions are written down.
+    instance #136068 'CTA band' 1440.0x332.0 lay=horizontal gap=0.0 pad=[96.0, 64.0, 96.0, 64.0] #460f22
+      frame #136069 'Heading' 480.2x72.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[72.0/Bold] Start a project
+              INST 'Stop' 14.0x14.0
+      frame #136075 'Ask' 533.0x140.0 lay=vertical gap=32.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Address link' 363.0x52.0
+              T[44.0/Bold] info@aleywa.com
+          INST 'Button' 155.0x56.0
+              T[18.0/Medium] Write to us
+          INST 'Button' 224.0x56.0
+              T[18.0/Medium] Copy address
+    instance #136088 'Footer' 1440.0x257.0 lay=vertical gap=48.0 pad=[64.0, 64.0, 32.0, 64.0] #460f22
+      frame #136089 'Columns' 1312.0x160.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Wordmark' 101.599x32.0
+          T[18.0/Regular] Brand identity and websites, made together.
+          T[15.0/Medium] Contact
+          INST 'Link' 150.0x44.0
+                T[18.0/Medium] info@aleywa.com
+          INST 'Link' 102.0x44.0
+                T[18.0/Medium] aleywa.com
+          T[15.0/Medium] Pages
+              INST 'Link' 100.0x44.0
+                    T[18.0/Medium] What we do
+              INST 'Link' 107.0x44.0
+                    T[18.0/Medium] Recent work
+              INST 'Link' 62.0x44.0
+                    T[18.0/Medium] Why us
+              INST 'Link' 116.0x44.0
+                    T[18.0/Medium] How we work
+              INST 'Link' 59.0x44.0
+                    T[18.0/Medium] Letters
+              INST 'Link' 44.0x44.0
+                    T[18.0/Medium] Blog
+          T[15.0/Medium] About the site
+          T[13.0/Medium] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+          INST 'Link' 63.0x44.0
+                T[18.0/Medium] Privacy

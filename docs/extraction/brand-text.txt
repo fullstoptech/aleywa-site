@@ -1,0 +1,76 @@
+[15.0] What we do
+[15.0] Recent work
+[15.0] Why us
+[15.0] How we work
+[15.0] Blog
+[15.0] Letters
+[18.0] Start a project
+[120.0] Our brand in full
+[21.0] This is our own brand, shown in full. Every piece is labelled, and each comes with the decision behind it and what we gave up.
+[44.0] Round letters.
+[44.0] One square stop
+[18.0] The wordmark is lower case, with round letters and flat-ended strokes, ending in a square raspberry full stop. The stop is the hand-cut piece of candy, and it ends every headline. Every piece takes one risk.
+[18.0] We gave up bubbly candy imagery and the usual twisted wrapper.
+[13.0] Our own brand. Brand book page.
+[13.0] Our own brand. Brand book page.
+[44.0] Drawn by hand
+[18.0] We set the name in 45 typefaces. None carried the idea, and several read as default faces. So we drew the wordmark.
+[18.0] We gave up a ready-made typeface, and a cut on the e.
+[44.0] Spaced by measuring
+[18.0] We set the space between letters by measuring the closest distance between neighbouring outlines, not the boxes around them. The y and w had the most empty space, so we tightened that pair to about 3.4 units after comparing four values. Small sizes get their own drawing.
+[13.0] The numbers are rounded and on our own measure.
+[13.0] Our own brand. Brand book page.
+[44.0] Colour sampled,
+[44.0] then turned down
+[18.0] The colours came from photographs of real alewa, then we lowered the vividness: paper, ink, stone, one raspberry for the stop, and one berry for the single dark surface. A hot pink failed: white on it is only 3.7 to 1.
+[18.0] We gave up bright pink as a ground.
+[18.0] Paper
+[15.0] #F6F3EE
+[18.0] Ink
+[15.0] #181110
+[18.0] Stone
+[15.0] #6A615F
+[18.0] Raspberry
+[15.0] #AB2859
+[18.0] Berry
+[15.0] #460F22
+[13.0] Our own brand. Brand book page.
+[44.0] One family,
+[44.0] and an honest gap
+[18.0] The text typeface is Schibsted Grotesk. It has no glyphs for ɛ Ɛ ɔ Ɔ ɖ ɣ ʋ, letters of Twi, Ga and Ewe. A fallback sets them for now, and we plan to have them drawn.
+[44.0] ɛ
+[13.0] Not drawn yet
+[44.0] ɔ
+[13.0] Not drawn yet
+[44.0] ɖ
+[13.0] Not drawn yet
+[44.0] ɣ
+[13.0] Not drawn yet
+[44.0] ʋ
+[13.0] Not drawn yet
+[13.0] Status: planned
+[18.0] Read about the letters
+[44.0] Where it goes
+[18.0] A business card with a 9 mm square cut through the face. A letterhead with a column of squares that counts its letters. An envelope with a square window. Billboards read in pieces. A wall that reads one word to a row.
+[13.0] Mockups and 3D renders. Names and details on mockups are samples. Printer samples to come.
+[44.0] The brand book
+[18.0] More than fifty pages: the idea, the logo, colour, type, layout, voice, applications and how to use it.
+[13.0] Our own brand. Brand book page.
+[72.0] Start a project
+[44.0] info@aleywa.com
+[18.0] Write to us
+[18.0] Copy address
+[18.0] Brand identity and websites, made together.
+[15.0] Contact
+[18.0] info@aleywa.com
+[18.0] aleywa.com
+[15.0] Pages
+[18.0] What we do
+[18.0] Recent work
+[18.0] Why us
+[18.0] How we work
+[18.0] Letters
+[18.0] Blog
+[15.0] About the site
+[13.0] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+[18.0] Privacy

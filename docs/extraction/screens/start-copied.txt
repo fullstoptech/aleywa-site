@@ -1,0 +1,15 @@
+frame #139039 'Start a project / copied / 1440' 1440.0x742.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] #f6f3ee
+  instance #139040 'Email block' 1440.0x742.0 lay=horizontal gap=64.0 pad=[96.0, 64.0, 96.0, 64.0] #460f22
+    frame #139041 'Ask' 728.0x220.0 lay=vertical gap=32.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      T[72.0/Bold] info@aleywa.com
+      frame #139043 'Buttons and toast' 395.0x56.0 lay=vertical gap=16.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Button' 155.0x56.0
+              T[18.0/Medium] Write to us
+          INST 'Button' 224.0x56.0
+              T[18.0/Medium] Address copied.
+      frame #139051 'Fallback box' 680.0x28.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[18.0/Regular] If your email does not open, copy the address above.
+    frame #139053 'Window column' 520.0x550.0 lay=vertical gap=12.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #139054 'Window' 520.0x520.0 lay=None gap=None pad=None #181110
+      instance #139056 'Label' 324.0x18.0 lay=horizontal gap=12.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[13.0/Medium] Our own brand. 3D render. Printer samples to come.

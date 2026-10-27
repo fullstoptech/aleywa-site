@@ -1,0 +1,117 @@
+frame #137637 'Recent work / 1440' 1440.0x3974.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] #f6f3ee
+  instance #137638 'Header' 1440.0x88.0 lay=horizontal gap=0.0 pad=[0.0, 64.0, 0.0, 64.0] #f6f3ee
+    frame #137639 'Home link' 101.599x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #137640 'Wordmark' 101.599x32.0 lay=None gap=None pad=None 
+    frame #137644 'Nav' 636.0x44.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #137645 'Nav item' 99.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] What we do
+      instance #137649 'Nav item' 123.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Stop' 10.0x10.0
+            T[15.0/Medium] Recent work
+      instance #137653 'Nav item' 68.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Why us
+      instance #137657 'Nav item' 113.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] How we work
+      instance #137661 'Nav item' 48.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Blog
+      instance #137665 'Nav item' 65.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Letters
+    instance #137669 'Link' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      frame #137670 'Tap area' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[18.0/Medium] Start a project
+  frame #137674 'Main' 1440.0x3886.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+    frame #137675 'Page hero' 1440.0x606.0 lay=vertical gap=0.0 pad=[96.0, 64.0, 96.0, 64.0] 
+      frame #137676 'Hero row' 1312.0x414.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[72.0/Bold] Our own work,
+              T[72.0/Bold] with the reasons
+                INST 'Stop' 14.0x14.0
+            T[21.0/Regular] Every piece is ours and every piece is labelled. Each comes with the decision behind it and what we gave up. Client work will appear here when a client has cleared it in writing.
+          INST 'Window' 384.0x384.0
+          INST 'Label' 97.0x18.0
+            T[13.0/Medium] Our own brand.
+    frame #137691 'Plate grid' 1440.0x2691.0 lay=vertical gap=96.0 pad=[96.0, 64.0, 96.0, 64.0] 
+      frame #137692 'Plate row 1 (8 + 4)' 1312.0x856.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Plate / Our brand in full' 867.0x796.0
+                T[28.0/Bold] Our brand in full
+              T[18.0/Regular] The wordmark, the spacing, colour, type and applications, each with the decision behind it and what we gave up.
+              INST 'Label' 176.0x18.0
+                T[13.0/Medium] Our own brand. Brand book.
+          INST 'Link / Read the decision' 151.0x44.0
+                T[18.0/Medium] Read the decision
+          INST 'Plate / The card' 421.0x526.0
+                T[28.0/Bold] The card
+              T[18.0/Regular] A 9 mm square is cut through the paper face, the size of the stop.
+              T[18.0/Regular] We gave up printing the stop. It is cut through the card, and the raspberry core shows.
+              INST 'Label' 324.0x18.0
+                T[13.0/Medium] Our own brand. 3D render. Printer samples to come.
+          INST 'Link / Read the decision' 151.0x44.0
+                T[18.0/Medium] Read the decision
+      frame #137724 'Plate row 2 (6 + 6)' 1312.0x725.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Plate / The wall' 644.0x629.0
+                T[28.0/Bold] The wall
+              T[18.0/Regular] In some cities, billboards are read in pieces, pasted side by side. We designed a wall that reads one word to a row.
+              INST 'Label' 165.0x18.0
+                T[13.0/Medium] Our own brand. 3D render.
+          INST 'Link / Read the decision' 151.0x44.0
+                T[18.0/Medium] Read the decision
+          INST 'Plate / The space between the letters' 644.0x665.0
+                T[28.0/Bold] The space between the letters
+              T[18.0/Regular] We set each gap by measuring each pair, then drew a separate small version for tiny sizes.
+              T[18.0/Regular] We gave up the wide gap between the y and the w.
+              INST 'Label' 210.0x18.0
+                T[13.0/Medium] Our own brand. Brand book page.
+          INST 'Link / Read the decision' 151.0x44.0
+                T[18.0/Medium] Read the decision
+      frame #137725 'Plate row 3 (6 + 6)' 1312.0x725.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Plate / This website' 644.0x601.0
+                T[28.0/Bold] This website
+              T[18.0/Regular] Our own site, designed from our own brand's colour, type and rules.
+              INST 'Label' 173.0x18.0
+                T[13.0/Medium] Our own brand. Site design.
+          INST 'Link / Read the decision' 151.0x44.0
+                T[18.0/Medium] Read the decision
+          INST 'Plate / The wordmark' 644.0x665.0
+                T[28.0/Bold] The wordmark
+              T[18.0/Regular] We set our name in 45 typefaces and none carried the idea, so we drew it by hand.
+              T[18.0/Regular] We gave up a ready-made typeface, and a cut on the e.
+              INST 'Label' 210.0x18.0
+                T[13.0/Medium] Our own brand. Brand book page.
+          INST 'Link / Read the decision' 151.0x44.0
+                T[18.0/Medium] Read the decision
+    instance #137788 'CTA band' 1440.0x332.0 lay=horizontal gap=0.0 pad=[96.0, 64.0, 96.0, 64.0] #460f22
+      frame #137789 'Heading' 480.2x72.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[72.0/Bold] Start a project
+              INST 'Stop' 14.0x14.0
+      frame #137795 'Ask' 533.0x140.0 lay=vertical gap=32.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Address link' 363.0x52.0
+              T[44.0/Bold] info@aleywa.com
+          INST 'Button' 155.0x56.0
+              T[18.0/Medium] Write to us
+          INST 'Button' 224.0x56.0
+              T[18.0/Medium] Copy address
+    instance #137808 'Footer' 1440.0x257.0 lay=vertical gap=48.0 pad=[64.0, 64.0, 32.0, 64.0] #460f22
+      frame #137809 'Columns' 1312.0x160.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Wordmark' 101.599x32.0
+          T[18.0/Regular] Brand identity and websites, made together.
+          T[15.0/Medium] Contact
+          INST 'Link' 150.0x44.0
+                T[18.0/Medium] info@aleywa.com
+          INST 'Link' 102.0x44.0
+                T[18.0/Medium] aleywa.com
+          T[15.0/Medium] Pages
+              INST 'Link' 100.0x44.0
+                    T[18.0/Medium] What we do
+              INST 'Link' 107.0x44.0
+                    T[18.0/Medium] Recent work
+              INST 'Link' 62.0x44.0
+                    T[18.0/Medium] Why us
+              INST 'Link' 116.0x44.0
+                    T[18.0/Medium] How we work
+              INST 'Link' 59.0x44.0
+                    T[18.0/Medium] Letters
+              INST 'Link' 44.0x44.0
+                    T[18.0/Medium] Blog
+          T[15.0/Medium] About the site
+          T[13.0/Medium] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+          INST 'Link' 63.0x44.0
+                T[18.0/Medium] Privacy

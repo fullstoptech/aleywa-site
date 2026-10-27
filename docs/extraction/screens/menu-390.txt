@@ -1,0 +1,25 @@
+frame #135834 'Menu / 390' 390.0x844.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+  instance #135835 'Menu panel' 390.0x844.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] #f6f3ee
+    instance #135836 'Header' 390.0x64.0 lay=horizontal gap=0.0 pad=[0.0, 20.0, 0.0, 20.0] #f6f3ee
+      frame #135837 'Home link' 76.199x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Wordmark' 76.199x24.0
+      instance #135842 'Menu button' 57.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Close
+    frame #135846 'Menu body' 390.0x780.0 lay=vertical gap=48.0 pad=[32.0, 20.0, 32.0, 20.0] 
+      frame #135847 'Menu list' 350.0x348.0 lay=vertical gap=12.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[15.0/Medium] 1
+          T[44.0/Bold] What we do
+          T[15.0/Medium] 2
+          T[44.0/Bold] Recent work
+          T[15.0/Medium] 3
+          T[44.0/Bold] Why us
+          T[15.0/Medium] 4
+          T[44.0/Bold] How we work
+          T[15.0/Medium] 5
+          T[44.0/Bold] Blog
+          T[15.0/Medium] 6
+          T[44.0/Bold] Letters
+      frame #135866 'Menu foot' 350.0x104.0 lay=vertical gap=16.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Button' 350.0x56.0
+            T[18.0/Medium] Start a project
+        T[21.0/Regular] info@aleywa.com

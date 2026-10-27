@@ -1,0 +1,226 @@
+frame #138541 'Post / 1440' 1440.0x9740.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] #f6f3ee
+  instance #138542 'Header' 1440.0x88.0 lay=horizontal gap=0.0 pad=[0.0, 64.0, 0.0, 64.0] #f6f3ee
+    frame #138543 'Home link' 101.599x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #138544 'Wordmark' 101.599x32.0 lay=None gap=None pad=None 
+    frame #138548 'Nav' 636.0x44.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #138549 'Nav item' 99.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] What we do
+      instance #138553 'Nav item' 105.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Recent work
+      instance #138557 'Nav item' 68.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Why us
+      instance #138561 'Nav item' 113.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] How we work
+      instance #138565 'Nav item' 66.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Stop' 10.0x10.0
+            T[15.0/Medium] Blog
+      instance #138569 'Nav item' 65.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Letters
+    instance #138573 'Link' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      frame #138574 'Tap area' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[18.0/Medium] Start a project
+  instance #138578 'Reading marker' 1440.0x10.0 lay=horizontal gap=0.0 pad=[0.0, 16.0, 0.0, 16.0] 
+    rectangle #138579 'Read' 559.2x1.0 lay=None gap=None pad=None #181110
+    instance #138580 'Stop' 10.0x10.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] #ab2859
+    rectangle #138581 'Remaining' 838.8x1.0 lay=None gap=None pad=None #e0dbd6
+  frame #138582 'Main / article' 1440.0x9642.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+    frame #138583 'Post head' 1440.0x1255.0 lay=vertical gap=0.0 pad=[32.0, 64.0, 32.0, 64.0] 
+      instance #138584 'Post hero' 1312.0x1191.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Link' 137.0x44.0
+                T[18.0/Medium] Back to the blog
+          T[15.0/Medium] The measure
+            T[13.0/Medium] Where the y meets the w, enlarged.
+            T[13.0/Medium] Diagram, Aleywa Studios.
+            T[72.0/Bold] How we spaced / our wordmark by
+              T[72.0/Bold] measuring the gaps
+                INST 'Stop' 14.0x14.0
+            T[21.0/Regular] We spaced our wordmark by measuring the closest gap between letter outlines. The six targets, four tests on y and w, and why we settled on about 3.4.
+          T[15.0/Medium] By Aleywa Studios · 12 Nov 2026 · 6 min read
+    frame #138607 'Post body' 1440.0x7193.0 lay=vertical gap=24.0 pad=[64.0, 64.0, 96.0, 64.0] 
+      frame #138608 'Block' 680.0x128.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x128.0
+          T[20.0/Regular] The y and the w in our wordmark sit about 3.4 units apart at their closest point, on our measure. They started at 5.5. We tested four gaps before we settled. Every other pair of letters has a target of its own: a-l 8.6, l-e 6.6, e-y 5.5, w-a 5.5, and 7.6 between the last a and the square stop.
+      frame #138611 'Block' 680.0x64.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x64.0
+          T[20.0/Regular] This post explains how we measured, why y and w needed the most work, and the one decision the numbers could not make.
+      frame #138614 'Block' 680.0x64.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 0.0, 0.0] 
+        INST 'Heading' 680.0x32.0
+          T[28.0/Bold] Why the boxes around letters mislead
+      frame #138617 'Block' 680.0x96.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x96.0
+          T[20.0/Regular] Every letter sits inside a box. The usual way to space type is to set the gaps between those boxes, and for straight letters that works. An l fills its box from edge to edge, so the box and the letter agree.
+      frame #138620 'Block' 680.0x128.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x128.0
+          T[20.0/Regular] Round and diagonal letters do not fill their boxes. An o touches its box at a single point on each side. A y or a w leaves big empty triangles in the corners of its box. Set the boxes evenly and the eye sees uneven gaps, because it judges the space between the shapes and ignores the boxes.
+      frame #138623 'Block' 680.0x96.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x96.0
+          T[20.0/Regular] So we measured something else: the closest distance between the outlines of two neighbouring letters. That number describes the gap the eye actually sees.
+      frame #138626 'Block' 680.0x160.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x160.0
+          T[20.0/Regular] The method is simple to repeat. Keep each letter as its own object. Find the nearest pair of points between two neighbours, measure the distance, and move one letter until the distance matches its target. Then save the file and measure again from the saved version, because what you exported is what 
+      frame #138629 'Block' 960.0x844.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 32.0, 0.0] 
+        INST 'Figure' 960.0x780.0
+          T[13.0/Medium] Above: the box around each letter. Below: the closest gap between outlines, the number we spaced by.
+          T[13.0/Medium] Diagram, Aleywa Studios.
+      frame #138634 'Block' 680.0x64.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 0.0, 0.0] 
+        INST 'Heading' 680.0x32.0
+          T[28.0/Bold] One unit: the stem
+      frame #138637 'Block' 680.0x96.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x96.0
+          T[20.0/Regular] A measurement needs a unit that holds at any size. Ours is tied to the drawing. The wordmark is 128 units tall, and every stem is 15 units thick, as described in how we drew the wordmark.
+      frame #138640 'Block' 680.0x160.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x160.0
+          T[20.0/Regular] Working in those units keeps the numbers honest when the logo is scaled. A gap of about 3.4 is a little under a quarter of a stem, whether the word is on a business card or a billboard. Shown 128 pixels tall, one unit is exactly one pixel, which makes the figures easy to check on screen.
+      frame #138643 'Block' 680.0x64.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 0.0, 0.0] 
+        INST 'Heading' 680.0x32.0
+          T[28.0/Bold] A target for every pair
+      frame #138646 'Block' 680.0x64.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x64.0
+          T[20.0/Regular] Each pair of neighbours got a target. The targets differ because the shapes that meet are different.
+      frame #138649 'Block' 680.0x411.0 lay=vertical gap=0.0 pad=[24.0, 0.0, 24.0, 0.0] 
+        INST 'Table' 680.0x363.0
+              T[15.0/Medium] Pair
+              T[15.0/Medium] Shapes that meet
+              T[15.0/Medium] Target (units)
+              T[18.0/Regular] a‑l
+              T[18.0/Regular] straight to straight
+              T[18.0/Bold] 8.6
+              T[18.0/Regular] l‑e
+              T[18.0/Regular] straight to round
+              T[18.0/Bold] 6.6
+              T[18.0/Regular] e‑y
+              T[18.0/Regular] round to diagonal
+              T[18.0/Bold] 5.5
+              T[18.0/Regular] y‑w
+              T[18.0/Regular] diagonal to diagonal
+              T[18.0/Bold] 3.4
+              T[18.0/Regular] w‑a
+              T[18.0/Regular] diagonal to round
+              T[18.0/Bold] 5.5
+              T[18.0/Regular] a‑stop
+              T[18.0/Regular] straight to square
+              T[18.0/Bold] 7.6
+      frame #138700 'Block' 680.0x128.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x128.0
+          T[20.0/Regular] The pattern is simple once it is in a table. Two straight edges facing each other need the most room, because nothing opens up between them. A round letter brings some white space of its own, so it can sit closer. Diagonals bring the most, so they sit closest of all.
+      frame #138703 'Block' 960.0x654.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 32.0, 0.0] 
+        INST 'Figure' 960.0x590.0
+          T[13.0/Medium] The spacing page of the brand book, with each target and the value measured in the final file.
+          T[13.0/Medium] Brand book, Aleywa Studios.
+      frame #138708 'Block' 680.0x64.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 0.0, 0.0] 
+        INST 'Heading' 680.0x32.0
+          T[28.0/Bold] The pair with the most empty space
+      frame #138711 'Block' 680.0x128.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x128.0
+          T[20.0/Regular] The y and the w are two diagonals that open downward. The right arm of the y leans left as it falls. The left arm of the w leans right. They come closest at the top, at the x-height, and then the space between them widens into a wedge all the way down.
+      frame #138714 'Block' 680.0x96.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x96.0
+          T[20.0/Regular] That wedge is why this pair had the most empty space in the word. At 5.5, the gap we gave e-y and w-a, the opening between y and w looked like the widest gap in the word.
+      frame #138717 'Block' 680.0x64.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 0.0, 0.0] 
+        INST 'Heading' 680.0x32.0
+          T[28.0/Bold] Four tests, then about 3.4
+      frame #138720 'Block' 680.0x64.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x64.0
+          T[20.0/Regular] We tried four values for the y-w gap: 5.5, 4.2, 3.2 and 2.4. The figure shows the top of each pair enlarged, where the two letters come closest.
+      frame #138723 'Block' 680.0x64.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x64.0
+          T[20.0/Regular] The opening changes quickly. At 5.5 there is a clear notch between the two arms. By 2.4 the top corners nearly touch.
+      frame #138726 'Block' 680.0x128.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x128.0
+          T[20.0/Regular] We settled on about 3.4 units, between the third and second tests. Every number in this post is rounded and taken on one measure. Measure the same gap another way and it moves by a few tenths of a unit, so treat the numbers as targets on our measure.
+      frame #138729 'Block' 960.0x373.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 32.0, 0.0] 
+        INST 'Figure' 960.0x309.0
+          T[13.0/Medium] The top of the y (left) and the w (right) at each gap we tried, and the gap we kept.
+          T[13.0/Medium] Diagram, Aleywa Studios.
+      frame #138734 'Block' 680.0x96.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x96.0
+          T[20.0/Regular] Once a gap is set, it stays set. The logo exports are made once, in a vector tool, and every board, document and render uses those files. Nobody re-spaces the letters by eye later.
+      frame #138737 'Block' 680.0x206.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 32.0, 0.0] 
+        INST 'Pull quote' 680.0x142.0
+          T[32.0/Italic] Between 3.2 and 4.2, both ends could be defended on paper, and no measurement settles which looks right.
+      frame #138740 'Block' 680.0x64.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 0.0, 0.0] 
+        INST 'Heading' 680.0x32.0
+          T[28.0/Bold] Small sizes get their own drawing
+      frame #138743 'Block' 680.0x128.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x128.0
+          T[20.0/Regular] Tight gaps that look right on a poster fill in on a phone screen. So below 24 pixels tall, the wordmark uses a separate drawing. Its gaps open by 3 to 4 units, and the stop grows from 1.1 stems to 1.3 stems so it does not shrink to a speck.
+      frame #138746 'Block' 680.0x128.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x128.0
+          T[20.0/Regular] The extra space is not spread evenly. The pairs with straight edges, a-l, l-e and the a against the stop, open by 3 units. The pairs with diagonals, e-y, y-w and w-a, open by 4. Measured in units, the stop grows from 16.5 to 19.5 units square.
+      frame #138749 'Block' 680.0x32.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x32.0
+          T[20.0/Regular] This is a second set of files, drawn for small sizes.
+      frame #138752 'Block' 960.0x549.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 32.0, 0.0] 
+        INST 'Figure' 960.0x485.0
+          T[13.0/Medium] The small-size drawing, shown at true size and magnified.
+          T[13.0/Medium] Brand book, Aleywa Studios.
+      frame #138757 'Block' 680.0x64.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 0.0, 0.0] 
+        INST 'Heading' 680.0x32.0
+          T[28.0/Bold] What measuring cannot decide
+      frame #138760 'Block' 680.0x96.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x96.0
+          T[20.0/Regular] The numbers did a lot. They gave every pair a target, showed us which pair was wrong, and turned "it looks a bit off" into four values we could compare.
+      frame #138763 'Block' 680.0x96.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Paragraph' 680.0x96.0
+          T[20.0/Regular] They did not choose the final gap. Between 3.2 and 4.2, both ends could be defended on paper, and no measurement settles which looks right. The last call was made by looking at the whole word.
+      frame #138766 'Block' 680.0x348.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 0.0, 0.0] 
+        INST 'Rules to reuse' 680.0x316.0
+          T[28.0/Bold] Rules to reuse
+              T[20.0/Regular] 1.
+            T[20.0/Regular] Measure the closest distance between outlines, not the boxes around letters.
+              T[20.0/Regular] 2.
+            T[20.0/Regular] Count in units of your stem, so the numbers survive scaling.
+              T[20.0/Regular] 3.
+            T[20.0/Regular] Give every pair a written target, and record the measured value next to it.
+              T[20.0/Regular] 4.
+            T[20.0/Regular] Test values on both sides of where you think the answer is.
+              T[20.0/Regular] 5.
+            T[20.0/Regular] Draw small sizes separately, with wider gaps and a larger stop.
+      frame #138789 'Block' 680.0x184.0 lay=vertical gap=0.0 pad=[32.0, 0.0, 0.0, 0.0] 
+        INST 'What we gave up' 680.0x152.0
+            T[15.0/Medium] What we gave up
+          T[18.0/Regular] The wide gap between the y and the w. At 5.5 it looked like the widest opening in the word.
+    frame #138794 'Next post' 1440.0x605.0 lay=horizontal gap=24.0 pad=[64.0, 64.0, 96.0, 64.0] 
+      frame #138795 'Label column' 421.0x32.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[28.0/Bold] Next post
+      frame #138797 'Card column' 867.0x444.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Post card' 640.0x444.0
+            T[15.0/Medium] 16 Nov 2026 · 5 min read
+              T[28.0/Bold] Our typeface cannot set ɛ or ɔ: / checking a font for Twi, Ga and Ewe
+    instance #138805 'CTA band' 1440.0x332.0 lay=horizontal gap=0.0 pad=[96.0, 64.0, 96.0, 64.0] #460f22
+      frame #138806 'Heading' 480.2x72.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[72.0/Bold] Start a project
+              INST 'Stop' 14.0x14.0
+      frame #138812 'Ask' 533.0x140.0 lay=vertical gap=32.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Address link' 363.0x52.0
+              T[44.0/Bold] info@aleywa.com
+          INST 'Button' 155.0x56.0
+              T[18.0/Medium] Write to us
+          INST 'Button' 224.0x56.0
+              T[18.0/Medium] Copy address
+    instance #138825 'Footer' 1440.0x257.0 lay=vertical gap=48.0 pad=[64.0, 64.0, 32.0, 64.0] #460f22
+      frame #138826 'Columns' 1312.0x160.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Wordmark' 101.599x32.0
+          T[18.0/Regular] Brand identity and websites, made together.
+          T[15.0/Medium] Contact
+          INST 'Link' 150.0x44.0
+                T[18.0/Medium] info@aleywa.com
+          INST 'Link' 102.0x44.0
+                T[18.0/Medium] aleywa.com
+          T[15.0/Medium] Pages
+              INST 'Link' 100.0x44.0
+                    T[18.0/Medium] What we do
+              INST 'Link' 107.0x44.0
+                    T[18.0/Medium] Recent work
+              INST 'Link' 62.0x44.0
+                    T[18.0/Medium] Why us
+              INST 'Link' 116.0x44.0
+                    T[18.0/Medium] How we work
+              INST 'Link' 59.0x44.0
+                    T[18.0/Medium] Letters
+              INST 'Link' 44.0x44.0
+                    T[18.0/Medium] Blog
+          T[15.0/Medium] About the site
+          T[13.0/Medium] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+          INST 'Link' 63.0x44.0
+                T[18.0/Medium] Privacy

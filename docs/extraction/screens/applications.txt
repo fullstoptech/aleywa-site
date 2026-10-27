@@ -1,0 +1,109 @@
+frame #136551 'Applications / 1440' 1440.0x2315.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] #f6f3ee
+  instance #136552 'Header' 1440.0x88.0 lay=horizontal gap=0.0 pad=[0.0, 64.0, 0.0, 64.0] #f6f3ee
+    frame #136553 'Home link' 101.599x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #136554 'Wordmark' 101.599x32.0 lay=None gap=None pad=None 
+    frame #136558 'Nav' 636.0x44.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      instance #136559 'Nav item' 117.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Stop' 10.0x10.0
+            T[15.0/Medium] What we do
+      instance #136563 'Nav item' 105.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Recent work
+      instance #136567 'Nav item' 68.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Why us
+      instance #136571 'Nav item' 113.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] How we work
+      instance #136575 'Nav item' 48.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Blog
+      instance #136579 'Nav item' 65.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] Letters
+    instance #136583 'Link' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+      frame #136584 'Tap area' 121.0x44.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          T[18.0/Medium] Start a project
+  frame #136588 'Main' 1440.0x2227.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+    frame #136589 'Page hero' 1440.0x650.0 lay=vertical gap=32.0 pad=[64.0, 64.0, 96.0, 64.0] 
+      frame #136590 'Breadcrumb' 172.0x44.0 lay=horizontal gap=32.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Link / back to What we do' 100.0x44.0
+              T[18.0/Medium] What we do
+        INST 'Kicker / position' 40.0x20.0
+          T[15.0/Medium] 3 of 4
+      frame #136598 'Hero row' 1312.0x414.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+              T[72.0/Bold] Applications
+                INST 'Stop' 14.0x14.0
+            T[21.0/Regular] We design what carries your brand: cards, letterheads, signs, social posts and slides.
+            T[18.0/Regular] Your brand meets people on a card, a letterhead, a sign, a post and a slide. We design the ones you will reach for first, once, and ready to print or post. Each piece takes one risk (a scale, a crop, a material or a line) and is disciplined everywhere else.
+          INST 'Window' 384.0x384.0
+          INST 'Label' 324.0x18.0
+            T[13.0/Medium] Our own brand. 3D render. Printer samples to come.
+    frame #136614 'Our own example' 1440.0x289.0 lay=horizontal gap=24.0 pad=[32.0, 64.0, 32.0, 64.0] 
+      frame #136615 'Label column' 421.0x20.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[15.0/Medium] Our own example
+      frame #136617 'Example' 867.0x224.0 lay=vertical gap=12.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[28.0/Bold] The card
+          T[18.0/Regular] A 9 mm square is cut through the paper face, the size of the stop. Stacked, the edges show a raspberry line.
+          T[18.0/Regular] We gave up printing the stop. It is cut through the card, and the raspberry core shows.
+          INST 'Label' 324.0x18.0
+            T[13.0/Medium] Our own brand. 3D render. Printer samples to come.
+          INST 'Link / recent work' 164.0x44.0
+                T[18.0/Medium] See all recent work
+    frame #136631 'What you get and need' 1440.0x249.0 lay=horizontal gap=24.0 pad=[64.0, 64.0, 64.0, 64.0] 
+      frame #136632 'What you get' 644.0x110.0 lay=vertical gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[28.0/Bold] What you get
+            T[18.0/Regular] The pieces you will use first, designed once and ready to print or post.
+      frame #136637 'What we need from you' 644.0x120.0 lay=vertical gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[28.0/Bold] What we need from you
+        T[21.0/Regular] Where your brand will appear first, and what has to be printed or posted soonest.
+    frame #136640 'How it works' 1440.0x213.0 lay=horizontal gap=24.0 pad=[64.0, 64.0, 64.0, 64.0] 
+      frame #136641 'Label column' 421.0x32.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[28.0/Bold] How it works
+      frame #136643 'Content' 867.0x84.0 lay=vertical gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[15.0/Medium] We do
+            T[18.0/Regular] We design the pieces that carry the brand.
+            T[15.0/Medium] You decide
+            T[18.0/Regular] You choose which pieces come first.
+            T[15.0/Medium] You receive
+            T[18.0/Regular] Cards, letterheads, signs, social posts and slides, ready to use.
+    frame #136654 'Next' 1440.0x237.0 lay=horizontal gap=24.0 pad=[64.0, 64.0, 96.0, 64.0] 
+      frame #136655 'Label column' 421.0x32.0 lay=vertical gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        T[28.0/Bold] Next
+      frame #136657 'Content' 867.0x76.0 lay=vertical gap=12.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Kicker / next position' 40.0x20.0
+          T[15.0/Medium] 4 of 4
+        INST 'Link / next job' 69.0x44.0
+              T[18.0/Medium] Website
+    instance #136665 'CTA band' 1440.0x332.0 lay=horizontal gap=0.0 pad=[96.0, 64.0, 96.0, 64.0] #460f22
+      frame #136666 'Heading' 480.2x72.0 lay=horizontal gap=0.0 pad=[0.0, 0.0, 0.0, 0.0] 
+            T[72.0/Bold] Start a project
+              INST 'Stop' 14.0x14.0
+      frame #136672 'Ask' 533.0x140.0 lay=vertical gap=32.0 pad=[0.0, 0.0, 0.0, 0.0] 
+        INST 'Address link' 363.0x52.0
+              T[44.0/Bold] info@aleywa.com
+          INST 'Button' 155.0x56.0
+              T[18.0/Medium] Write to us
+          INST 'Button' 224.0x56.0
+              T[18.0/Medium] Copy address
+    instance #136685 'Footer' 1440.0x257.0 lay=vertical gap=48.0 pad=[64.0, 64.0, 32.0, 64.0] #460f22
+      frame #136686 'Columns' 1312.0x160.0 lay=horizontal gap=24.0 pad=[0.0, 0.0, 0.0, 0.0] 
+          INST 'Wordmark' 101.599x32.0
+          T[18.0/Regular] Brand identity and websites, made together.
+          T[15.0/Medium] Contact
+          INST 'Link' 150.0x44.0
+                T[18.0/Medium] info@aleywa.com
+          INST 'Link' 102.0x44.0
+                T[18.0/Medium] aleywa.com
+          T[15.0/Medium] Pages
+              INST 'Link' 100.0x44.0
+                    T[18.0/Medium] What we do
+              INST 'Link' 107.0x44.0
+                    T[18.0/Medium] Recent work
+              INST 'Link' 62.0x44.0
+                    T[18.0/Medium] Why us
+              INST 'Link' 116.0x44.0
+                    T[18.0/Medium] How we work
+              INST 'Link' 59.0x44.0
+                    T[18.0/Medium] Letters
+              INST 'Link' 44.0x44.0
+                    T[18.0/Medium] Blog
+          T[15.0/Medium] About the site
+          T[13.0/Medium] Every mockup and render on this site is labelled. Names and details on mockups are samples.
+          INST 'Link' 63.0x44.0
+                T[18.0/Medium] Privacy
