@@ -9,9 +9,15 @@ const lettersSvg = lettersRaw
   .replace('<svg ', '<svg aria-hidden="true" style="width:3440.232px;height:1062px;display:block" ');
 ---
 <div class="hero-static">
-  {/* Desktop stage */}
-  {/* Stage is scaled to fit the fold: header (88) + stage + berry band (up to ~230) = viewport height, so the berry text is visible without scrolling. */}
-  <div class="hero-desktop-wrap hidden lg:block relative overflow-hidden bg-paper w-full" style="height:min(calc(100vw * 680 / 1440), calc(100svh - 318px));min-height:300px;">
+  {/* Mobile layout, two options to compare: ?hero=a (default) puts the company description above the strip, pinned with it;
+      ?hero=b keeps it all in the berry band, like desktop. In both, the headline lives in the band. Delete the loser once chosen. */}
+  <script is:inline>document.currentScript.parentElement.dataset.heroVariant = new URLSearchParams(location.search).get('hero') === 'b' ? 'b' : 'a';</script>
+  <div class="hero-desc lg:hidden section-x"><div class="inner-x py-3">
+    <p class="text-label">Aleywa Studios is a design studio that decides your brand and your website together, and shows you the reason behind every decision.</p>
+  </div></div>
+  {/* Stage. Desktop: scaled to fit the fold (header 88 + stage + berry band ~230 = viewport height) so the berry text is visible without scrolling.
+      Mobile: the same strip at 0.586 scale, fitted to what is left under the header and band; scrolls sideways by hand when the slide is off (reduced motion / no JS). */}
+  <div class="hero-frame relative overflow-x-auto overflow-y-hidden lg:overflow-hidden bg-paper w-full">
     <div class="hero-stage absolute top-0 left-0 origin-top-left" style="width:1440px;height:900px;">
       <div class="hero-layer absolute" style="left:0;top:-244.8px;width:3657.546px;height:1152px;will-change:transform;">
         <div class="absolute overflow-hidden" style="left:118.8px;top:448.2px;width:345.6px;height:345.6px;">
@@ -61,19 +67,20 @@ const lettersSvg = lettersRaw
     </div>
   </div>
   {/* Full-bleed berry band: stretches edge to edge at any viewport width */}
-  <div class="hero-band hidden lg:block w-full" style="background:var(--color-berry);color:var(--color-paper);">
-    <div class="section-x"><div class="inner-x flex gap-6 items-start py-5 min-h-[190px]">
+  <div class="hero-band w-full" style="background:var(--color-berry);color:var(--color-paper);">
+    <div class="section-x"><div class="inner-x flex flex-col lg:flex-row gap-3 lg:gap-6 items-start py-4 lg:py-5 lg:min-h-[190px]">
       <div class="hero-band-stack flex-1" style="display:grid;">
         <div class="hero-band-rest" style="grid-area:1/1;will-change:opacity,transform;">
-          <p class="text-hero-fluid">Brand identity and websites,<br />made together<span aria-hidden="true" style="display:inline-block;width:14px;height:14px;background:var(--color-accent-on-inverse);margin-left:0.12em;"></span></p>
+          <h1 class="text-hero-fluid">Brand identity <br class="lg:hidden" />and websites,<br />made together<span aria-hidden="true" class="inline-block w-[9px] h-[9px] lg:w-[14px] lg:h-[14px]" style="background:var(--color-accent-on-inverse);margin-left:0.12em;"></span></h1>
         </div>
         <div class="hero-band-focus" style="grid-area:1/1;opacity:0;will-change:opacity,transform;" aria-hidden="true">
           <p class="text-hero-fluid">The card</p>
           <p class="text-label mt-2" style="color:#fcd1da;">A 9 mm square is cut through the paper face, the size of the stop.</p>
         </div>
       </div>
-      <p class="text-label w-[300px] shrink-0" style="color:#fcd1da;">Aleywa Studios is a design studio that decides your brand and your website together, and shows you the reason behind every decision.</p>
-      <p class="text-caption w-[170px] shrink-0" style="color:#fcd1da;">Scroll along the word. Four windows, then the rest.</p>
+      <p class="hero-band-desc text-label lg:w-[300px] shrink-0" style="color:#fcd1da;">Aleywa Studios is a design studio that decides your brand and your website together, and shows you the reason behind every decision.</p>
+      <p class="text-caption w-[170px] shrink-0 hidden lg:block" style="color:#fcd1da;">Scroll along the word. Four windows, then the rest.</p>
+      <p data-hero-hint class="text-caption lg:hidden" style="color:#fcd1da;">Swipe along the word.</p>
     </div></div>
   </div>
   <div class="hero-reduced-flow section-x" style="display:none;"><div class="inner-x py-8 flex flex-col gap-4">
@@ -82,31 +89,35 @@ const lettersSvg = lettersRaw
     <p class="text-h2">Why choose us</p>
     <ol class="text-body flex flex-col gap-1"><li>1 &nbsp;One studio for your brand and your website.</li><li>2 &nbsp;Every decision has a reason you can read.</li><li>3 &nbsp;Craft you can measure.</li><li>4 &nbsp;Letters for your people.</li><li>5 &nbsp;Bold, and finished.</li></ol>
   </div></div>
-  {/* Mobile variant */}
-  <div class="lg:hidden">
-    <div class="section-x"><div class="inner-x pt-6 flex flex-col gap-6">
-      <h1 class="text-[44px] leading-[1.04] font-bold tracking-[-0.04em]">Brand identity<br />and websites,<br />made together<span aria-hidden="true" style="display:inline-block;width:9px;height:9px;background:var(--color-accent);margin-left:0.12em;"></span></h1>
-    </div></div>
-    <div class="overflow-x-auto mt-6" style="scroll-snap-type:x mandatory;">
-      <div class="relative" style="width:900px;height:360px;scroll-snap-align:start;">
-        <div class="absolute overflow-hidden" style="left:40px;top:60px;width:202px;height:202px;">
-          <Image src={heroA1} alt="Our own brand. 3D render." widths={[202, 404]} loading="eager" class="w-full h-full object-cover" />
-        </div>
-        <p class="text-h3 absolute" style="left:20px;top:280px;">1 Strategy.</p>
-        <p class="text-caption absolute" style="left:20px;top:320px;">Our own brand. 3D render.</p>
-      </div>
-    </div>
-    <div style="background:var(--color-berry);color:var(--color-paper);" class="section-x"><div class="inner-x py-4 flex flex-col gap-3">
-      <p class="text-label" style="color:#fcd1da;">Aleywa Studios is a design studio that decides your brand and your website together, and shows you the reason behind every decision.</p>
-      <p class="text-caption" style="color:#fcd1da;">Swipe along the word.</p>
-    </div></div>
-  </div>
 </div>
 <style>
-  /* Smaller of width-fit and fold-fit (header 88 + berry ~230 reserved), so the
+  /* Desktop: smaller of width-fit and fold-fit (header 88 + berry ~230 reserved), so the
      giant lettering shrinks on short screens and the berry band stays in view. */
+  .hero-frame { height: min(calc(100vw * 680 / 1440), calc(100svh - 318px)); min-height: 300px; }
   .hero-stage { transform-origin: top left; transform: scale(min(calc(100vw / 1440px), calc((100svh - 318px) / 680px))); }
   .hero-focus { opacity: 0; }
+  /* Mobile: the pinned hero fills the screen under the header. The strip takes what is left after
+     --reserve (header + description/band), sized from the small viewport so it never jumps when the
+     browser toolbar hides; the hero itself is at least the dynamic viewport tall, and the berry band
+     stretches to absorb any extra, so no paper shows beneath it. Captions are counter-scaled back
+     to reading size. The focus captions are desktop-only. */
+  @media (max-width: 1023.98px) {
+    .hero-static[data-hero-variant='a'] { --reserve: 390px; }
+    .hero-static[data-hero-variant='b'] { --reserve: 380px; }
+    .hero-static[data-hero-variant='b'] .hero-desc { display: none; }
+    .hero-static[data-hero-variant='a'] .hero-band-desc { display: none; }
+    .hero-static {
+      display: flex;
+      flex-direction: column;
+      min-height: calc(100svh - var(--hero-top, 65px));
+      min-height: calc(100dvh - var(--hero-top, 65px));
+    }
+    .hero-frame { flex: none; --hs: max(0.3, min(1, calc((100svh - var(--reserve, 390px)) / 680px))); height: calc(680px * var(--hs)); min-height: 0; }
+    .hero-band { flex: 1 0 auto; }
+    .hero-stage { transform: scale(var(--hs)); }
+    .hero-rest { transform: scale(calc(1 / var(--hs))); transform-origin: 0 0; width: max-content !important; max-width: 150px; }
+    .hero-focus { display: none; }
+  }
   @media (prefers-reduced-motion: reduce) {
     .hero-focus { opacity: 1; position: static !important; }
   }

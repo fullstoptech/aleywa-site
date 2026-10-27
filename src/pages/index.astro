@@ -22,7 +22,7 @@ const featured = posts[0];
 const restPosts = posts.slice(1, 3);
 ---
 <BaseLayout title="Aleywa Studios" description="Brand identity and websites, made together. Aleywa Studios is a design studio that decides your brand and your website together, and shows you the reason behind every decision." footerTone="paper">
-  <div data-hero-root class="hero-root"><div class="lg:sticky lg:top-[88px]"><HeroStatic /></div><Hero client:load /></div><style>.hero-root{position:relative}/* One viewport of scroll drives the whole hero slide: no excess empty scroll space. */@media(min-width:1024px){.hero-root{height:200vh}}</style>
+  <div data-hero-root class="hero-root"><div class="sticky top-0 lg:top-[88px]"><HeroStatic /></div><Hero client:load /></div><style>.hero-root{position:relative}/* Hero.tsx sizes this to the strip's travel distance; 200vh is the pre-hydration fallback. */@media(min-width:1024px){.hero-root{height:200vh}}</style>
 
   <section class="section-x"><div class="inner-x py-16 lg:py-24 flex flex-col gap-10 lg:gap-16">
     <SectionHeader title="What we do" intro="Four jobs, in the order we do them." />
