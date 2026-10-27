@@ -1,5 +1,9 @@
 import { onMount, onCleanup } from 'solid-js';
 
+const clamp01 = (v: number) => Math.min(1, Math.max(0, v));
+// Smoothstep: gentle ease-in/out so the slide starts and settles softly.
+const smoothstep = (v: number) => { const t = clamp01(v); return t * t * (3 - 2 * t); };
+
 export default function Hero() {
   onMount(() => {
     const root = document.querySelector('[data-hero-root]') as HTMLElement | null;
@@ -7,47 +11,61 @@ export default function Hero() {
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const layer = root.querySelector('.hero-layer') as HTMLElement | null;
     if (reduced || !layer || window.innerWidth < 1024) {
-      // No-JS / reduced-motion fallback panel in normal flow
       const fb = root.querySelector('.hero-reduced-flow') as HTMLElement | null;
       if (fb && reduced) fb.style.display = 'block';
       return;
     }
-    let ticking = false;
-    const update = () => {
-      ticking = false;
+    const restEls = Array.from(root.querySelectorAll<HTMLElement>('.hero-rest'));
+    const focusEls = Array.from(root.querySelectorAll<HTMLElement>('.hero-focus'));
+    const bandRest = root.querySelector<HTMLElement>('.hero-band-rest');
+    const bandFocus = root.querySelector<HTMLElement>('.hero-band-focus');
+
+    const targetForScroll = () => {
       const rect = root.getBoundingClientRect();
       const total = Math.max(1, root.offsetHeight - window.innerHeight);
-      const raw = Math.min(1, Math.max(0, -rect.top / total));
+      const raw = clamp01(-rect.top / total);
       // 0-20% rest hold, 20-80% slide, 80-100% focus hold
-      let t = 0;
-      if (raw <= 0.2) t = 0;
-      else if (raw >= 0.8) t = 1;
-      else t = (raw - 0.2) / 0.6;
-      const x = -2700 * t;
-      layer.style.transform = `translateX(${x}px)`;
-      const restEls = root.querySelectorAll('.hero-rest');
-      const focusEls = root.querySelectorAll('.hero-focus');
-      restEls.forEach((el) => { (el as HTMLElement).style.opacity = String(1 - t); });
-      focusEls.forEach((el) => { (el as HTMLElement).style.opacity = String(t); });
-      const bandRest = root.querySelector('.hero-band-rest') as HTMLElement | null;
-      const bandFocus = root.querySelector('.hero-band-focus') as HTMLElement | null;
+      if (raw <= 0.2) return 0;
+      if (raw >= 0.8) return 1;
+      return (raw - 0.2) / 0.6;
+    };
+
+    const apply = (tRaw: number) => {
+      const t = smoothstep(tRaw);
+      layer.style.transform = `translate3d(${-2700 * t}px, 0, 0)`;
+      restEls.forEach((el) => { el.style.opacity = String(1 - t); });
+      focusEls.forEach((el) => { el.style.opacity = String(t); });
       if (bandRest && bandFocus) {
-        const bf = t > 0.5;
-        bandRest.style.opacity = bf ? '0' : '1';
-        bandRest.style.transform = bf ? 'translateY(-6px)' : 'translateY(0)';
-        bandFocus.hidden = false;
-        bandFocus.style.opacity = bf ? '1' : '0';
-        bandFocus.style.transform = bf ? 'translateY(0)' : 'translateY(6px)';
-        bandRest.style.transition = 'opacity 180ms cubic-bezier(0.2,0.7,0.2,1), transform 180ms cubic-bezier(0.2,0.7,0.2,1)';
-        bandFocus.style.transition = 'opacity 180ms cubic-bezier(0.2,0.7,0.2,1), transform 180ms cubic-bezier(0.2,0.7,0.2,1)';
-        bandFocus.style.position = 'absolute';
+        // Continuous crossfade through the middle of the slide.
+        const bf = smoothstep((t - 0.35) / 0.3);
+        bandRest.style.opacity = String(1 - bf);
+        bandRest.style.transform = `translateY(${-8 * bf}px)`;
+        bandRest.setAttribute('aria-hidden', bf > 0.5 ? 'true' : 'false');
+        bandFocus.style.opacity = String(bf);
+        bandFocus.style.transform = `translateY(${8 * (1 - bf)}px)`;
+        bandFocus.setAttribute('aria-hidden', bf > 0.5 ? 'false' : 'true');
       }
     };
-    const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
-    update();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-    onCleanup(() => { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); });
+
+    // Lerp toward the scroll target each frame for a smooth, inertial slide.
+    let current = targetForScroll();
+    let raf = 0;
+    let running = true;
+    apply(current);
+    const tick = () => {
+      if (!running) return;
+      const target = targetForScroll();
+      const diff = target - current;
+      if (Math.abs(diff) < 0.0005) {
+        if (current !== target) { current = target; apply(current); }
+      } else {
+        current += diff * 0.085;
+        apply(current);
+      }
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    onCleanup(() => { running = false; cancelAnimationFrame(raf); });
   });
   return <span hidden aria-hidden="true" />;
 }

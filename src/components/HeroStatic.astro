@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import Wordmark from './Wordmark.astro';
 import lettersRaw from '../assets/letters.svg?raw';
 import heroA1 from '../assets/img/hero-window-a1.png';
 import heroE from '../assets/img/hero-window-e.png';
@@ -11,13 +10,9 @@ const lettersSvg = lettersRaw
 ---
 <div class="hero-static">
   {/* Desktop stage */}
-  <div class="hero-desktop-wrap hidden lg:block relative overflow-hidden bg-paper" style="height:min(900px, 62.5vw);">
+  <div class="hero-desktop-wrap hidden lg:block relative overflow-hidden bg-paper w-full" style="height:calc(100vw * 680 / 1440);">
     <div class="hero-stage absolute top-0 left-0 origin-top-left" style="width:1440px;height:900px;">
-      <div class="absolute top-0 left-0 flex items-center justify-between w-[1440px] h-[88px] px-16 z-20">
-        <a href="/" aria-label="Aleywa Studios — home"><Wordmark /></a>
-        <a href="/start-a-project" class="text-body font-medium min-h-[44px] inline-flex items-center">Start a project</a>
-      </div>
-      <div class="hero-layer absolute" style="left:0;top:-244.8px;width:3657.546px;height:1152px;">
+      <div class="hero-layer absolute" style="left:0;top:-244.8px;width:3657.546px;height:1152px;will-change:transform;">
         <div class="absolute overflow-hidden" style="left:118.8px;top:448.2px;width:345.6px;height:345.6px;">
           <Image src={heroA1} alt="Our own brand. 3D render." widths={[346, 692]} loading="eager" class="w-full h-full object-cover" />
         </div>
@@ -62,18 +57,23 @@ const lettersSvg = lettersRaw
           </ol>
         </div>
       </div>
-      <div class="absolute left-0 w-[1440px] flex gap-6 px-16 items-start" style="top:680px;height:220px;background:var(--color-berry);color:var(--color-paper);padding-top:24px;padding-bottom:24px;">
-        <div class="hero-band-rest flex-1">
+    </div>
+  </div>
+  {/* Full-bleed berry band: stretches edge to edge at any viewport width */}
+  <div class="hero-band hidden lg:block w-full" style="background:var(--color-berry);color:var(--color-paper);">
+    <div class="section-x"><div class="inner-x flex gap-6 items-start py-6 min-h-[220px]">
+      <div class="hero-band-stack flex-1" style="display:grid;">
+        <div class="hero-band-rest" style="grid-area:1/1;will-change:opacity,transform;">
           <p class="text-hero-h1">Brand identity and websites,<br />made together<span aria-hidden="true" style="display:inline-block;width:14px;height:14px;background:var(--color-accent-on-inverse);margin-left:0.12em;"></span></p>
         </div>
-        <div class="hero-band-focus flex-1" hidden>
+        <div class="hero-band-focus" style="grid-area:1/1;opacity:0;will-change:opacity,transform;" aria-hidden="true">
           <p class="text-hero-h1">The card</p>
           <p class="text-label mt-2" style="color:#fcd1da;">A 9 mm square is cut through the paper face, the size of the stop.</p>
         </div>
-        <p class="text-label w-[300px]" style="color:#fcd1da;">Aleywa Studios is a design studio that decides your brand and your website together, and shows you the reason behind every decision.</p>
-        <p class="text-caption w-[170px]" style="color:#fcd1da;">Scroll along the word. Four windows, then the rest.</p>
       </div>
-    </div>
+      <p class="text-label w-[300px] shrink-0" style="color:#fcd1da;">Aleywa Studios is a design studio that decides your brand and your website together, and shows you the reason behind every decision.</p>
+      <p class="text-caption w-[170px] shrink-0" style="color:#fcd1da;">Scroll along the word. Four windows, then the rest.</p>
+    </div></div>
   </div>
   <div class="hero-reduced-flow section-x" style="display:none;"><div class="inner-x py-8 flex flex-col gap-4">
     <p class="text-h3">4 Website.</p>
