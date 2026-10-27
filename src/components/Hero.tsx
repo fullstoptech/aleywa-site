@@ -23,15 +23,14 @@ export default function Hero() {
     const targetForScroll = () => {
       const rect = root.getBoundingClientRect();
       const total = Math.max(1, root.offsetHeight - window.innerHeight);
-      const raw = clamp01(-rect.top / total);
-      // 0-20% rest hold, 20-80% slide, 80-100% focus hold
-      if (raw <= 0.2) return 0;
-      if (raw >= 0.8) return 1;
-      return (raw - 0.2) / 0.6;
+      // No holds: the slide starts on the first pixel of scroll and finishes
+      // exactly when the hero scroll space ends, so no dead scrolling.
+      return clamp01(-rect.top / total);
     };
 
     const apply = (tRaw: number) => {
-      const t = smoothstep(tRaw);
+      // Linear progress so movement is immediate; the lerp below smooths it.
+      const t = clamp01(tRaw);
       layer.style.transform = `translate3d(${-2700 * t}px, 0, 0)`;
       restEls.forEach((el) => { el.style.opacity = String(1 - t); });
       focusEls.forEach((el) => { el.style.opacity = String(t); });
@@ -59,7 +58,7 @@ export default function Hero() {
       if (Math.abs(diff) < 0.0005) {
         if (current !== target) { current = target; apply(current); }
       } else {
-        current += diff * 0.085;
+        current += diff * 0.12;
         apply(current);
       }
       raf = requestAnimationFrame(tick);
