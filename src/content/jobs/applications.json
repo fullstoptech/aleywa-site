@@ -1,0 +1,23 @@
+{
+  "n": 3,
+  "slug": "applications",
+  "title": "Applications",
+  "line": "We design what carries your brand: cards, letterheads, signs, social posts and slides.",
+  "intro": "Your brand meets people on a card, a letterhead, a sign, a post and a slide. We design the ones you will reach for first, once, and ready to print or post. Each piece takes one risk (a scale, a crop, a material or a line) and is disciplined everywhere else.",
+  "example": {
+    "title": "The card",
+    "body": "A 9 mm square is cut through the paper face, the size of the stop. Stacked, the edges show a raspberry line.",
+    "gaveUp": "We gave up printing the stop. It is cut through the card, and the raspberry core shows.",
+    "label": "Our own brand. 3D render. Printer samples to come.",
+    "image": "plate-card.jpg"
+  },
+  "gets": [
+    "The pieces you will use first, designed once and ready to print or post."
+  ],
+  "needs": "Where your brand will appear first, and what has to be printed or posted soonest.",
+  "weDo": "We design the pieces that carry the brand.",
+  "youDecide": "You choose which pieces come first.",
+  "youReceive": "Cards, letterheads, signs, social posts and slides, ready to use.",
+  "windowImage": "window-card.png",
+  "windowLabel": "Our own brand. 3D render. Printer samples to come."
+}

@@ -1,0 +1,26 @@
+{
+  "n": 4,
+  "slug": "website",
+  "title": "Website",
+  "line": "We plan, write and build your site from your brand's own colour, type and rules.",
+  "intro": "We plan the pages and what each one is for, write the words to say what you say first, and build the site from your brand's own colour, type and rules. Then we check it at phone size.",
+  "example": {
+    "title": "This website",
+    "body": "Our own site, designed from our own brand's colour, type and rules.",
+    "gaveUp": "We gave up a contact form. The site has one plain line: Start a project.",
+    "label": "Our own brand. Site design.",
+    "image": "plate-website.jpg"
+  },
+  "gets": [
+    "A plan of the pages and what each one is for.",
+    "The words for every page, starting with what you say first.",
+    "The site, designed and built from your brand, checked at phone size."
+  ],
+  "needs": "What you have now, links included, and who will keep the site up to date afterwards.",
+  "needsNote": "Build scope, hosting and who edits the site after launch are written down with you at the start.",
+  "weDo": "We plan the pages, write the words and build the site in the same system.",
+  "youDecide": "You approve the plan, the words and the design.",
+  "youReceive": "A site built from your brand and checked at phone size.",
+  "windowImage": "plate-website.jpg",
+  "windowLabel": "Our own brand. Site design."
+}

@@ -1,0 +1,24 @@
+{
+  "n": 1,
+  "slug": "strategy",
+  "title": "Strategy",
+  "line": "We work out who you are for, and what you say first.",
+  "intro": "A logo drawn before you know who it is for is a guess. So we start with three questions. Who is this for? What else can they choose? What do you say first? We write the answers down, and every later decision, from your colour to the first line of your website, can be checked against them.",
+  "example": {
+    "title": "One idea",
+    "body": "Our brand idea in one line: round letters, one square stop.",
+    "gaveUp": "We gave up bubbly candy imagery and the usual twisted wrapper.",
+    "label": "Our own brand. Brand book page.",
+    "image": "plate-one-idea.jpg"
+  },
+  "gets": [
+    "A written strategy: who it is for, what the other choices are, and what you say first.",
+    "A one-page brief your team and your suppliers can work from."
+  ],
+  "needs": "What you are building, who buys it today, and what they use instead.",
+  "weDo": "We work out who you are for, what the other choices are, and what you say first.",
+  "youDecide": "You confirm who it is for and what comes first.",
+  "youReceive": "A written strategy and a one-page brief.",
+  "windowImage": "window-ale.png",
+  "windowLabel": "Our own brand. Brand book page."
+}

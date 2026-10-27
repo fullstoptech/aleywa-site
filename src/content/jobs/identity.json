@@ -1,0 +1,25 @@
+{
+  "n": 2,
+  "slug": "identity",
+  "title": "Identity",
+  "line": "We draw your name, choose your colour and type, and write the rules so anyone on your team can use them.",
+  "intro": "We draw your name. We show you routes, you choose one, and we refine it until it holds at the size of a browser tab and at the size of a sign. Then we write the rules, so anyone on your team can use it.",
+  "example": {
+    "title": "The brand book",
+    "body": "Ours has more than fifty pages: the idea, the logo, colour, type, layout, voice, applications and how to use it.",
+    "gaveUp": "We gave up a ready-made typeface, and a cut on the e.",
+    "label": "Our own brand. Brand book page.",
+    "image": "brand-book-cover.jpg"
+  },
+  "gets": [
+    "Routes to choose from, then one drawn and refined, with its small-size version.",
+    "Colour and type with the reasons, checked for contrast.",
+    "A book of rules: a web page and a PDF."
+  ],
+  "needs": "Your name as you want it written, and every letter your customers write in it.",
+  "weDo": "We show you routes, and when you have chosen, we draw it and write its rules.",
+  "youDecide": "You choose the route.",
+  "youReceive": "Your mark and its small-size version, colour, type, and a book of rules.",
+  "windowImage": "window-wordmark-identity.png",
+  "windowLabel": "Our own brand. Brand book page."
+}
