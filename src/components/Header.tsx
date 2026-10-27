@@ -4,9 +4,12 @@ import { NAV, EMAIL, isCurrent } from '../data/site';
 
 export default function Header(props: { currentPath?: string }) {
   const currentPath = props.currentPath ?? (typeof window !== 'undefined' ? window.location.pathname : '/');
+  // Homepage only: sticky immediately, so the menu stays over the scroll-driven
+  // hero from the start (no scroll-threshold spacer/listener behaviour there).
+  const isHome = currentPath === '/';
   const [scrolled, setScrolled] = createSignal(false);
-  // The header is not sticky by default: it sits in the flow at the top and
-  // only becomes sticky (fixed) once you have scrolled past its own height.
+  // Other pages: the header is not sticky by default: it sits in the flow at
+  // the top and only becomes sticky (fixed) once you scroll past its height.
   const [stuck, setStuck] = createSignal(false);
   const [headerH, setHeaderH] = createSignal(0);
   const [open, setOpen] = createSignal(false);
@@ -22,7 +25,7 @@ export default function Header(props: { currentPath?: string }) {
       const h = headerEl?.offsetHeight ?? 0;
       if (h) setHeaderH(h);
       setScrolled(window.scrollY > 8);
-      setStuck(h > 0 && window.scrollY >= h);
+      setStuck(!isHome && h > 0 && window.scrollY >= h);
     };
     update();
     window.addEventListener('scroll', update, { passive: true });
@@ -62,7 +65,7 @@ export default function Header(props: { currentPath?: string }) {
       <Show when={stuck()}><div aria-hidden="true" style={`height:${headerH()}px`} /></Show>
       <header
         ref={headerEl}
-        class={stuck() ? 'bg-paper fixed top-0 inset-x-0 z-50 site-header header-stuck' : 'bg-paper relative z-50 site-header'}
+        class={isHome ? 'bg-paper sticky top-0 z-50 site-header' : stuck() ? 'bg-paper fixed top-0 inset-x-0 z-50 site-header header-stuck' : 'bg-paper relative z-50 site-header'}
         style={(scrolled() || open() ? 'border-bottom:1px solid var(--color-line);background:var(--color-paper);' : 'border-bottom:1px solid transparent;') + 'transition:background-color 300ms cubic-bezier(0.22,1,0.36,1),border-color 300ms cubic-bezier(0.22,1,0.36,1);'}
       >
         <div class="section-x">
