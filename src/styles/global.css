@@ -254,6 +254,13 @@ a:active, button:active { transform: translateY(1px); }
 }
 main { animation: page-in 450ms var(--ease-smooth); }
 
+/* Header slides in when it becomes sticky after scrolling past its height */
+@keyframes header-in {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+.header-stuck { animation: header-in 350ms var(--ease-smooth); }
+
 /* Mobile menu entrance */
 @keyframes menu-in {
   from { opacity: 0; transform: translateY(-10px); }

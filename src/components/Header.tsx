@@ -5,7 +5,12 @@ import { NAV, EMAIL, isCurrent } from '../data/site';
 export default function Header(props: { currentPath?: string }) {
   const currentPath = props.currentPath ?? (typeof window !== 'undefined' ? window.location.pathname : '/');
   const [scrolled, setScrolled] = createSignal(false);
+  // The header is not sticky by default: it sits in the flow at the top and
+  // only becomes sticky (fixed) once you have scrolled past its own height.
+  const [stuck, setStuck] = createSignal(false);
+  const [headerH, setHeaderH] = createSignal(0);
   const [open, setOpen] = createSignal(false);
+  let headerEl: HTMLElement | undefined;
   let menuBtn: HTMLButtonElement | undefined;
   let panel: HTMLDivElement | undefined;
   let closeBtn: HTMLButtonElement | undefined;
@@ -13,10 +18,16 @@ export default function Header(props: { currentPath?: string }) {
   const wmHtml = wordmarkRaw.replace('<svg ', '<svg role="img" aria-label="Aleywa Studios" style="height:32px;width:auto;display:block" ');
 
   onMount(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onCleanup(() => window.removeEventListener('scroll', onScroll));
+    const update = () => {
+      const h = headerEl?.offsetHeight ?? 0;
+      if (h) setHeaderH(h);
+      setScrolled(window.scrollY > 8);
+      setStuck(h > 0 && window.scrollY >= h);
+    };
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    onCleanup(() => { window.removeEventListener('scroll', update); window.removeEventListener('resize', update); });
   });
 
   const openMenu = () => {
@@ -47,8 +58,11 @@ export default function Header(props: { currentPath?: string }) {
 
   return (
     <>
+      {/* Spacer holds the header's place in the flow while it is fixed, so the page does not jump. */}
+      <Show when={stuck()}><div aria-hidden="true" style={`height:${headerH()}px`} /></Show>
       <header
-        class="bg-paper sticky top-0 z-50 site-header"
+        ref={headerEl}
+        class={stuck() ? 'bg-paper fixed top-0 inset-x-0 z-50 site-header header-stuck' : 'bg-paper relative z-50 site-header'}
         style={(scrolled() || open() ? 'border-bottom:1px solid var(--color-line);background:var(--color-paper);' : 'border-bottom:1px solid transparent;') + 'transition:background-color 300ms cubic-bezier(0.22,1,0.36,1),border-color 300ms cubic-bezier(0.22,1,0.36,1);'}
       >
         <div class="section-x">
