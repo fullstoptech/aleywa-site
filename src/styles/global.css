@@ -1,0 +1,239 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Schibsted Grotesk";
+  src: url("/fonts/schibsted-grotesk.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Schibsted Grotesk";
+  src: url("/fonts/schibsted-grotesk-italic.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto GH";
+  src: url("/fonts/noto-gh.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0186, U+0189, U+0190, U+0254, U+0256, U+025B, U+0263, U+028B;
+}
+
+@theme {
+  --font-sans: "Schibsted Grotesk", "Noto GH", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-paper: #f6f3ee;
+  --color-ink: #181110;
+  --color-ink-muted: #6a615f;
+  --color-line: #e0dbd6;
+  --color-line-strong: #877e7b;
+  --color-accent: #ab2859;
+  --color-accent-hover: #7f1840;
+  --color-accent-pressed: #5e122e;
+  --color-accent-on-inverse: #de4c7d;
+  --color-berry: #460f22;
+  --color-berry-deep: #2b0713;
+  --color-raised: #fefdfb;
+  --color-hover-ground: #ece9e4;
+  --color-sunken: #ece9e4;
+  --color-pressed-ground: #e0dbd6;
+  --color-focus: #de4c7d;
+  --color-danger: #b3261e;
+  --color-info: #2d5e8a;
+  --color-success: #2e6b4e;
+  --color-warning: #8a5a00;
+  --color-on-accent: #f6f3ee;
+
+  --color-brand-50: #fdf3f5;
+  --color-brand-100: #fde6eb;
+  --color-brand-200: #fcd1da;
+  --color-brand-300: #fdb2c4;
+  --color-brand-400: #f189a5;
+  --color-brand-500: #de4c7d;
+  --color-brand-600: #ab2859;
+  --color-brand-700: #7f1840;
+  --color-brand-800: #5e122e;
+  --color-brand-900: #460f22;
+  --color-brand-950: #2b0713;
+
+  --color-neutral-0: #fefdfb;
+  --color-neutral-50: #f6f3ee;
+  --color-neutral-100: #ece9e4;
+  --color-neutral-200: #e0dbd6;
+  --color-neutral-300: #ccc6c1;
+  --color-neutral-400: #aba39f;
+  --color-neutral-500: #877e7b;
+  --color-neutral-600: #6a615f;
+  --color-neutral-700: #4e4544;
+  --color-neutral-800: #362e2d;
+  --color-neutral-900: #251d1c;
+  --color-neutral-950: #181110;
+
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
+
+  --shadow-popover: 0 12px 28px -14px rgba(24, 17, 16, 0.35);
+
+  --ease-base: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  --text-caption: 13px;
+  --text-caption--line-height: 1.4;
+  --text-caption--letter-spacing: 0.01em;
+  --text-caption--font-weight: 500;
+
+  --text-label: 15px;
+  --text-label--line-height: 1.3;
+  --text-label--font-weight: 500;
+
+  --text-body: 18px;
+  --text-body--line-height: 1.55;
+  --text-body--font-weight: 400;
+
+  --text-body-lg: 21px;
+  --text-body-lg--line-height: 1.5;
+  --text-body-lg--letter-spacing: -0.005em;
+  --text-body-lg--font-weight: 400;
+
+  --text-prose: 20px;
+  --text-prose--line-height: 1.6;
+  --text-prose--font-weight: 400;
+
+  --text-h3: 28px;
+  --text-h3--line-height: 1.15;
+  --text-h3--letter-spacing: -0.025em;
+  --text-h3--font-weight: 700;
+
+  --text-h2: 44px;
+  --text-h2--line-height: 1.08;
+  --text-h2--letter-spacing: -0.035em;
+  --text-h2--font-weight: 700;
+
+  --text-h1: 72px;
+  --text-h1--line-height: 1;
+  --text-h1--letter-spacing: -0.04em;
+  --text-h1--font-weight: 700;
+
+  --text-hero-h1: 60px;
+  --text-hero-h1--line-height: 1.04;
+  --text-hero-h1--letter-spacing: -0.04em;
+  --text-hero-h1--font-weight: 700;
+
+  --text-display: 120px;
+  --text-display--line-height: 0.96;
+  --text-display--letter-spacing: -0.04em;
+  --text-display--font-weight: 700;
+
+  --text-statement: 192px;
+  --text-statement--line-height: 0.95;
+  --text-statement--letter-spacing: -0.045em;
+  --text-statement--font-weight: 700;
+
+  --text-pull: 32px;
+  --text-pull--line-height: 1.3;
+  --text-pull--font-weight: 400;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  scroll-behavior: auto;
+}
+body {
+  overflow-x: clip;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: var(--color-brand-200);
+  color: var(--color-ink);
+}
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+/* Fluid display type: 390 -> 1440 values from the screens */
+.text-display-fluid {
+  font-size: clamp(56px, calc(56px + (120 - 56) * ((100vw - 390px) / (1440 - 390))), 120px);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+.text-h1-fluid {
+  font-size: clamp(38px, calc(38px + (72 - 38) * ((100vw - 390px) / (1440 - 38))), 72px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+.text-hero-fluid {
+  font-size: clamp(44px, calc(44px + (60 - 44) * ((100vw - 390px) / (1440 - 390))), 60px);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+.container-x {
+  max-width: 1312px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+@media (min-width: 768px) {
+  .container-x { padding-inline: 48px; }
+}
+@media (min-width: 1024px) {
+  .container-x { padding-inline: 64px; }
+}
+/* Full-bleed section padding matching container margins */
+.section-x {
+  padding-inline: 20px;
+}
+@media (min-width: 768px) {
+  .section-x { padding-inline: 48px; }
+}
+@media (min-width: 1024px) {
+  .section-x { padding-inline: 64px; }
+}
+.section-x > .inner-x {
+  max-width: 1312px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 320ms cubic-bezier(0.2, 0.7, 0.2, 1), transform 320ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+[data-reveal].is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.no-js [data-reveal], [data-reveal].no-anim {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+.post-prose h3 { font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 700; padding-top: 1rem; }
+.post-prose p { font-size: 20px; line-height: 1.6; }
