@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+---
+<!-- TODO(owner): legal review -->
+<BaseLayout title="Privacy — Aleywa Studios" description="What this site does with your visit: it is static, sets no cookies, and runs no analytics." footerTone="paper">
+  <PageHero size="display" title="Privacy" />
+  <section class="section-x"><div class="inner-x max-w-[680px] flex flex-col gap-8 pb-16 lg:pb-24" data-reveal>
+    <div class="flex flex-col gap-3"><h2 class="text-h3">What this site is</h2><p class="text-body">This site is static. Its pages are files, served as they are. There is no account, no form, and nothing to sign in to.</p></div>
+    <div class="flex flex-col gap-3"><h2 class="text-h3">Cookies and analytics</h2><p class="text-body">This site sets no cookies. It runs no analytics and no tracking. Nothing about your visit is sent to us by the site itself.</p></div>
+    <div class="flex flex-col gap-3"><h2 class="text-h3">Writing to us</h2><p class="text-body">The one action here is an ordinary email link to info@aleywa.com. Writing to us uses your own email program. What you send is what you choose to write, and it arrives as an ordinary email.</p></div>
+    <div class="flex flex-col gap-3"><h2 class="text-h3">Copying the address</h2><p class="text-body">The Copy address button copies the address on your own device. It sends nothing anywhere.</p></div>
+    <div class="flex flex-col gap-3"><h2 class="text-h3">Hosting</h2><p class="text-body">Like most hosting, the servers that serve these files may keep ordinary logs of requests. We do not add tracking of our own on top of that.</p></div>
+    <div class="flex flex-col gap-3"><h2 class="text-h3">Changes</h2><p class="text-body">If this site ever starts doing more than the above, this page will say so first.</p></div>
+  </div></section>
+</BaseLayout>

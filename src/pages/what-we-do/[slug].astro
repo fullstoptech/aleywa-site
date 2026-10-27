@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Stop from '../../components/Stop.astro';
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import { imageByName } from '../../data/images';
+export async function getStaticPaths() {
+  const jobs = await getCollection('jobs');
+  const sorted = [...jobs].sort((a, b) => a.data.n - b.data.n);
+  return sorted.map((j, i) => ({ params: { slug: j.data.slug }, props: { job: j.data, next: sorted[(i + 1) % sorted.length].data } }));
+}
+const { job, next } = Astro.props;
+---
+<BaseLayout title={`${job.title} — Aleywa Studios`} description={job.line} footerTone="berry">
+  <section class="section-x"><div class="inner-x pt-8 lg:pt-16 pb-16 lg:pb-24 flex flex-col gap-8" data-reveal>
+    <div class="flex items-center gap-8">
+      <a href="/what-we-do" class="text-body font-medium min-h-[44px] inline-flex items-center underline decoration-[1.5px] underline-offset-[4px]">What we do</a>
+      <span class="text-label text-ink-muted">{job.n} of 4</span>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6">
+      <div class="lg:col-span-7 flex flex-col gap-6">
+        <h1 class="text-h1-fluid">{job.title}<Stop size={14} /></h1>
+        <p class="text-body-lg max-w-[680px]">{job.line}</p>
+        <p class="text-body max-w-[680px]">{job.intro}</p>
+      </div>
+      <figure class="lg:col-span-5 flex flex-col gap-3">
+        <div class="overflow-hidden aspect-square"><Image src={imageByName[job.windowImage]} alt={job.example.title} widths={[384, 768]} class="w-full h-full object-cover" /></div>
+        <figcaption class="text-caption text-ink-muted">{job.windowLabel}</figcaption>
+      </figure>
+    </div>
+  </div></section>
+
+  <section class="section-x border-t border-line"><div class="inner-x grid grid-cols-1 lg:grid-cols-12 gap-6 py-8" data-reveal>
+    <p class="text-label lg:col-span-4">Our own example</p>
+    <div class="lg:col-span-8 flex flex-col gap-3">
+      <h2 class="text-h3">{job.example.title}</h2>
+      <p class="text-body max-w-[680px]">{job.example.body}</p>
+      <p class="text-body max-w-[680px]">{job.example.gaveUp}</p>
+      <p class="text-caption text-ink-muted">{job.example.label}</p>
+      <a href="/recent-work" class="text-body font-medium underline decoration-[1.5px] underline-offset-[4px] hover:text-[#7f1840] transition-colors duration-[120ms] min-h-[44px] inline-flex items-center">See all recent work</a>
+    </div>
+  </div></section>
+
+  <section class="section-x"><div class="inner-x grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-6 py-16" data-reveal>
+    <div class="flex flex-col gap-5">
+      <h2 class="text-h3">What you get</h2>
+      {job.gets.map((g) => <p class="text-body">{g}</p>)}
+    </div>
+    <div class="flex flex-col gap-5">
+      <h2 class="text-h3">What we need from you</h2>
+      <p class="text-body-lg">{job.needs}</p>
+      {job.needsNote && <p class="text-body italic">{job.needsNote}</p>}
+    </div>
+  </div></section>
+
+  <section class="section-x border-t border-line"><div class="inner-x grid grid-cols-1 lg:grid-cols-12 gap-6 py-16" data-reveal>
+    <h2 class="text-h3 lg:col-span-4">How it works</h2>
+    <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="flex flex-col gap-2"><p class="text-label text-ink-muted">We do</p><p class="text-body">{job.weDo}</p></div>
+      <div class="flex flex-col gap-2"><p class="text-label text-ink-muted">You decide</p><p class="text-body">{job.youDecide}</p></div>
+      <div class="flex flex-col gap-2"><p class="text-label text-ink-muted">You receive</p><p class="text-body">{job.youReceive}</p></div>
+    </div>
+  </div></section>
+
+  <section class="section-x border-t border-line"><div class="inner-x grid grid-cols-1 lg:grid-cols-12 gap-6 py-16 lg:pb-24" data-reveal>
+    <h2 class="text-h3 lg:col-span-4">Next</h2>
+    <div class="lg:col-span-8 flex flex-col gap-3">
+      <span class="text-label text-ink-muted">{next.n} of 4</span>
+      <a href={`/what-we-do/${next.slug}`} class="text-body font-medium underline decoration-[1.5px] underline-offset-[4px] hover:text-[#7f1840] transition-colors duration-[120ms] min-h-[44px] inline-flex items-center">{next.title}</a>
+    </div>
+  </div></section>
+  <CtaBand tone="berry" size="h1" />
+</BaseLayout>

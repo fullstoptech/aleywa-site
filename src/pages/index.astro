@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroStatic from '../components/HeroStatic.astro';
+import Hero from '../components/Hero';
+import SectionHeader from '../components/SectionHeader.astro';
+import JobRow from '../components/JobRow.astro';
+import Plate from '../components/Plate.astro';
+import Reason from '../components/Reason.astro';
+import StepGrid from '../components/StepGrid.astro';
+import PostCard from '../components/PostCard.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { getCollection } from 'astro:content';
+import { reasons } from '../data/reasons';
+import { steps } from '../data/steps';
+import { glyphsMissing } from '../data/glyphs';
+
+const jobs = (await getCollection('jobs')).sort((a, b) => a.data.n - b.data.n);
+const work = (await getCollection('work')).sort((a, b) => a.data.order - b.data.order);
+const byTitle = Object.fromEntries(work.map((x) => [x.data.title, x]));
+const posts = (await getCollection('posts')).sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+const featured = posts[0];
+const restPosts = posts.slice(1, 3);
+---
+<BaseLayout title="Aleywa Studios" description="Brand identity and websites, made together. Aleywa Studios is a design studio that decides your brand and your website together, and shows you the reason behind every decision." bare footerTone="paper">
+  <div data-hero-root class="hero-root"><div class="lg:sticky lg:top-0"><HeroStatic /></div><Hero client:load /></div><style>.hero-root{position:relative}@media(min-width:1024px){.hero-root{height:280vh}}</style>
+
+  <section class="section-x"><div class="inner-x py-16 lg:py-24 flex flex-col gap-10 lg:gap-16">
+    <SectionHeader title="What we do" intro="Four jobs, in the order we do them." />
+    <div>{jobs.map((j) => <JobRow n={j.data.n} title={j.data.title} line={j.data.line} gets={j.data.gets} href={`/what-we-do/${j.data.slug}`} />)}</div>
+    <a href="/what-we-do" class="text-body font-medium underline decoration-[1.5px] underline-offset-[4px] hover:text-[#7f1840] transition-colors duration-[120ms] min-h-[44px] inline-flex items-center">See what each one includes</a>
+  </div></section>
+
+  <section class="section-x"><div class="inner-x py-16 lg:py-24 flex flex-col gap-10 lg:gap-16">
+    <SectionHeader title="Recent work" intro="Our own recent work, labelled. Each piece comes with the decision behind it. Client work will appear here when a client has cleared it in writing." />
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-6">
+      <div class="lg:col-span-7"><Plate title={byTitle['The wordmark'].data.title} caption={byTitle['The wordmark'].data.caption} gaveUp={byTitle['The wordmark'].data.gaveUp} label={byTitle['The wordmark'].data.label} image={byTitle['The wordmark'].data.image} alt="The Aleywa wordmark, drawn by hand" href="/recent-work/our-brand-in-full" /></div>
+      <div class="lg:col-span-5"><Plate offset title={byTitle['The space between the letters'].data.title} caption={byTitle['The space between the letters'].data.caption} gaveUp={byTitle['The space between the letters'].data.gaveUp} label={byTitle['The space between the letters'].data.label} image={byTitle['The space between the letters'].data.image} alt="The space between the letters of the wordmark" href="/recent-work/our-brand-in-full" /></div>
+      <div class="lg:col-span-5"><Plate title={byTitle['The card'].data.title} caption={byTitle['The card'].data.caption} gaveUp={byTitle['The card'].data.gaveUp} label={byTitle['The card'].data.label} image={byTitle['The card'].data.image} alt="Our card, with a square cut through it" href="/recent-work/our-brand-in-full" /></div>
+      <div class="lg:col-span-7"><Plate title={byTitle['The wall'].data.title} caption={byTitle['The wall'].data.caption} gaveUp={byTitle['The wall'].data.gaveUp} label={byTitle['The wall'].data.label} image={byTitle['The wall'].data.image} alt="Our wall, reading one word to a row" href="/recent-work/our-brand-in-full" /></div>
+    </div>
+    <a href="/recent-work" class="text-body font-medium underline decoration-[1.5px] underline-offset-[4px] hover:text-[#7f1840] transition-colors duration-[120ms] min-h-[44px] inline-flex items-center">See all recent work</a>
+  </div></section>
+
+  <section class="section-x"><div class="inner-x py-16 lg:py-24 flex flex-col gap-10 lg:gap-16">
+    <SectionHeader title="Why choose us" intro="Five reasons, and the work that backs each one." />
+    <div>
+      {reasons.map((r) => r.n === 4 ? (
+        <Reason n={r.n} title={r.title} body={r.body} glyphs={glyphsMissing.slice(0,5)} statusNote="Status: planned" linkHref="/letters" linkLabel="See the letters" />
+      ) : (
+        <Reason n={r.n} title={r.title} body={r.body} label={r.label} image={r.image} alt={r.alt} />
+      ))}
+    </div>
+    <a href="/why-us" class="text-body font-medium underline decoration-[1.5px] underline-offset-[4px] hover:text-[#7f1840] transition-colors duration-[120ms] min-h-[44px] inline-flex items-center">Read the full answer</a>
+  </div></section>
+
+  <section class="section-x"><div class="inner-x py-16 lg:py-24 flex flex-col gap-10 lg:gap-16">
+    <SectionHeader title="How we work" intro="The order we work in. You decide at each step." />
+    <StepGrid steps={steps} />
+    <div class="max-w-[680px] flex flex-col gap-3">
+      <p class="text-body">You decide at each step. We write down what we tried and what we gave up.</p>
+      <p class="text-body">We label what is a mockup and what is not, and we tell you what is unfinished.</p>
+    </div>
+    <a href="/how-we-work" class="text-body font-medium underline decoration-[1.5px] underline-offset-[4px] hover:text-[#7f1840] transition-colors duration-[120ms] min-h-[44px] inline-flex items-center">See each step</a>
+  </div></section>
+
+  <section class="section-x"><div class="inner-x py-16 lg:py-24 flex flex-col gap-10 lg:gap-16">
+    <SectionHeader title="From the blog" intro="How we decide, written down." />
+    <PostCard featured title={featured.data.title} dateLabel={featured.data.dateLabel} minutes={featured.data.minutes} excerpt={featured.data.excerpt} image={featured.data.image} alt={featured.data.title} href={`/blog/${featured.id}`} />
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-8">
+      {restPosts.map((p) => <PostCard title={p.data.title} dateLabel={p.data.dateLabel} minutes={p.data.minutes} excerpt={p.data.excerpt} image={p.data.image} alt={p.data.title} href={`/blog/${p.id}`} />)}
+    </div>
+    <a href="/blog" class="text-body font-medium underline decoration-[1.5px] underline-offset-[4px] hover:text-[#7f1840] transition-colors duration-[120ms] min-h-[44px] inline-flex items-center">All posts</a>
+  </div></section>
+
+  <CtaBand tone="paper" size="display" />
+</BaseLayout>

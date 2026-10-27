@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Stop from '../components/Stop.astro';
+---
+<BaseLayout title="That page is not here — Aleywa Studios" description="Go to the home page, or write to info@aleywa.com." footerTone="paper">
+  <section class="section-x"><div class="inner-x grid grid-cols-1 lg:grid-cols-12 gap-8 py-16 lg:py-24" data-reveal>
+    <div class="lg:col-span-7 flex flex-col gap-8">
+      <h1 class="text-display-fluid">That page<br />is not here<Stop size={24} /></h1>
+      <p class="text-body-lg">Go to the home page, or write to info@aleywa.com.</p>
+      <a href="/" class="text-[38px] leading-[1.08] font-bold underline decoration-[1.5px] underline-offset-[4px] hover:text-[#7f1840] transition-colors duration-[120ms]">Go to the home page</a>
+    </div>
+    <div class="lg:col-span-5 flex justify-start lg:justify-center">
+      <div class="rounded-full border border-line w-[280px] h-[280px] lg:w-[384px] lg:h-[384px] bg-raised" aria-hidden="true"></div>
+    </div>
+  </div></section>
+</BaseLayout>

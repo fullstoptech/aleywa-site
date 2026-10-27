@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import EmailBlock from '../components/EmailBlock.astro';
+import Stop from '../components/Stop.astro';
+---
+<BaseLayout title="Start a project — Aleywa Studios" description="Tell us what you are building." footerTone="berry">
+  <PageHero size="display" title="Start a project" sub="Tell us what you are building." />
+  <section class="section-x"><div class="inner-x grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-6 pb-16 lg:pb-24" data-reveal>
+    <div class="flex flex-col gap-5">
+      <h2 class="text-h2">What to include<Stop size={9} /></h2>
+      <p class="text-body-lg">What you are building.</p>
+      <p class="text-body-lg">When you hope to launch.</p>
+      <p class="text-body-lg">Links to what you have now.</p>
+      <p class="text-body italic">A few lines is enough.</p>
+    </div>
+    <div class="flex flex-col gap-5">
+      <h2 class="text-h2">What happens next<Stop size={9} /></h2>
+      <p class="text-body-lg">We read what you send and write back by email.</p>
+      <p class="text-body">There is no form. Your message arrives as an ordinary email.</p>
+    </div>
+  </div></section>
+  <EmailBlock />
+</BaseLayout>

@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Stop from '../../components/Stop.astro';
+import PostCard from '../../components/PostCard.astro';
+import { Image } from 'astro:assets';
+import { getCollection, render } from 'astro:content';
+import ReadingMarker from '../../components/ReadingMarker';
+import { spacedBlocks, spacedTable, spacedRules, spacedHero } from '../../data/postSpaced';
+export async function getStaticPaths() {
+  const posts = (await getCollection('posts')).sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+  return posts.map((p, i) => ({ params: { slug: p.id }, props: { post: p, next: posts[(i + 1) % posts.length] } }));
+}
+const { post, next } = Astro.props;
+const { Content } = await render(post);
+const isDesigned = post.id === 'spaced-by-measuring';
+---
+<BaseLayout title={`${post.data.title} — Aleywa Studios`} description={post.data.excerpt} footerTone="berry">
+  <ReadingMarker client:load />
+  <article>
+    <section class="section-x"><div class="inner-x pt-8 pb-8 flex flex-col gap-8" data-reveal>
+      <a href="/blog" class="text-body font-medium min-h-[44px] inline-flex items-center underline decoration-[1.5px] underline-offset-[4px]">Back to the blog</a>
+      {isDesigned ? (
+        <figure class="flex flex-col gap-2">
+          <p class="text-label">The measure</p>
+          <div class="overflow-hidden"><Image src={spacedHero} alt="Where the y meets the w, enlarged" widths={[1312]} class="w-full aspect-[1312/689] object-cover" /></div>
+          <figcaption class="text-caption text-ink-muted">Where the y meets the w, enlarged.</figcaption>
+          <figcaption class="text-caption text-ink-muted">Diagram, Aleywa Studios.</figcaption>
+        </figure>
+      ) : (
+        <div class="overflow-hidden"><Image src={post.data.image} alt={post.data.title} widths={[1312]} class="w-full aspect-[1312/689] object-cover" /></div>
+      )}
+      <h1 class="text-h1-fluid max-w-[900px]">{post.data.title}<Stop size={14} /></h1>
+      <p class="text-body-lg max-w-[680px]">{post.data.excerpt}</p>
+      <p class="text-label text-ink-muted">By Aleywa Studios · {post.data.dateLabel} · {post.data.minutes} min read</p>
+    </div></section>
+
+    <section class="section-x"><div class="inner-x max-w-[680px] mx-auto lg:mx-0 lg:ml-[max(0px,calc((100%-680px)/2))] pb-16 flex flex-col gap-6" style="max-width:680px;">
+      {isDesigned ? spacedBlocks.map((b) => {
+        if (b.type === 'p') return <p class="text-prose">{b.text}</p>;
+        if (b.type === 'h3') return <h2 class="text-h3 pt-4">{b.text}</h2>;
+        if (b.type === 'pull') return <blockquote class="text-pull italic py-4">{b.text}</blockquote>;
+        if (b.type === 'figure') return (
+          <figure class="flex flex-col gap-2 py-4" style="width:min(960px,90vw);max-width:90vw;">
+            <Image src={b.image} alt={b.alt} widths={[960]} class="w-full object-cover" />
+            <figcaption class="text-caption text-ink-muted">{b.caption}</figcaption>
+            <figcaption class="text-caption text-ink-muted">{b.credit}</figcaption>
+          </figure>
+        );
+        if (b.type === 'table') return (
+          <div class="overflow-x-auto py-4">
+            <table class="w-full text-left border-collapse">
+              <thead><tr class="border-b-2 border-line-strong"><th class="text-label py-3 pr-4">Pair</th><th class="text-label py-3 pr-4">Shapes that meet</th><th class="text-label py-3">Target (units)</th></tr></thead>
+              <tbody>{spacedTable.map((r) => <tr class="border-b border-line"><td class="text-body py-3 pr-4">{r[0]}</td><td class="text-body py-3 pr-4">{r[1]}</td><td class="text-body font-bold py-3">{r[2]}</td></tr>)}</tbody>
+            </table>
+          </div>
+        );
+        if (b.type === 'rules') return (
+          <div class="flex flex-col gap-3 pt-4">
+            <h2 class="text-h3">Rules to reuse</h2>
+            <ol class="flex flex-col gap-2">{spacedRules.map((r, i) => <li class="text-prose"><span class="font-medium">{i + 1}.</span> {r}</li>)}</ol>
+          </div>
+        );
+        if (b.type === 'gaveup') return (
+          <div class="flex flex-col gap-2 border-t border-line pt-6">
+            <p class="text-label">What we gave up</p>
+            <p class="text-body">{b.text}</p>
+          </div>
+        );
+        return null;
+      }) : (
+        <div class="post-prose flex flex-col gap-6"><Content /></div>
+      )}
+    </div></section>
+
+    <section class="section-x border-t border-line"><div class="inner-x grid grid-cols-1 lg:grid-cols-12 gap-6 py-16" data-reveal>
+      <h2 class="text-h3 lg:col-span-4">Next post</h2>
+      <div class="lg:col-span-8 max-w-[640px]">
+        <PostCard title={next.data.title} dateLabel={next.data.dateLabel} minutes={next.data.minutes} excerpt={next.data.excerpt} image={next.data.image} alt={next.data.title} href={`/blog/${next.id}`} />
+      </div>
+    </div></section>
+  </article>
+  <CtaBand tone="berry" size="h1" />
+</BaseLayout>

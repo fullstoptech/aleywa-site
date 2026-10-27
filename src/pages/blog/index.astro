@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import PostCard from '../../components/PostCard.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('posts')).sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+const featured = posts[0];
+const rest = posts.slice(1);
+---
+<BaseLayout title="Blog — Aleywa Studios" description="Posts from our own brand: what we tried, what we kept and what we gave up." footerTone="berry">
+  <PageHero size="h1" titleLines={['How we decide,', 'written down']} sub="Posts from our own brand: what we tried, what we kept and what we gave up." />
+  <section class="section-x"><div class="inner-x pb-16 lg:pb-24">
+    <PostCard featured title={featured.data.title} dateLabel={featured.data.dateLabel} minutes={featured.data.minutes} excerpt={featured.data.excerpt} image={featured.data.image} alt={featured.data.title} href={`/blog/${featured.id}`} />
+  </div></section>
+  <section class="section-x"><div class="inner-x grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-8 pb-16 lg:pb-24">
+    {rest.map((p) => <PostCard title={p.data.title} dateLabel={p.data.dateLabel} minutes={p.data.minutes} excerpt={p.data.excerpt} image={p.data.image} alt={p.data.title} href={`/blog/${p.id}`} />)}
+  </div></section>
+  <CtaBand tone="berry" size="h1" />
+</BaseLayout>

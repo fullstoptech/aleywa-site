@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import Plate from '../../components/Plate.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { getCollection } from 'astro:content';
+import windowAle from '../../assets/img/window-ale.png';
+const work = (await getCollection('work')).sort((a, b) => a.data.order - b.data.order);
+const byTitle = Object.fromEntries(work.map((x) => [x.data.title, x]));
+const P = (t: string) => byTitle[t];
+---
+<BaseLayout title="Recent work — Aleywa Studios" description="Every piece is ours and every piece is labelled. Each comes with the decision behind it and what we gave up." footerTone="berry">
+  <PageHero size="h1" titleLines={['Our own work,', 'with the reasons']} sub="Every piece is ours and every piece is labelled. Each comes with the decision behind it and what we gave up. Client work will appear here when a client has cleared it in writing." windowImage={windowAle} windowLabel="Our own brand." windowAlt="Our own brand" />
+  <section class="section-x"><div class="inner-x py-16 lg:py-24 flex flex-col gap-16 lg:gap-24">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-6">
+      <div class="lg:col-span-8"><Plate title={P('Our brand in full').data.title} caption={P('Our brand in full').data.caption} gaveUp={P('Our brand in full').data.gaveUp} label={P('Our brand in full').data.label} image={P('Our brand in full').data.image} alt="Our brand in full" href="/recent-work/our-brand-in-full" /></div>
+      <div class="lg:col-span-4"><Plate title={P('The card').data.title} caption={P('The card').data.caption} gaveUp={P('The card').data.gaveUp} label={P('The card').data.label} image={P('The card').data.image} alt="Our card, with a square cut through it" href="/recent-work/our-brand-in-full" /></div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-6">
+      <Plate title={P('The wall').data.title} caption={P('The wall').data.caption} gaveUp={P('The wall').data.gaveUp} label={P('The wall').data.label} image={P('The wall').data.image} alt="Our wall, reading one word to a row" href="/recent-work/our-brand-in-full" />
+      <Plate title={P('The space between the letters').data.title} caption={P('The space between the letters').data.caption} gaveUp={P('The space between the letters').data.gaveUp} label={P('The space between the letters').data.label} image={P('The space between the letters').data.image} alt="The space between the letters of the wordmark" href="/recent-work/our-brand-in-full" />
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-6">
+      <Plate title={P('This website').data.title} caption={P('This website').data.caption} gaveUp={P('This website').data.gaveUp} label={P('This website').data.label} image={P('This website').data.image} alt="This website, designed from our own brand" href="/recent-work/our-brand-in-full" />
+      <Plate title={P('The wordmark').data.title} caption={P('The wordmark').data.caption} gaveUp={P('The wordmark').data.gaveUp} label={P('The wordmark').data.label} image={P('The wordmark').data.image} alt="The Aleywa wordmark, drawn by hand" href="/recent-work/our-brand-in-full" />
+    </div>
+  </div></section>
+  <CtaBand tone="berry" size="h1" />
+</BaseLayout>

@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import GlyphSlot from '../components/GlyphSlot.astro';
+import HonestAnswer from '../components/HonestAnswer.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Stop from '../components/Stop.astro';
+import { glyphs } from '../data/glyphs';
+---
+<BaseLayout title="Letters — Aleywa Studios" description="Names and words in Twi, Ga and Ewe need letters many typefaces do not have." footerTone="berry">
+  <PageHero size="display" title="Letters for your people" sub="Names and words in Twi, Ga and Ewe need letters many typefaces do not have." />
+  <section class="section-x"><div class="inner-x flex flex-wrap gap-x-1 gap-y-8 pb-16" data-reveal>
+    {glyphs.map((g) => <div class="w-[calc(50%-4px)] sm:w-[160px]"><GlyphSlot glyph={g.glyph} status={g.status} size="lg" /></div>)}
+  </div></section>
+  <section class="section-x border-t border-line"><div class="inner-x grid grid-cols-1 lg:grid-cols-12 gap-6 py-16 lg:py-24" data-reveal>
+    <h2 class="text-h2 lg:col-span-5">What we found<Stop size={9} /></h2>
+    <p class="text-body-lg lg:col-span-7 max-w-[680px]">Our text typeface, Schibsted Grotesk, has no glyphs for \u025B \u0190 \u0254 \u0186 \u0256 \u0263 \u028B. It does have \u014B and the usual accents.</p>
+  </div></section>
+  <section class="section-x"><div class="inner-x grid grid-cols-1 lg:grid-cols-2 gap-8 pb-16 lg:pb-24" data-reveal>
+    <div class="flex flex-col gap-5 border-t-2 border-line-strong pt-8">
+      <h2 class="text-h2">What we do now<Stop size={9} /></h2>
+      <p class="text-body">A second typeface sets those letters by unicode range, so the page does not break. We check every letter in your name and your words before we choose type.</p>
+    </div>
+    <div class="flex flex-col gap-5 border-t-2 border-line-strong pt-8">
+      <h2 class="text-h2">What we plan<Stop size={9} /></h2>
+      <p class="text-body">We plan to have a type designer draw the missing letters into a licensed version of the typeface, which its licence allows. Until then, we do not say the gap is closed.</p>
+      <p class="text-label text-ink-muted">Status: planned.</p>
+    </div>
+  </div></section>
+  <section class="section-x"><div class="inner-x pb-16">
+    <HonestAnswer question="Will my name be set correctly?" answer="Yes. Until our own typeface is drawn, a fallback typeface that has the letters sets them, and we check every letter in your name before we choose type." />
+  </div></section>
+  <section style="background:var(--color-hover-ground);"><div class="section-x"><div class="inner-x flex flex-col gap-6 py-16 lg:py-24" data-reveal>
+    <SectionHeader title="Why it matters to you" />
+    <p class="text-body-lg max-w-[680px]">If your customers write \u025B or \u0254 in your name, your brand has to set it correctly on a sign, on a card and on a screen. We check that before we draw anything.</p>
+  </div></div></section>
+  <CtaBand tone="berry" size="h1" />
+</BaseLayout>

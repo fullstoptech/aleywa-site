@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Stop from '../../components/Stop.astro';
+import Swatch from '../../components/Swatch.astro';
+import GlyphSlot from '../../components/GlyphSlot.astro';
+import { Image } from 'astro:assets';
+import { glyphsMissing } from '../../data/glyphs';
+import brandFull from '../../assets/img/plate-brand-full.jpg';
+import brandWordmarkFig from '../../assets/img/brand-wordmark-fig.jpg';
+import brandSpacing from '../../assets/img/plate-spacing.jpg';
+import brandTypeFig from '../../assets/img/brand-type-fig.jpg';
+import brandColoursFig from '../../assets/img/brand-colours-fig.jpg';
+import brandBookCover from '../../assets/img/brand-book-cover.jpg';
+import plateCard from '../../assets/img/plate-card.jpg';
+---
+<BaseLayout title="Our brand in full — Aleywa Studios" description="This is our own brand, shown in full. Every piece is labelled, and each comes with the decision behind it and what we gave up." footerTone="berry">
+  <PageHero size="display" title="Our brand in full" sub="This is our own brand, shown in full. Every piece is labelled, and each comes with the decision behind it and what we gave up." />
+
+  <section class="section-x border-t border-line"><div class="inner-x grid grid-cols-1 lg:grid-cols-2 gap-8 py-16" data-reveal>
+    <div class="flex flex-col gap-5">
+      <h2 class="text-h2">Round letters.<br />One square stop<Stop size={9} /></h2>
+      <p class="text-body max-w-[680px]">The wordmark is lower case, with round letters and flat-ended strokes, ending in a square raspberry full stop. The stop is the hand-cut piece of candy, and it ends every headline. Every piece takes one risk.</p>
+      <p class="text-body max-w-[680px]">We gave up bubbly candy imagery and the usual twisted wrapper.</p>
+    </div>
+    <figure class="flex flex-col gap-3">
+      <div class="rounded-full overflow-hidden aspect-square max-w-[640px]"><Image src={brandFull} alt="Our brand, shown in full" widths={[640, 1200]} class="w-full h-full object-cover" /></div>
+      <figcaption class="text-caption text-ink-muted">Our own brand. Brand book page.</figcaption>
+    </figure>
+  </div></section>
+
+  <section class="section-x border-t border-line"><div class="inner-x grid grid-cols-1 lg:grid-cols-2 gap-8 py-16" data-reveal>
+    <figure class="flex flex-col gap-3 order-2 lg:order-1">
+      <div class="bg-hover-ground overflow-hidden"><Image src={brandWordmarkFig} alt="The wordmark, drawn by hand" widths={[533, 1066]} class="w-full aspect-[4/3] object-cover" /></div>
+      <figcaption class="text-caption text-ink-muted">Our own brand. Brand book page.</figcaption>
+    </figure>
+    <div class="flex flex-col gap-5 order-1 lg:order-2">
+      <h2 class="text-h2">Drawn by hand<Stop size={9} /></h2>
+      <p class="text-body max-w-[680px]">We set the name in 45 typefaces. None carried the idea, and several read as default faces. So we drew the wordmark.</p>
+      <p class="text-body max-w-[680px]">We gave up a ready-made typeface, and a cut on the e.</p>
+    </div>
+  </div></section>
+
+  <section class="section-x border-t border-line"><div class="inner-x grid grid-cols-1 lg:grid-cols-12 gap-8 py-16" data-reveal>
+    <div class="lg:col-span-5 flex flex-col gap-5">
+      <h2 class="text-h2">Spaced by measuring<Stop size={9} /></h2>
+      <p class="text-body">We set the space between letters by measuring the closest distance between neighbouring outlines, not the boxes around them. The y and w had the most empty space, so we tightened that pair to about 3.4 units after comparing four values. Small sizes get their own drawing.</p>
+      <p class="text-caption text-ink-muted">The numbers are rounded and on our own measure.</p>
+    </div>
+    <figure class="lg:col-span-7 flex flex-col gap-3">
+      <div class="bg-hover-ground overflow-hidden"><Image src={brandSpacing} alt="The spacing of the wordmark, measured" widths={[755, 1200]} class="w-full aspect-[4/3] object-cover" /></div>
+      <figcaption class="text-caption text-ink-muted">Our own brand. Brand book page.</figcaption>
+    </figure>
+  </div></section>
+
+  <section class="section-x border-t border-line"><div class="inner-x flex flex-col gap-10 py-16" data-reveal>
+    <div class="flex flex-col gap-5 max-w-[680px]">
+      <h2 class="text-h2">Colour sampled,<br />then turned down<Stop size={9} /></h2>
+      <p class="text-body">The colours came from photographs of real alewa, then we lowered the vividness: paper, ink, stone, one raspberry for the stop, and one berry for the single dark surface. A hot pink failed: white on it is only 3.7 to 1.</p>
+      <p class="text-body">We gave up bright pink as a ground.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <Swatch name="Paper" hex="#F6F3EE" bg="#F6F3EE" />
+      <Swatch name="Ink" hex="#181110" bg="#181110" />
+      <Swatch name="Stone" hex="#6A615F" bg="#6A615F" />
+      <Swatch name="Raspberry" hex="#AB2859" bg="#AB2859" />
+      <Swatch name="Berry" hex="#460F22" bg="#460F22" />
+    </div>
+    <figure class="flex flex-col gap-3 max-w-[755px]">
+      <div class="bg-hover-ground overflow-hidden"><Image src={brandColoursFig} alt="Our colours, sampled then turned down" widths={[755, 1200]} class="w-full aspect-[4/3] object-cover" /></div>
+      <figcaption class="text-caption text-ink-muted">Our own brand. Brand book page.</figcaption>
+    </figure>
+  </div></section>
+
+  <section class="section-x border-t border-line"><div class="inner-x grid grid-cols-1 lg:grid-cols-12 gap-8 py-16" data-reveal>
+    <figure class="lg:col-span-7 flex flex-col gap-3">
+      <div class="bg-hover-ground overflow-hidden"><Image src={brandTypeFig} alt="Our type: one family, and an honest gap" widths={[755, 1200]} class="w-full aspect-[4/3] object-cover" /></div>
+      <figcaption class="text-caption text-ink-muted">Our own brand. Brand book page.</figcaption>
+    </figure>
+    <div class="lg:col-span-5 flex flex-col gap-5">
+      <h2 class="text-h2">One family,<br />and an honest gap<Stop size={9} /></h2>
+      <p class="text-body">The text typeface is Schibsted Grotesk. It has no glyphs for \u025B \u0190 \u0254 \u0186 \u0256 \u0263 \u028B, letters of Twi, Ga and Ewe. A fallback sets them for now, and we plan to have them drawn.</p>
+      <div class="flex flex-wrap gap-4">{glyphsMissing.slice(0,5).map((g) => <GlyphSlot glyph={g.glyph} status={g.status} />)}</div>
+      <p class="text-caption text-ink-muted">Status: planned</p>
+      <a href="/letters" class="text-body font-medium underline decoration-[1.5px] underline-offset-[4px] hover:text-[#7f1840] transition-colors duration-[120ms] min-h-[44px] inline-flex items-center">Read about the letters</a>
+    </div>
+  </div></section>
+
+  <section class="section-x border-t border-line"><div class="inner-x grid grid-cols-1 lg:grid-cols-2 gap-8 py-16" data-reveal>
+    <div class="flex flex-col gap-5">
+      <h2 class="text-h2">Where it goes<Stop size={9} /></h2>
+      <p class="text-body max-w-[680px]">A business card with a 9 mm square cut through the face. A letterhead with a column of squares that counts its letters. An envelope with a square window. Billboards read in pieces. A wall that reads one word to a row.</p>
+    </div>
+    <figure class="flex flex-col gap-3">
+      <div class="bg-hover-ground overflow-hidden"><Image src={plateCard} alt="Where the brand goes: the card" widths={[533, 1066]} class="w-full aspect-[4/3] object-cover" /></div>
+      <figcaption class="text-caption text-ink-muted">Mockups and 3D renders. Names and details on mockups are samples. Printer samples to come.</figcaption>
+    </figure>
+  </div></section>
+
+  <section class="section-x border-t border-line"><div class="inner-x flex flex-col gap-10 py-16" data-reveal>
+    <div class="flex flex-col gap-5 max-w-[680px]">
+      <h2 class="text-h2">The brand book<Stop size={9} /></h2>
+      <p class="text-body">More than fifty pages: the idea, the logo, colour, type, layout, voice, applications and how to use it.</p>
+    </div>
+    <figure class="flex flex-col gap-3">
+      <div class="bg-hover-ground overflow-hidden"><Image src={brandBookCover} alt="The brand book" widths={[1200]} class="w-full aspect-[16/9] object-cover" /></div>
+      <figcaption class="text-caption text-ink-muted">Our own brand. Brand book page.</figcaption>
+    </figure>
+  </div></section>
+
+  <CtaBand tone="berry" size="h1" />
+</BaseLayout>

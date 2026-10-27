@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import Reason from '../components/Reason.astro';
+import HonestAnswer from '../components/HonestAnswer.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { reasons } from '../data/reasons';
+import { honestAnswers } from '../data/honest';
+import { glyphsMissing } from '../data/glyphs';
+import windowCard from '../assets/img/window-card.png';
+---
+<BaseLayout title="Why us — Aleywa Studios" description="Five reasons, and the work that backs each one." footerTone="berry">
+  <PageHero size="h1" titleLines={['Five reasons', 'to choose us']} windowImage={windowCard} windowLabel="Our own brand. 3D render." windowAlt="Our card, with a square cut through it" />
+  <section class="section-x"><div class="inner-x pb-4">
+    {reasons.map((r) => r.n === 4 ? (
+      <Reason n={r.n} title={r.title} body={r.body} glyphs={glyphsMissing.slice(0,5)} statusNote="Status: planned" linkHref="/letters" linkLabel="See the letters" />
+    ) : (
+      <Reason n={r.n} title={r.title} body={r.body} label={r.label} image={r.image} alt={r.alt} />
+    ))}
+  </div></section>
+  <section class="section-x"><div class="inner-x py-16 lg:py-24 flex flex-col gap-10">
+    <SectionHeader title="Honest answers" />
+    <div>{honestAnswers.map((h) => <HonestAnswer question={h.question} answer={h.answer} />)}</div>
+  </div></section>
+  <CtaBand tone="berry" size="h1" />
+</BaseLayout>
