@@ -1,0 +1,35 @@
+---
+import '../styles/global.css';
+import Seo from '../components/Seo.astro';
+import Footer from '../components/Footer.astro';
+import HeaderSlot from '../components/HeaderSlot.astro';
+interface Props { title: string; description: string; bare?: boolean; footerTone?: 'paper' | 'berry'; currentPath?: string }
+const { title, description, bare = false, footerTone = 'paper' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" href="/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin />
+    <Seo title={title} description={description} />
+  </head>
+  <body>
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-ink focus:text-paper focus:px-4 focus:py-2 text-label">Skip to content</a>
+    {!bare && <HeaderSlot />}
+    <main id="main"><slot /></main>
+    <Footer tone={footerTone} />
+    <script>
+      const els = document.querySelectorAll('[data-reveal]');
+      if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        els.forEach((e) => e.classList.add('is-revealed'));
+      } else {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('is-revealed'); io.unobserve(en.target); } });
+        }, { threshold: 0.08 });
+        els.forEach((e) => io.observe(e));
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+---
+import { Image } from 'astro:assets';
+interface Props { image: ImageMetadata; label: string; alt: string; shape?: 'round' | 'square'; class?: string }
+const { image, label, alt, shape = 'round', class: cls = '' } = Astro.props;
+---
+<figure class={`flex flex-col gap-3 ${cls}`}>
+  <div class={shape === 'round' ? 'rounded-full overflow-hidden aspect-square' : 'overflow-hidden aspect-square'}>
+    <Image src={image} alt={alt} widths={[400, 800]} class="w-full h-full object-cover" />
+  </div>
+  <figcaption class="text-caption text-ink-muted">{label}</figcaption>
+</figure>

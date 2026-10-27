@@ -1,0 +1,13 @@
+---
+import { Image } from 'astro:assets';
+interface Props { title: string; dateLabel: string; minutes: number; excerpt: string; image: ImageMetadata; alt: string; href: string; featured?: boolean }
+const { title, dateLabel, minutes, excerpt, image, alt, href, featured = false } = Astro.props;
+---
+<article class="flex flex-col gap-4" data-reveal>
+  <a href={href} class="block overflow-hidden bg-hover-ground">
+    <Image src={image} alt={alt} widths={[640, 1200]} class={`w-full object-cover ${featured ? 'aspect-[1312/689]' : 'aspect-[640/336]'}`} />
+  </a>
+  <p class="text-label text-ink-muted">{dateLabel} · {minutes} min read</p>
+  <h3 class={featured ? 'text-h2 max-w-[680px]' : 'text-h3'}><a href={href} class="hover:text-[#7f1840] transition-colors duration-[120ms]">{title}</a></h3>
+  <p class="text-body max-w-[680px]">{excerpt}</p>
+</article>

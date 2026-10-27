@@ -1,0 +1,25 @@
+---
+import Wordmark from './Wordmark.astro';
+import Stop from './Stop.astro';
+import { NAV, isCurrent } from '../data/site';
+const current = Astro.url.pathname;
+---
+<header class="bg-paper sticky top-0 z-40">
+  <div class="section-x">
+    <div class="inner-x flex items-center justify-between h-16 lg:h-[88px] gap-4">
+      <a href="/" aria-label="Aleywa Studios — home" class="min-h-[44px] inline-flex items-center"><Wordmark /></a>
+      <nav class="hidden lg:flex items-center gap-6" aria-label="Primary">
+        {NAV.map((n) => (
+          <a href={n.href} aria-current={isCurrent(current, n.href) ? 'page' : undefined} class="text-label min-h-[44px] inline-flex items-center gap-1 hover:text-[#7f1840] transition-colors duration-[120ms]">
+            {isCurrent(current, n.href) && <Stop size={10} />}
+            {n.label}
+          </a>
+        ))}
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="/start-a-project" class="text-body font-medium min-h-[44px] inline-flex items-center hover:text-[#7f1840] transition-colors duration-[120ms]">Start a project</a>
+        <span class="lg:hidden text-label min-h-[44px] inline-flex items-center px-2">Menu</span>
+      </div>
+    </div>
+  </div>
+</header>

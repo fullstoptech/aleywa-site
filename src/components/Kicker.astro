@@ -1,0 +1,5 @@
+---
+interface Props { class?: string; tone?: 'ink' | 'inverse' }
+const { class: cls = '', tone = 'ink' } = Astro.props;
+---
+<p class={`text-label ${tone === 'inverse' ? 'text-[#fcd1da]' : 'text-ink-muted'} ${cls}`}><slot /></p>

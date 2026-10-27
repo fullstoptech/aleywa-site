@@ -1,0 +1,28 @@
+---
+import Stop from './Stop.astro';
+import { EMAIL } from '../data/site';
+import CopyAddress from './CopyAddress';
+interface Props { tone?: 'paper' | 'berry'; size?: 'h1' | 'display' }
+const { tone = 'berry', size = 'h1' } = Astro.props;
+const berry = tone === 'berry';
+---
+<section class={berry ? '' : 'bg-paper'} style={berry ? 'background:var(--color-berry);color:var(--color-paper);' : ''} data-reveal>
+  <div class="section-x">
+    <div class="inner-x flex flex-col lg:flex-row lg:items-end gap-8 py-16 lg:py-24">
+      <div class="flex-1">
+        {size === 'display' ? (
+          <h2 class="text-display-fluid">Start a project<Stop size={24} tone={berry ? 'on-inverse' : 'accent'} /></h2>
+        ) : (
+          <h2 class="text-h1-fluid">Start a project<Stop size={14} tone={berry ? 'on-inverse' : 'accent'} /></h2>
+        )}
+      </div>
+      <div class="flex flex-col gap-6">
+        <a href={`mailto:${EMAIL}`} class="text-h2 font-bold underline decoration-[1.5px] underline-offset-[4px] break-all">{EMAIL}</a>
+        <div class="flex flex-wrap gap-4 items-center">
+          <a href={`mailto:${EMAIL}`} class={`inline-flex items-center justify-center px-6 h-14 text-body font-medium whitespace-nowrap transition-opacity duration-[120ms] hover:opacity-90 ${berry ? '' : ''}`} style={berry ? 'background:var(--color-paper);color:var(--color-ink);' : 'background:var(--color-ink);color:var(--color-paper);'}>Write to us</a>
+          <CopyAddress client:load on={berry ? 'berry' : 'paper'} />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

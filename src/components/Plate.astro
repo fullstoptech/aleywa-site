@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+interface Props { title: string; caption: string; gaveUp?: string; label: string; image: ImageMetadata; alt: string; href?: string; linkLabel?: string; class?: string; offset?: boolean }
+const { title, caption, gaveUp, label, image, alt, href, linkLabel = 'Read the decision', class: cls = '', offset = false } = Astro.props;
+---
+<article class={`flex flex-col gap-4 ${offset ? 'lg:mt-24' : ''} ${cls}`} data-reveal>
+  <div class="bg-raised p-0 overflow-hidden">
+    <Image src={image} alt={alt} widths={[400, 800, 1200]} class="w-full aspect-[4/3] object-cover" />
+  </div>
+  <p class="text-caption text-ink-muted">{label}</p>
+  <h3 class="text-h3">{title}</h3>
+  <p class="text-body">{caption}</p>
+  {gaveUp && <p class="text-body">{gaveUp}</p>}
+  {href && <a href={href} class="text-body font-medium underline decoration-[1.5px] underline-offset-[4px] hover:text-[#7f1840] transition-colors duration-[120ms] min-h-[44px] inline-flex items-center">{linkLabel}</a>}
+</article>

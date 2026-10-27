@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets';
+import { EMAIL } from '../data/site';
+import CopyAddress from './CopyAddress';
+import imgCard from '../assets/img/plate-card.jpg';
+interface Props { windowImage?: ImageMetadata; windowLabel?: string; windowAlt?: string }
+const { windowImage = imgCard, windowLabel = 'Our own brand. 3D render. Printer samples to come.', windowAlt = 'Our own brand card render' } = Astro.props;
+---
+<section style="background:var(--color-berry);color:var(--color-paper);" data-reveal>
+  <div class="section-x">
+    <div class="inner-x flex flex-col lg:flex-row gap-10 lg:gap-16 py-16 lg:py-24">
+      <div class="flex-1 flex flex-col gap-8">
+        <a href={`mailto:${EMAIL}`} class="text-h1-fluid font-bold underline decoration-[1.5px] underline-offset-[4px] break-all">{EMAIL}</a>
+        <div class="flex flex-wrap gap-4 items-center">
+          <a href={`mailto:${EMAIL}`} class="inline-flex items-center justify-center px-6 h-14 text-body font-medium whitespace-nowrap transition-opacity duration-[120ms] hover:opacity-90" style="background:var(--color-paper);color:var(--color-ink);">Write to us</a>
+          <CopyAddress client:load on="berry" />
+        </div>
+        <p class="text-body" style="color:#fcd1da;">If your email does not open, copy the address above.</p>
+      </div>
+      <figure class="flex flex-col gap-3 shrink-0 lg:w-[520px]">
+        <div class="overflow-hidden aspect-square bg-ink">
+          <Image src={windowImage} alt={windowAlt} widths={[520, 1040]} class="w-full h-full object-cover" />
+        </div>
+        <figcaption class="text-caption" style="color:#fcd1da;">{windowLabel}</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+---
+import Stop from './Stop.astro';
+interface Props { title: string; intro?: string; kicker?: string; tone?: 'paper' | 'berry'; stopSize?: number }
+const { title, intro, kicker, tone = 'paper', stopSize = 9 } = Astro.props;
+const titleColor = tone === 'berry' ? 'color:var(--color-paper);' : '';
+---
+<div class="flex flex-col gap-4" data-reveal>
+  {kicker && <p class={`text-label ${tone === 'berry' ? 'text-[#fcd1da]' : 'text-ink-muted'}`}>{kicker}</p>}
+  <h2 class="text-h2" style={titleColor}>{title}<Stop size={stopSize} tone={tone === 'berry' ? 'on-inverse' : 'accent'} /></h2>
+  {intro && <p class={`text-body-lg max-w-[680px] ${tone === 'berry' ? 'text-[#fcd1da]' : ''}`} style={tone === 'berry' ? 'color:#fcd1da;' : ''}>{intro}</p>}
+</div>

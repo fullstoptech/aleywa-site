@@ -1,0 +1,6 @@
+---
+interface Props { size?: number; tone?: 'accent' | 'on-inverse' | 'paper'; class?: string }
+const { size = 10, tone = 'accent', class: cls = '' } = Astro.props;
+const bg = tone === 'on-inverse' ? 'var(--color-accent-on-inverse)' : tone === 'paper' ? 'var(--color-paper)' : 'var(--color-accent)';
+---
+<span aria-hidden="true" class={cls} style={`display:inline-block;width:${size}px;height:${size}px;background:${bg};flex:none;vertical-align:baseline;transform:translateY(0.08em);margin-left:0.12em;`}></span>

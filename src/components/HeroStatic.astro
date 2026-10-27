@@ -1,0 +1,111 @@
+---
+import { Image } from 'astro:assets';
+import Wordmark from './Wordmark.astro';
+import lettersRaw from '../assets/letters.svg?raw';
+import heroA1 from '../assets/img/hero-window-a1.png';
+import heroE from '../assets/img/hero-window-e.png';
+import heroA2 from '../assets/img/hero-window-a2.png';
+import heroStop from '../assets/img/hero-window-stop.png';
+const lettersSvg = lettersRaw
+  .replace('<svg ', '<svg aria-hidden="true" style="width:3440.232px;height:1062px;display:block" ');
+---
+<div class="hero-static">
+  {/* Desktop stage */}
+  <div class="hero-desktop-wrap hidden lg:block relative overflow-hidden bg-paper" style="height:min(900px, 62.5vw);">
+    <div class="hero-stage absolute top-0 left-0 origin-top-left" style="width:1440px;height:900px;">
+      <div class="absolute top-0 left-0 flex items-center justify-between w-[1440px] h-[88px] px-16 z-20">
+        <a href="/" aria-label="Aleywa Studios — home"><Wordmark /></a>
+        <a href="/start-a-project" class="text-body font-medium min-h-[44px] inline-flex items-center">Start a project</a>
+      </div>
+      <div class="hero-layer absolute" style="left:0;top:-244.8px;width:3657.546px;height:1152px;">
+        <div class="absolute overflow-hidden" style="left:118.8px;top:448.2px;width:345.6px;height:345.6px;">
+          <Image src={heroA1} alt="Our own brand. 3D render." widths={[346, 692]} loading="eager" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute overflow-hidden" style="left:1029.957px;top:468.258px;width:261.726px;height:107.308px;">
+          <Image src={heroE} alt="Our own brand. Brand book page." widths={[262, 524]} class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute overflow-hidden" style="left:2965.05px;top:448.2px;width:345.6px;height:345.6px;">
+          <Image src={heroA2} alt="Our own brand. Site design." widths={[346, 692]} class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute overflow-hidden" style="left:3507.39px;top:751.5px;width:148.5px;height:148.5px;">
+          <Image src={heroStop} alt="Our own brand. 3D render. Printer samples to come." widths={[149, 298]} class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute" style="left:0;top:54px;" set:html={lettersSvg}></div>
+        {/* Rest captions */}
+        <div class="hero-rest absolute" style="left:190px;top:561px;width:240px;">
+          <p class="text-h3">1 Strategy.</p>
+          <p class="text-label">We work out who you are for, and what you say first.</p>
+        </div>
+        <div class="hero-rest absolute" style="left:700px;top:561px;width:200px;">
+          <p class="text-h3">2 Identity.</p>
+          <p class="text-label">We draw your name, choose your colour and type, and write the rules.</p>
+        </div>
+        <p class="hero-rest absolute text-caption" style="left:190px;top:820px;">Our own brand. 3D render.</p>
+        <p class="hero-rest absolute text-caption" style="left:1029px;top:600px;">Our own brand. Brand book page.</p>
+        {/* Focus captions (hidden in rest via CSS when JS hero active; visible in flow fallback below) */}
+        <div class="hero-focus absolute" style="left:807px;top:375px;width:200px;">
+          <p class="text-h3">4 Website.</p>
+          <p class="text-label">We plan, write and build your site in the same system.</p>
+        </div>
+        <p class="hero-focus absolute text-caption" style="left:807px;top:659px;">Our own brand. Site design.</p>
+        <div class="hero-focus absolute" style="left:285px;top:177px;">
+          <p class="text-caption">Our own brand. Site design.</p>
+        </div>
+        <div class="hero-focus absolute" style="left:1010px;top:120px;width:366px;">
+          <p class="text-h2">Why choose us</p>
+          <ol class="text-body mt-3 flex flex-col gap-1">
+            <li>1 &nbsp;One studio for your brand and your website.</li>
+            <li>2 &nbsp;Every decision has a reason you can read.</li>
+            <li>3 &nbsp;Craft you can measure.</li>
+            <li>4 &nbsp;Letters for your people.</li>
+            <li>5 &nbsp;Bold, and finished.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="absolute left-0 w-[1440px] flex gap-6 px-16 items-start" style="top:680px;height:220px;background:var(--color-berry);color:var(--color-paper);padding-top:24px;padding-bottom:24px;">
+        <div class="hero-band-rest flex-1">
+          <p class="text-hero-h1">Brand identity and websites,<br />made together<span aria-hidden="true" style="display:inline-block;width:14px;height:14px;background:var(--color-accent-on-inverse);margin-left:0.12em;"></span></p>
+        </div>
+        <div class="hero-band-focus flex-1" hidden>
+          <p class="text-hero-h1">The card</p>
+          <p class="text-label mt-2" style="color:#fcd1da;">A 9 mm square is cut through the paper face, the size of the stop.</p>
+        </div>
+        <p class="text-label w-[300px]" style="color:#fcd1da;">Aleywa Studios is a design studio that decides your brand and your website together, and shows you the reason behind every decision.</p>
+        <p class="text-caption w-[170px]" style="color:#fcd1da;">Scroll along the word. Four windows, then the rest.</p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-reduced-flow section-x" style="display:none;"><div class="inner-x py-8 flex flex-col gap-4">
+    <p class="text-h3">4 Website.</p>
+    <p class="text-body">We plan, write and build your site in the same system.</p>
+    <p class="text-h2">Why choose us</p>
+    <ol class="text-body flex flex-col gap-1"><li>1 &nbsp;One studio for your brand and your website.</li><li>2 &nbsp;Every decision has a reason you can read.</li><li>3 &nbsp;Craft you can measure.</li><li>4 &nbsp;Letters for your people.</li><li>5 &nbsp;Bold, and finished.</li></ol>
+  </div></div>
+  {/* Mobile variant */}
+  <div class="lg:hidden">
+    <div class="section-x"><div class="inner-x pt-6 flex flex-col gap-6">
+      <h1 class="text-[44px] leading-[1.04] font-bold tracking-[-0.04em]">Brand identity<br />and websites,<br />made together<span aria-hidden="true" style="display:inline-block;width:9px;height:9px;background:var(--color-accent);margin-left:0.12em;"></span></h1>
+    </div></div>
+    <div class="overflow-x-auto mt-6" style="scroll-snap-type:x mandatory;">
+      <div class="relative" style="width:900px;height:360px;scroll-snap-align:start;">
+        <div class="absolute overflow-hidden" style="left:40px;top:60px;width:202px;height:202px;">
+          <Image src={heroA1} alt="Our own brand. 3D render." widths={[202, 404]} loading="eager" class="w-full h-full object-cover" />
+        </div>
+        <p class="text-h3 absolute" style="left:20px;top:280px;">1 Strategy.</p>
+        <p class="text-caption absolute" style="left:20px;top:320px;">Our own brand. 3D render.</p>
+      </div>
+    </div>
+    <div style="background:var(--color-berry);color:var(--color-paper);" class="section-x"><div class="inner-x py-4 flex flex-col gap-3">
+      <p class="text-label" style="color:#fcd1da;">Aleywa Studios is a design studio that decides your brand and your website together, and shows you the reason behind every decision.</p>
+      <p class="text-caption" style="color:#fcd1da;">Swipe along the word.</p>
+    </div></div>
+  </div>
+</div>
+<style>
+  .hero-stage { transform-origin: top left; transform: scale(calc(100vw / 1440)); }
+  @media (min-width: 1024px) and (max-width: 1439px) { .hero-stage { transform: scale(calc(100vw / 1440)); } }
+  .hero-focus { opacity: 0; }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-focus { opacity: 1; position: static !important; }
+  }
+</style>

@@ -1,0 +1,10 @@
+---
+import raw from '../assets/wordmark.svg?raw';
+interface Props { tone?: 'paper' | 'berry'; height?: number; class?: string }
+const { tone = 'paper', height = 32, class: cls = '' } = Astro.props;
+const letter = tone === 'berry' ? '#f6f3ee' : '#181110';
+const square = tone === 'berry' ? '#de4c7d' : '#AB2859';
+let svg = raw.split('#181110').join(letter).split('#AB2859').join(square).split('#ab2859').join(square);
+svg = svg.replace('<svg ', `<svg role="img" aria-label="Aleywa Studios" height="${height}" style="height:${height}px;width:auto;display:block" `);
+---
+<span class={cls} set:html={svg} />

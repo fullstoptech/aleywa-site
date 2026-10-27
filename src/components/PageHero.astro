@@ -1,0 +1,29 @@
+---
+import Stop from './Stop.astro';
+import { Image } from 'astro:assets';
+interface Props { title?: string; titleLines?: string[]; sub?: string; size?: 'display' | 'h1'; windowImage?: ImageMetadata; windowLabel?: string; windowAlt?: string; windowShape?: 'round' | 'square' }
+const { title, titleLines, sub, size = 'display', windowImage, windowLabel, windowAlt = '', windowShape = 'round' } = Astro.props;
+const lines = titleLines ?? [title];
+const stopSize = size === 'display' ? 24 : 14;
+---
+<section class="section-x">
+  <div class="inner-x flex flex-col lg:flex-row gap-8 lg:gap-6 py-16 lg:py-24" data-reveal>
+    <div class="flex-1 flex flex-col gap-8">
+      {size === 'display' ? (
+        <h1 class="text-display-fluid">{lines.map((l, i) => (<>{l}{i === lines.length - 1 && <Stop size={stopSize} />}{i < lines.length - 1 && <br />}</>))}</h1>
+      ) : (
+        <h1 class="text-h1-fluid">{lines.map((l, i) => (<>{l}{i === lines.length - 1 && <Stop size={stopSize} />}{i < lines.length - 1 && <br />}</>))}</h1>
+      )}
+      {sub && <p class="text-body-lg max-w-[680px]">{sub}</p>}
+      <slot />
+    </div>
+    {windowImage && (
+      <figure class="flex flex-col gap-3 shrink-0">
+        <div class={windowShape === 'round' ? 'rounded-full overflow-hidden w-[240px] h-[240px] lg:w-[384px] lg:h-[384px]' : 'overflow-hidden w-[240px] h-[240px] lg:w-[384px] lg:h-[384px]'}>
+          <Image src={windowImage} alt={windowAlt} widths={[384, 768]} class="w-full h-full object-cover" />
+        </div>
+        {windowLabel && <figcaption class="text-caption text-ink-muted">{windowLabel}</figcaption>}
+      </figure>
+    )}
+  </div>
+</section>

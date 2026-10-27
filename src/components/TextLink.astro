@@ -1,0 +1,7 @@
+---
+interface Props { href: string; size?: 'body' | 'lead'; tone?: 'ink' | 'inverse' | 'accent'; class?: string }
+const { href, size = 'body', tone = 'ink', class: cls = '' } = Astro.props;
+const color = tone === 'inverse' ? 'color:var(--color-paper);' : tone === 'accent' ? 'color:var(--color-accent);' : '';
+const sz = size === 'lead' ? 'text-h2 font-bold' : 'text-body font-medium';
+---
+<a href={href} class={`${sz} underline decoration-[1.5px] underline-offset-[4px] transition-colors duration-[120ms] hover:text-[#7f1840] ${cls}`} style={color}><slot /></a>

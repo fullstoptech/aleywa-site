@@ -1,0 +1,5 @@
+---
+import Header from './Header';
+const currentPath = Astro.url.pathname;
+---
+<Header client:load currentPath={currentPath} />

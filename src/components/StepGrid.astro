@@ -1,0 +1,33 @@
+---
+interface Step { n: number; title: string; weDo: string; youDecide: string; youReceive: string }
+interface Props { steps: Step[] }
+const { steps } = Astro.props;
+---
+<div data-reveal>
+  <div class="hidden lg:grid grid-cols-5 gap-6 border-t-2 border-line-strong py-6">
+    <div></div>
+    {steps.map((s) => <div class="flex flex-col gap-1"><span class="text-label text-ink-muted">{s.n}</span><span class="text-h3">{s.title}</span></div>)}
+  </div>
+  {[
+    { label: 'We do', key: 'weDo' as const },
+    { label: 'You decide', key: 'youDecide' as const },
+    { label: 'You receive', key: 'youReceive' as const },
+  ].map((row) => (
+    <div class="hidden lg:grid grid-cols-5 gap-6 border-t border-line py-6">
+      <p class="text-label text-ink-muted">{row.label}</p>
+      {steps.map((s) => <p class="text-body">{s[row.key]}</p>)}
+    </div>
+  ))}
+  <div class="lg:hidden flex flex-col">
+    {steps.map((s) => (
+      <div class="border-t border-line py-6 flex flex-col gap-3">
+        <p class="text-label text-ink-muted">{s.n}</p>
+        <h3 class="text-h3">{s.title}</h3>
+        <p class="text-label text-ink-muted">We do</p><p class="text-body">{s.weDo}</p>
+        <p class="text-label text-ink-muted">You decide</p><p class="text-body">{s.youDecide}</p>
+        <p class="text-label text-ink-muted">You receive</p><p class="text-body">{s.youReceive}</p>
+      </div>
+    ))}
+  </div>
+  <div class="border-t-2 border-line-strong"></div>
+</div>

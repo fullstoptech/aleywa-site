@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets';
+import GlyphSlot from './GlyphSlot.astro';
+interface Glyph { glyph: string; status: string }
+interface Props { n: number; title: string; body: string; label?: string; image?: ImageMetadata; alt?: string; glyphs?: Glyph[]; statusNote?: string; linkHref?: string; linkLabel?: string }
+const { n, title, body, label, image, alt = '', glyphs, statusNote, linkHref, linkLabel } = Astro.props;
+---
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 py-8 border-t border-line" data-reveal>
+  <div class="lg:col-span-1"><span class="text-h1-fluid">{n}</span></div>
+  <div class="lg:col-span-6 flex flex-col gap-3">
+    <h3 class="text-h3">{title}</h3>
+    <p class="text-body max-w-[680px]">{body}</p>
+    {glyphs && (
+      <div class="flex flex-wrap gap-4 mt-2">
+        {glyphs.map((g) => <GlyphSlot glyph={g.glyph} status={g.status} />)}
+      </div>
+    )}
+    {statusNote && <p class="text-caption text-ink-muted">{statusNote}</p>}
+    {linkHref && <a href={linkHref} class="text-body font-medium underline decoration-[1.5px] underline-offset-[4px] hover:text-[#7f1840] transition-colors duration-[120ms] min-h-[44px] inline-flex items-center">{linkLabel}</a>}
+  </div>
+  <div class="lg:col-span-5 flex flex-col gap-2">
+    {image && <div class="bg-hover-ground overflow-hidden"><Image src={image} alt={alt} widths={[400, 800]} class="w-full aspect-[4/3] object-cover" /></div>}
+    {label && <p class="text-caption text-ink-muted">{label}</p>}
+  </div>
+</article>

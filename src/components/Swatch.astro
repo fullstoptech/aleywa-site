@@ -1,0 +1,9 @@
+---
+interface Props { name: string; hex: string; bg: string }
+const { name, hex, bg } = Astro.props;
+---
+<div class="flex flex-col">
+  <div class="h-[200px] lg:h-[240px] border border-line" style={`background:${bg};`}></div>
+  <p class="text-body font-medium mt-3">{name}</p>
+  <p class="text-label text-ink-muted">{hex}</p>
+</div>
